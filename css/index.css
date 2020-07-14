@@ -30,15 +30,14 @@ body {
 }
 
 .main h2 {
-    color: #364e96;
-    border-bottom: dashed 2px #364e96;
+    color: #6594e0;
 }
 
-.profile-lists {
+.list-1 {
     text-align: center;
 }
 
-.profile-lists li {
+.list-1 li {
     display: inline-block;
     padding: 0.5em 1em;
     text-decoration: none;
@@ -48,6 +47,28 @@ body {
     background: #f2fcff;
     text-align: start;
     margin: 8px 5px;
+}
+
+.list-1-full {
+    text-align: center;
+}
+
+.list-1-full li {
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    /*color: #1d8ace;*/
+    border: double 4px #D20250;
+    border-radius: 20px;
+    background: #f2fcff;
+    text-align: start;
+    margin: 8px 5px;
+    width: 90%;
+}
+
+.list-1-full li img {
+    width: 100%;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
 .atcoder-color {
