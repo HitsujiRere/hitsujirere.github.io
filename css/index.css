@@ -1,14 +1,56 @@
 html {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
     font-size: 20px;
+    font-weight: normal;
 }
 
 body {
+    background-color: #EFEFEF;
+
     /*background-image: url(../img/backimage.gif);
     background-repeat:repeat;*/
     
-    margin: 10px 10px 10px 10px;
+    /*margin: 10px 10px 10px 10px;*/
 
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
+}
+
+.main a {
+    color: #005DFF;
+    text-decoration: none;
+}
+
+.main h1 {
+    color: #6594e0;
+    padding: 0.5em 0;
+    border-top: solid 3px #6594e0;
+    border-bottom: solid 3px #6594e0;
+    text-align: center;
+}
+
+.main h2 {
+    color: #364e96;
+    border-bottom: dashed 2px #364e96;
+}
+
+.profile-lists {
+    text-align: center;
+}
+
+.profile-lists li {
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    /*color: #1d8ace;*/
+    border: double 4px #D20250;
+    border-radius: 10px;
+    background: #f2fcff;
+    text-align: start;
+    margin: 8px 5px;
+}
+
+.atcoder-color {
+    color: #70bebf;
+    font-weight: bold;
 }
