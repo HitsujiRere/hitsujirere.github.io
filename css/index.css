@@ -35,6 +35,7 @@ body {
 
 .list-1 {
     text-align: center;
+    padding-left: 0px;
 }
 
 .list-1 li {
@@ -51,6 +52,7 @@ body {
 
 .list-1-full {
     text-align: center;
+    padding-left: 0px;
 }
 
 .list-1-full li {
