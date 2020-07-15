@@ -21,6 +21,8 @@ Made with JavaScript.
 
 https://hitsujirere.github.io/Siritori/
 
+<img src="image/siritori.jpg" width=50%>
+
 ### Hex Calcurator
 
 This is a hexadecimal function calculator.
@@ -28,6 +30,8 @@ This is a hexadecimal function calculator.
 Made with Uno-Platform and C#.
 
 https://hexcalcurator.azurewebsites.net (Stopping Now)
+
+<img src="image/HexCalcurator.png"  width=50%>
 
 ### Just 10 Game
 
@@ -41,9 +45,13 @@ https://twitter.com/HitsujiRere/status/1243791294679240711?s=20
 
 https://youtu.be/mSAGdvujaFc
 
+<img src="image/just10game.png" width=50%>
+
 ### Yudetamago 2
 It's a click action game to make a boiled egg.
 
 Made with C++ and C++ Library Open-Siv-3D.
 
 https://scrapbox.io/hitsujirere-projects/ゆでたまご２
+
+<img src="image/yudetamago2.png" width=50%>
