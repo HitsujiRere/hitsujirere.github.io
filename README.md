@@ -3,9 +3,9 @@
 ## Profile
 
 - Name: Hitsuji Rere
-- Twitter: @HitsujiRere
-- GitHub: @HitsujiRere
-- AtCoder: @Deji
+- Twitter: [@HitsujiRere](https://twitter.com/HitsujiRere)
+- GitHub: [@HitsujiRere](https://github.com/HitsujiRere)
+- AtCoder: [@Deji](https://atcoder.jp/users/Deji)
     - Highest Rating: 1234
 - PAST #3
     - Grade: Intermediate
