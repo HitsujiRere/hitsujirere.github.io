@@ -10,7 +10,16 @@
 - PAST #3
     - Grade: Intermediate
     - Score: 76
+- Qiita
+    - [@HitsujiRere](https://qiita.com/HitsujiRere)
+- HatenaBlog
+    - [HitsujiRere](https://hitsujirere.hatenablog.com/)
 
+## About
+
+My web page is https://hitsujirere.github.io
+
+<!-- 
 ## Products
 
 ### Siritori
@@ -54,4 +63,4 @@ Made with C++ and C++ Library Open-Siv-3D.
 
 https://scrapbox.io/hitsujirere-projects/ゆでたまご２
 
-<img src="image/yudetamago2.png" width=50%>
+<img src="image/yudetamago2.png" width=50%> -->
