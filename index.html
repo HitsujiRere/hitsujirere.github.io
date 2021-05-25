@@ -6,12 +6,8 @@
     <meta name="author" content="HitsujiRere">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700" rel="stylesheet">
-
     <link rel="stylesheet" href="/css/normalize.css">
 
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/index.css">
 
     <link rel="shortcut icon" href="/image/rere.png">
@@ -20,270 +16,135 @@
 </head>
 
 <body>
-    <div class="header">
-        <ul>
-            <li>HitsujiRere🐏</li>
-            <li><a href="/" class="header_now">日本語</a></li>
-        </ul>
-    </div>
-
+    <header>
+        <h1>
+           <a href="/">HITSUJI-RERE</a>
+        </h1>
+        <div class="header-links">
+           <ul>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">AWARDS</a></li>
+              <li><a href="#">SKILL</a></li>
+              <li><a href="#">PORDUCTS</a></li>
+           </ul>
+        </nav>
+    </header>
+    
     <div class="main">
-        <div>
-            <h1>Profile</h1>
+        <div class="pages">
+            <section class="page">
+              <h1>ABOUT</h1>
+              <dl class="page-dl">
+                <dt>Name</dt>
+                <dd>陽辻 怜玲（ひつじ れれ）</dd>
+              </dl>
+              <dl class="page-dl">
+                <dt>Twitter</dt>
+                <dd><a href="https://twitter.com/HitsujiRere" target=" _blank">@HitsujiRere</a></dd>
+              </dl>
+              <dl class="page-dl">
+                <dt>GitHub</dt>
+                <dd><a href="https://github.com/HitsujiRere" target="_blank">@HitsujiRere</a></dd>
+              </dl>
+              <dl class="page-dl">
+                <dt>AtCoder</dt>
+                <dd><a href="https://atcoder.jp/users/Deji" target="_blank">@Deji</a></dd>
+              </dl>
+              <dl class="page-dl">
+                <dt>Qiita</dt>
+                <dd><a href="https://qiita.com/HitsujiRere" target="_blank">@HitsujiRere</a></dd>
+              </dl>
+            </section>
 
-            <ul class="list-1">
-                <li>Name : ひつじ れれ</li>
-                <li>Twitter : <a href="https://twitter.com/HitsujiRere" target=" _blank">@HitsujiRere</a></li>
-                <li>GitHub : <a href="https://github.com/HitsujiRere" target="_blank">@HitsujiRere</a></li>
-                <li>
-                    AtCoder : <a href="https://atcoder.jp/users/Deji" target="_blank">@Deji</a>
-                    <ul class="list-1">
-                        <li>Rating最高値 : <span id="atcoderMaxRate" class="atcoder-color">1347</span></li>
-                    </ul>
-                </li>
-                <li>
-                    PAST 第3回
-                    <ul class="list-1">
-                        <li>等級 : 中級</li>
-                        <li>得点 : 76</li>
-                    </ul>
-                </li>
-                <li>Qiita: <a href="https://qiita.com/HitsujiRere" target="_blank">@HitsujiRere</a></li>
-                <li>HatenaBlog : <a href="https://hitsujirere.hatenablog.com/" target="_blank">HitsujiRere</a></li>
-            </ul>
-        </div>
+            <section class="page">
+              <h1>AWARDS</h1>
+              <dl class="page-dl">
+                <dt>DCON2021</dt>
+                <dd>7位</dd>
+              </dl>
+              <dl class="page-dl">
+                <dt>HIT2020</dt>
+                <dd>ICTまちづくり賞</dd>
+              </dl>
+              <dl class="page-dl">
+                <dt>パソコン甲子園<br/>プログラミング部門</dt>
+                <dd>本選出場</dd>
+              </dl>
+              <dl class="page-dl">
+                <dt>高専プロコン2020</dt>
+                <dd>
+                  <dl class="page-dl-full">
+                    <dt>自由部門</dt>
+                    <dd>特別賞</dd>
+                  </dl>
+                  <dl class="page-dl-full">
+                    <dt>パテント審査部門</dt>
+                    <dd>奨励賞</dd>
+                  </dl>
+                </dd>
+              </dl>
+            </section>
 
-        <div>
-            <h1>Award</h1>
-
-            <ul class="list-1">
-                <li>
-                    DCON2021
-                    <ul class="list-1">
-                        <li>7位</li>
-                    </ul>
-                </li>
-
-                <li>
-                    HIT2020
-                    <ul class="list-1">
-                        <li>ICTまちづくり賞</li>
-                    </ul>
-                </li>
-
-                <li>
-                    パソコン甲子園2020
-                    <ul class="list-1">
-                        <li>
-                            本選出場
-                            （本校の事情により参加できず）
-                        </li>
-                    </ul>
-                </li>
-
-                <li>
-                    高専プロコン - 第31回苫小牧大会（2020）
-                    <ul class="list-1">
-                        <li>自由部門 : 特別賞</li>
-                        <li>パテント審査 : 奨励賞</li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-
-        <div>
-            <h1>Developable Languages</h1>
-
-            <ul class="list-1">
+            <section class="page">
+              <h1>SKILL</h1>
+              <ul class="page-ul">
                 <li>C</li>
                 <li>C++</li>
                 <li>C#</li>
-                <li>
-                    JavaScript
-                    <ul class="list-1">
-                        <li>Node.js</li>
-                    </ul>
+                <li>JavaScript
+                  <ul class="page-ul">
+                    <li>Node.js</li>
+                  </ul>    
                 </li>
                 <li>Python</li>
-            </ul>
-        </div>
+              </ul>
+            </section>
 
-        <div>
-            <h1>Hobby</h1>
-
-            <ul class="list-1">
+            <section class="page">
+              <h1>PORDUCTS</h1>
+              <ul class="page-ul products">
                 <li>
-                    自作言語開発
-                    <ul class="list-1">
-                        <li>Rust</li>
-                    </ul>
+                  <h2>おしゃべる ～推しがあなたを支えーる！～</h2>
+                  <p>自由な声と喋れるスマートスピーカーの追加コンテンツ</p>
+                  <p>DCON2021にて発表</p>
                 </li>
                 <li>
-                    ゲーム開発
-                    <ul class="list-1">
-                        <li>Processing</li>
-                        <li>OpenSiv3D</li>
-                    </ul>
-                </li>
-                <li>競技プログラミング</li>
-                <li>麻雀</li>
-            </ul>
-        </div>
-
-        <div>
-            <h1>Products</h1>
-
-            <ul class="list-1-full">
-                <li>
-                    <h2>おしゃべる</h2>
-                    <p>DCON2021にて発表</p>
-                    <p>Python, Tacotron2, Node.js で開発．</p>
-                    <p>
-                        <a href="https://github.com/ishikawa-nct-iken/oshaberu_clova" target=" _blank">
-                            https://github.com/ishikawa-nct-iken/oshaberu_clova
-                        </a>
-                    </p>
-                    <p>
-                        <a href="https://www3.nhk.or.jp/news/html/20210418/amp/k10012981521000.html" target=" _blank">
-                            高専生がAI活用 社会課題解決のサービス開発競う 優勝は福井
-                        </a>
-                    </p>
-                    <img src="/image/oshaberu.png">
+                  <h2>Twattaa</h2>
+                  <p>授業の演習にて作成・発表した匿名掲示板</p>
                 </li>
                 <li>
-                    <h2>Twattaa</h2>
-                    <p>授業の演習で作成した匿名掲示板</p>
-                    <p>JavaScript( Node.js , Vue.js ) , socket.io で開発．</p>
-                    <p>
-                        <a href="https://github.com/HitsujiRere/Twattaa"
-                            target=" _blank">https://github.com/HitsujiRere/Twattaa
-                        </a>
-                    </p>
-                    <img src="/image/Twattaa_1.png">
-                    <img src="/image/Twattaa_2.png">
+                  <h2>Learn Processing</h2>
+                  <p>部内用の発展的なProcessingの学習</p>
                 </li>
                 <li>
-                    <h2>Learn Processing</h2>
-                    <p>部活用のProcessingによる作品制作で使うjavaの学習</p>
-                    <p>配列，リスト，クラスについて</p>
-                    <p>
-                        <a href="https://github.com/HitsujiRere/LearnProcessing"
-                            target=" _blank">https://github.com/HitsujiRere/LearnProcessing
-                        </a>
-                    </p>
+                  <h2>Fall Texts</h2>
+                  <p>入力した文字が落ち，リアルタイムで共有</p>
                 </li>
                 <li>
-                    <h2>Fall Texts</h2>
-                    <p>文字を入力すると，リアルタイムで共有できます</p>
-                    <p>JavaScript ( Node.js , p5.js ) , socket.io で開発．</p>
-                    <p> <a href="https://hitsujirere.herokuapp.com/fallTexts"
-                            target=" _blank">https://hitsujirere.herokuapp.com/fallTexts</a></p>
-                    </p>
-                    <p>
-                        <a href="https://github.com/HitsujiRere/HerokuTestSever"
-                            target=" _blank">https://github.com/HitsujiRere/HerokuTestSever
-                        </a>
-                    </p>
+                  <h2>シマエーる</h2>
+                  <p>学生向けコミュニケーションロボット</p>
+                  <p>高専プロコン2020にて発表</p>
                 </li>
                 <li>
-                    <h2>シマエーる</h2>
-                    <p>学生向けコミュニケーションロボット</p>
-                    <p>高専プロコン2020にて発表</p>
-                    <p>Google AIY Voice Kit , Google Assistant API , Python で開発．</p>
-                    <p>
-                        <a href="https://github.com/ishikawa-nct-iken/shimayell_aiy"
-                            target=" _blank">https://github.com/ishikawa-nct-iken/shimayell_aiy
-                        </a>
-                    </p>
-                    <!--YouTube-->
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/kGZ-tcQfXwM?start=3600"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                  <h2>しりとり VS.</h2>
+                  <p>一人でどこまでしりとりを続けられるか挑戦したり， CPUと対戦することができます．</p>
+                  <p>授業の演習にて作成・発表</p>
                 </li>
                 <li>
-                    <h2>Siritori</h2>
-                    <p> どこまでしりとりを続けられるか挑戦したり，
-                        CPUと対戦することができます．</p>
-                    <p>JavaScript ( Node.js ) で開発．</p>
-                    <p> <a href="https://siritori-server.herokuapp.com"
-                            target=" _blank">https://siritori-server.herokuapp.com</a></p>
-                    </p>
-                    <p>
-                        <a href="https://github.com/HitsujiRere/SiritoriServer"
-                            target=" _blank">https://github.com/HitsujiRere/SiritoriServer
-                        </a>
-                    </p>
-                    <img src="/image/siritori.jpg">
+                  <h2>Hex Calcurator</h2>
+                  <p>16進数で計算できる関数電卓</p>
                 </li>
                 <li>
-                    <h2>Hex Calcurator</h2>
-                    <p>16進数関数電卓です．</p>
-                    <p>C# ( Uno Platform ) で開発．</p>
-                    <p>
-                        <a class="no-link" href="https://hexcalcurator.azurewebsites.net" target=" _blank">
-                            https://hexcalcurator.azurewebsites.net</a>
-                        (停止中)
-                    </p>
-                    <img src="/image/HexCalcurator.png">
+                  <h2>Just 10 Game</h2>
+                  <p>数字の10を作る落ち物ゲーム</p>
                 </li>
                 <li>
-                    <h2>Just 10 Game</h2>
-                    <p>数字の10を作るゲームです</p>
-                    <p>C++ ( OpenSiv3D ) で開発．</p>
-                    <p><a href="https://scrapbox.io/hitsujirere-projects/Just10Game"
-                            target=" _blank">https://scrapbox.io/hitsujirere-projects/Just10Game</a>
-                    </p>
-                    <p>
-                        <a href="https://github.com/HitsujiRere/Just10Game"
-                            target=" _blank">https://github.com/HitsujiRere/Just10Game
-                        </a>
-                    </p>
-
-                    <!--Twitter-->
-                    <blockquote class="twitter-tweet tw-align-center">
-                        <p lang="ja" dir="ltr">Just10Game Ver 1.0.0です！！！<a
-                                href="https://twitter.com/hashtag/Just10Game?src=hash&amp;ref_src=twsrc%5Etfw">#Just10Game</a><a
-                                href="https://twitter.com/hashtag/OpenSiv3D?src=hash&amp;ref_src=twsrc%5Etfw">#OpenSiv3D</a>
-                            <a href="https://t.co/AnHVxYuKbB">pic.twitter.com/AnHVxYuKbB</a>
-                        </p>&mdash; れれ
-                        (@HitsujiRere) <a
-                            href="https://twitter.com/HitsujiRere/status/1243791294679240711?ref_src=twsrc%5Etfw">March
-                            28, 2020</a>
-                    </blockquote>
-                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-                    <!--YouTube-->
-                    <div style="text-align: center;">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/mSAGdvujaFc" frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
+                  <h2>ゆでたまご２</h2>
+                  <p>ゆでたまごを作るクリックアクションゲーム</p>
                 </li>
-                <li>
-                    <h2>Yudetamago 2</h2>
-                    <p>ゆでたまごを作るクリックアクションゲームです．</p>
-                    <p>Processing で開発．</p>
-                    <p> <a href="https://scrapbox.io/hitsujirere-projects/%E3%82%86%E3%81%A7%E3%81%9F%E3%81%BE%E3%81%94%EF%BC%92"
-                            target=" _blank">https://scrapbox.io/hitsujirere-projects/ゆでたまご２
-                        </a>
-                    </p>
-                    <p>
-                        <a href="https://github.com/HitsujiRere/Yudetamago2"
-                            target=" _blank">https://github.com/HitsujiRere/Yudetamago2
-                        </a>
-                    </p>
-                    <img src="/image/yudetamago2.png">
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="footer">
-        <ul>
-            <li>HitsujiRere🐏</li>
-            <li><a href="/" class="header_now">日本語</a></li>
-        </ul>
+              </dl>
+            </section>
+          </div>
     </div>
 </body>
 
