@@ -8,24 +8,26 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
+
     steps:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Setup Node.js
-        uses: ubuntu-latest@v2
-        with:
-          node-version: "16.x"
+      - name: Setup Node
+       uses: actions/setup-node@v2
+       with:
+         node-version: 16.x
+         cache: yarn
 
       - name: Install NPM packages
-        run: npm install --frozen-lockfile
+        run: yarn --frozen-lockfile
 
       - name: Build Next.js app
-        run: npm run build
+        run: yarn build
 
       - name: Export Next.js app
-        run: npm run export
+        run: yarn export
 
       - name: Add nojekyll
         run: touch ./out/.nojekyll
