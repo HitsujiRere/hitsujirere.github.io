@@ -54,6 +54,7 @@ const Home: NextPage = () => {
             <div className="bg-black p-8 text-white text-xl w-max mx-auto my-6">
               <div className='space-y-6 whitespace-pre-wrap'>
                 <Details
+                  open={true}
                   summaryOpen='const Languages = {'
                   summaryClose='const Languages = {...}'
                   className='space-y-6'
