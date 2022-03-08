@@ -1,66 +1,34 @@
-# HitsujiRere🐏
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Profile
+## Getting Started
 
-- Name: Hitsuji Rere
-- Twitter: [@HitsujiRere](https://twitter.com/HitsujiRere)
-- GitHub: [@HitsujiRere](https://github.com/HitsujiRere)
-- AtCoder: [@Deji](https://atcoder.jp/users/Deji)
-    - Highest Rating: 1234
-- PAST #3
-    - Grade: Intermediate
-    - Score: 76
-- Qiita
-    - [@HitsujiRere](https://qiita.com/HitsujiRere)
-- HatenaBlog
-    - [HitsujiRere](https://hitsujirere.hatenablog.com/)
+First, run the development server:
 
-## About
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-My web page is https://hitsujirere.github.io
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-<!-- 
-## Products
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-### Siritori
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-You can challenge how long you can keep playing Shiritori, and you can battle the CPU.
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-Made with JavaScript.
+## Learn More
 
-https://hitsujirere.github.io/Siritori/
+To learn more about Next.js, take a look at the following resources:
 
-<img src="image/siritori.jpg" width=50%>
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-### Hex Calcurator
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-This is a hexadecimal function calculator.
+## Deploy on Vercel
 
-Made with Uno-Platform and C#.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-https://hexcalcurator.azurewebsites.net (Stopping Now)
-
-<img src="image/HexCalcurator.png"  width=50%>
-
-### Just 10 Game
-
-It's a game to make 10.
-
-Made with C++ and C++ Library Open-Siv-3D.
-
-https://scrapbox.io/hitsujirere-projects/Just10Game
-
-https://twitter.com/HitsujiRere/status/1243791294679240711?s=20
-
-https://youtu.be/mSAGdvujaFc
-
-<img src="image/just10game.png" width=50%>
-
-### Yudetamago 2
-It's a click action game to make a boiled egg.
-
-Made with C++ and C++ Library Open-Siv-3D.
-
-https://scrapbox.io/hitsujirere-projects/ゆでたまご２
-
-<img src="image/yudetamago2.png" width=50%> -->
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

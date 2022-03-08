@@ -1,0 +1,14 @@
+h1 {
+    font-size: 5em;
+    font-family: arial, helvetica;
+    color: #fff;
+    margin: 0;
+}
+
+.intro p {
+    color: #fff;
+}
+
+.section {
+    text-align: center;
+}

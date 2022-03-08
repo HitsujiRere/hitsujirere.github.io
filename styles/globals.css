@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Misaki Gothic';
+  src: url('/fonts/misaki_gothic.ttf') format('truetype');
+}
+
+html,
+body {
+  @apply bg-gray-100;
+  padding: 0;
+  margin: 0;
+  font-family: 'Press Start 2P', 'Misaki Gothic', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
