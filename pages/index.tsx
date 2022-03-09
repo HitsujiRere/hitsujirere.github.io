@@ -92,7 +92,7 @@ const Home: NextPage = () => {
                         ,
                       </p>
                       <p>      HighestRate: 1455,</p>
-                      <p>   {'}'},</p>
+                      <p>    {'}'},</p>
                       <p>  {'}'},</p>
                       <p>{'}'};</p>
                     </div>
