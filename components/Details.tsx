@@ -1,33 +1,24 @@
 import React, { useState, useEffect } from 'react';
 
 const Details = (props: {
-  open?: boolean,
-  summaryOpen: string,
-  summaryClose: string,
-  className?: string,
+  startOpen?: boolean,
+  summaryOpen: JSX.Element,
+  summaryClose: JSX.Element,
   child: JSX.Element,
+  className?: string,
 }) => {
-  let [open, setOpen] = useState(props.open ?? false);
-  let [summary, setSummary] = useState("");
-
-  useEffect(() => {
-    setSummary(open ? props.summaryOpen : props.summaryClose);
-  }, [summary, open, props.summaryOpen, props.summaryClose]);
+  let [open, setOpen] = useState(props.startOpen ?? false);
 
   return (
-    <details
-      open={props.open}
-      onToggle={(e) => {
-        console.log(summary);
-        setOpen(!open);
-      }}
-      className={props.className}
-    >
-      <summary className='block cursor-pointer'>
-        <span className=''>{summary}</span>
-      </summary>
-      {props.child}
-    </details>
+    <div className={props.className}>
+      <div
+        onClick={() => setOpen(!open)}
+        className='cursor-pointer'
+      >
+        {open ? props.summaryOpen : props.summaryClose}
+      </div>
+      {open && props.child}
+    </div>
   );
 }
 

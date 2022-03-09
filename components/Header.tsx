@@ -21,9 +21,9 @@ const Header: NextPage = () => {
             Skill
           </a>
         </Link>
-        <Link href='/#award'>
+        <Link href='/#awards'>
           <a className='text-lg font-bold'>
-            Award
+            Awards
           </a>
         </Link>
       </nav>
