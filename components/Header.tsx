@@ -26,6 +26,11 @@ const Header: NextPage = () => {
             Awards
           </a>
         </Link>
+        <Link href='/#products'>
+          <a className='text-lg font-bold'>
+            Products
+          </a>
+        </Link>
       </nav>
     </header>
   );

@@ -8,13 +8,21 @@ const Details = (props: {
   className?: string,
 }) => {
   let [open, setOpen] = useState(props.startOpen ?? false);
+  let [hover, setHover] = useState<boolean>(false);
 
   return (
-    <div className={props.className}>
+    <div
+      className={props.className}
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
+    >
       <div
+        className='cursor-pointer relative'
         onClick={() => setOpen(!open)}
-        className='cursor-pointer'
       >
+        <span className={'font-mono text-gray-300 absolute -left-6 duration-500 ' + (!hover && 'text-opacity-0')}>
+          {open ? 'v' : '>'}
+        </span>
         {open ? props.summaryOpen : props.summaryClose}
       </div>
       {open && props.child}

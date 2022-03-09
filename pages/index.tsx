@@ -34,12 +34,14 @@ const Home: NextPage = () => {
                   <Link href='https://twitter.com/HitsujiRere'>
                     <a className='underline'>@HitsujiRere</a>
                   </Link>
+                  ;
                 </p>
                 <p>
                   const GitHub = {}
                   <Link href='https://github.com/HitsujiRere'>
                     <a className='underline'>HitsujiRere</a>
                   </Link>
+                  ;
                 </p>
               </div>
             </div>
@@ -175,6 +177,30 @@ const Home: NextPage = () => {
               </div>
             </div>
           </div>
+
+          {/* Products */}
+          {/* <div>
+            <h2 id='products' className='text-3xl font-bold text-center p-6'>
+              Products
+            </h2>
+
+            <div className="bg-black p-8 text-white text-xl w-max mx-auto my-6">
+              <div className='space-y-6 whitespace-pre-wrap'>
+                <Details
+                  startOpen={true}
+                  summaryOpen={<p>const Products = &#123;</p>}
+                  summaryClose={<p>const Products = &#123;...&#125;</p>}
+                  className='space-y-6'
+                  child={
+                    <div className='space-y-6'>
+                      <p>{'}'};</p>
+                    </div>
+                  }
+                />
+              </div>
+            </div>
+          </div> */}
+
         </main>
 
         <Footer />
