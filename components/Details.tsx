@@ -18,14 +18,16 @@ const Details = (props: {
     >
       <div
         className='cursor-pointer relative'
-        onClick={() => setOpen(!open)}
+        onClick={() => setOpen(!open) }
       >
         <span className={'font-mono text-gray-300 absolute -left-6 duration-500 ' + (!hover && 'text-opacity-0')}>
           {open ? 'v' : '>'}
         </span>
         {open ? props.summaryOpen : props.summaryClose}
       </div>
-      {open && props.child}
+      <div className={!open ? 'hidden' : ''}>
+        {props.child}
+      </div>
     </div>
   );
 }

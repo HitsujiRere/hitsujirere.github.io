@@ -193,7 +193,7 @@ const Home: NextPage = () => {
                   className='space-y-6'
                   child={
                     <div className='space-y-6'>
-                      <p>Writing...</p>
+                      <p>  Writing...</p>
                       <p>{'}'};</p>
                     </div>
                   }
