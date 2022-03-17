@@ -2,7 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
 import React from 'react';
-import Header from '../components/Header';
+import Header from '../components/IndexHeader';
 import Footer from '../components/Footer';
 import Details from '../components/Details';
 
@@ -193,8 +193,8 @@ const Home: NextPage = () => {
                   className='space-y-6'
                   child={
                     <div className='space-y-6'>
-                      <div className='border-l-4 hover:border-4 border-black border-l-white hover:border-white hover:p-2.5 duration-500'>
-                        <Link href='/Products/oshaberu'>
+                      <div className='border-l-4 hover:border-4 border-black border-l-white hover:border-white hover:py-2.5 duration-500'>
+                        <Link href='/products/oshaberu'>
                           <a className='space-y-6'>
                             <p>  おしゃべる: [</p>
                             <p>    自由な声と喋れるスマートスピーカーの追加コンテンツ,</p>
@@ -203,8 +203,8 @@ const Home: NextPage = () => {
                           </a>
                         </Link>
                       </div>
-                      <div className='border-l-4 hover:border-4 border-black border-l-white hover:border-white hover:p-2.5 duration-500'>
-                        <Link href='/Products/twattaa'>
+                      <div className='border-l-4 hover:border-4 border-black border-l-white hover:border-white hover:py-2.5 duration-500'>
+                        <Link href='/products/twattaa'>
                           <a className='space-y-6'>
                             <p>  Twattaa: [</p>
                             <p>    授業の演習にて作成・発表した匿名掲示板,</p>
@@ -212,8 +212,8 @@ const Home: NextPage = () => {
                           </a>
                         </Link>
                       </div>
-                      <div className='border-l-4 hover:border-4 border-black border-l-white hover:border-white hover:p-2.5 duration-500'>
-                        <Link href='/Products/learn-processing'>
+                      <div className='border-l-4 hover:border-4 border-black border-l-white hover:border-white hover:py-2.5 duration-500'>
+                        <Link href='/products/learn-processing'>
                           <a className='space-y-6'>
                             <p>  LearnProcessing: [</p>
                             <p>    部内用の発展的なProcessingの学習,</p>
@@ -221,8 +221,8 @@ const Home: NextPage = () => {
                           </a>
                         </Link>
                       </div>
-                      <div className='border-l-4 hover:border-4 border-black border-l-white hover:border-white hover:p-2.5 duration-500'>
-                        <Link href='/Products/fall-texts'>
+                      <div className='border-l-4 hover:border-4 border-black border-l-white hover:border-white hover:py-2.5 duration-500'>
+                        <Link href='/products/fall-texts'>
                           <a className='space-y-6'>
                             <p>  FallTexts: [</p>
                             <p>    文字を落として、リアルタイムでみんなと共有,</p>
@@ -230,8 +230,8 @@ const Home: NextPage = () => {
                           </a>
                         </Link>
                       </div>
-                      <div className='border-l-4 hover:border-4 border-black border-l-white hover:border-white hover:p-2.5 duration-500'>
-                        <Link href='/Products/shimale'>
+                      <div className='border-l-4 hover:border-4 border-black border-l-white hover:border-white hover:py-2.5 duration-500'>
+                        <Link href='/products/shimale'>
                           <a className='space-y-6'>
                             <p>  シマエーる: [</p>
                             <p>    学生向けコミュニケーションロボット,</p>
@@ -240,8 +240,8 @@ const Home: NextPage = () => {
                           </a>
                         </Link>
                       </div>
-                      <div className='border-l-4 hover:border-4 border-black border-l-white hover:border-white hover:p-2.5 duration-500'>
-                        <Link href='/Products/shiritori-vs'>
+                      <div className='border-l-4 hover:border-4 border-black border-l-white hover:border-white hover:py-2.5 duration-500'>
+                        <Link href='/products/shiritori-vs'>
                           <a className='space-y-6'>
                             <p>  しりとりVS: [</p>
                             <p>    1人で限界までしりとりしたり、CPUと対戦したり,</p>
@@ -249,8 +249,8 @@ const Home: NextPage = () => {
                           </a>
                         </Link>
                       </div>
-                      <div className='border-l-4 hover:border-4 border-black border-l-white hover:border-white hover:p-2.5 duration-500'>
-                        <Link href='/Products/hex-calcurator'>
+                      <div className='border-l-4 hover:border-4 border-black border-l-white hover:border-white hover:py-2.5 duration-500'>
+                        <Link href='/products/hex-calcurator'>
                           <a className='space-y-6'>
                             <p>  HexCalcurator: [</p>
                             <p>    16進数で計算できる電卓,</p>
@@ -258,8 +258,8 @@ const Home: NextPage = () => {
                           </a>
                         </Link>
                       </div>
-                      <div className='border-l-4 hover:border-4 border-black border-l-white hover:border-white hover:p-2.5 duration-500'>
-                        <Link href='/Products/just10game'>
+                      <div className='border-l-4 hover:border-4 border-black border-l-white hover:border-white hover:py-2.5 duration-500'>
+                        <Link href='/products/just10game'>
                           <a className='space-y-6'>
                             <p>  Just10Game: [</p>
                             <p>    数字で10を作る落ち物ゲーム</p>
@@ -267,8 +267,8 @@ const Home: NextPage = () => {
                           </a>
                         </Link>
                       </div>
-                      <div className='border-l-4 hover:border-4 border-black border-l-white hover:border-white hover:p-2.5 duration-500'>
-                        <Link href='/Products/yudetamago2'>
+                      <div className='border-l-4 hover:border-4 border-black border-l-white hover:border-white hover:py-2.5 duration-500'>
+                        <Link href='/products/yudetamago2'>
                           <a className='space-y-6'>
                             <p>  ゆでたまご２: [</p>
                             <p>    ゆでたまごを作るクリックアクションゲーム,</p>
