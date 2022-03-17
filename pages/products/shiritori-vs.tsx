@@ -21,13 +21,12 @@ const Home: NextPage = () => {
 
         <main>
           <div>
-            <h2 className='text-3xl font-bold text-center p-6 typewriter'>
+            <h1 className='text-3xl font-bold text-center p-6 typewriter'>
               しりとり VS.
-            </h2>
+            </h1>
 
             <div className="text-xl w-max mx-auto">
               <div className='space-y-6 whitespace-pre-wrap'>
-                <h2>しりとり VS.</h2>
                 <p>1人で限界までしりとりしたり、CPUと対戦したり、</p>
                 <p>授業の演習にて作成・発表</p>
                 <p>

@@ -21,9 +21,9 @@ const Home: NextPage = () => {
 
         <main>
           <div>
-            <h2 className='text-3xl font-bold text-center p-6 typewriter'>
+            <h1 className='text-3xl font-bold text-center p-6 typewriter'>
               Learn Processing
-            </h2>
+            </h1>
 
             <div className="text-xl w-max mx-auto">
               <div className='space-y-6 whitespace-pre-wrap'>

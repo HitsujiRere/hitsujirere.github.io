@@ -8,10 +8,10 @@ const IndexHeader: NextPage = () => {
     <header className="flex justify-between items-center p-8">
       <Link href='/'>
         <a className='text-2xl font-bold'>
-          <h1>
+          <p>
             <Image src='/images/rere.png' width={50} height={50} alt='character'/>
             Hitsuji Rere
-          </h1>
+          </p>
         </a>
       </Link>
 
