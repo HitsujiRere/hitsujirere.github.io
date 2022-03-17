@@ -37,11 +37,6 @@ const Home: NextPage = () => {
                     <a className='border-b-2 hover:border-2 border-gray-100 border-b-black hover:border-black p-1 hover:p-2.5 duration-500'>Scrapbox</a>
                   </Link>
                 </p>
-                <p>
-                  <Link href='https://github.com/HitsujiRere/Twattaa'>
-                    <a className='border-b-2 hover:border-2 border-gray-100 border-b-black hover:border-black p-1 hover:p-2.5 duration-500'>GitHub</a>
-                  </Link>
-                </p>
                 <div>
                   <Image src='/images/yudetamago2.png' width={640} height={427} alt='ゆでたまご２' />
                 </div>
