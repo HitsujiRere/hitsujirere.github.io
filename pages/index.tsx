@@ -32,14 +32,14 @@ const Home: NextPage = () => {
                 <p>
                   const Twitter = {}
                   <Link href='https://twitter.com/HitsujiRere'>
-                    <a className='underline'>@HitsujiRere</a>
+                    <a className='border-b-2 hover:border-2 border-black border-b-white hover:border-white p-1 hover:p-2.5 duration-500'>@HitsujiRere</a>
                   </Link>
                   ;
                 </p>
                 <p>
                   const GitHub = {}
                   <Link href='https://github.com/HitsujiRere'>
-                    <a className='underline'>HitsujiRere</a>
+                    <a className='border-b-2 hover:border-2 border-black border-b-white hover:border-white p-1 hover:p-2.5 duration-500'>HitsujiRere</a>
                   </Link>
                   ;
                 </p>
@@ -87,7 +87,7 @@ const Home: NextPage = () => {
                       <p>    AtCoder: {'{'}</p>
                       <p>      User: {}
                         <Link href='https://atcoder.jp/users/Deji'>
-                          <a className='underline'>Deji</a>
+                          <a className='border-b-2 hover:border-2 border-black border-b-white hover:border-white p-1 hover:p-2.5 duration-500'>Deji</a>
                         </Link>
                         ,
                       </p>
@@ -113,14 +113,14 @@ const Home: NextPage = () => {
                 <Details
                   startOpen={true}
                   summaryOpen={<p>const Award = &#123;</p>}
-                  summaryClose={<p>const Award = &#123;...&#125;</p>}
+                  summaryClose={<p>const Award: &#123;...&#125;</p>}
                   className='space-y-6'
                   child={
                     <div className='space-y-6'>
                       <Details
                         startOpen={true}
                         summaryOpen={<p>  DCON2021: &#123;</p>}
-                        summaryClose={<p>  DCON2021 = &#123;...&#125;</p>}
+                        summaryClose={<p>  DCON2021: &#123;...&#125;</p>}
                         className='space-y-6'
                         child={
                           <div className='space-y-6'>
@@ -133,7 +133,7 @@ const Home: NextPage = () => {
                       <Details
                         startOpen={true}
                         summaryOpen={<p>  HIT2020: &#123;</p>}
-                        summaryClose={<p>  HIT2020 = &#123;...&#125;</p>}
+                        summaryClose={<p>  HIT2020: &#123;...&#125;</p>}
                         className='space-y-6'
                         child={
                           <div className='space-y-6'>
@@ -146,7 +146,7 @@ const Home: NextPage = () => {
                       <Details
                         startOpen={true}
                         summaryOpen={<p>  パソコン甲子園2020: &#123;</p>}
-                        summaryClose={<p>  パソコン甲子園2020 = &#123;...&#125;</p>}
+                        summaryClose={<p>  パソコン甲子園2020: &#123;...&#125;</p>}
                         className='space-y-6'
                         child={
                           <div className='space-y-6'>
@@ -158,7 +158,7 @@ const Home: NextPage = () => {
                       <Details
                         startOpen={true}
                         summaryOpen={<p>  高専プロコン2020: &#123;</p>}
-                        summaryClose={<p>  高専プロコン2020 = &#123;...&#125;</p>}
+                        summaryClose={<p>  高専プロコン2020: &#123;...&#125;</p>}
                         className='space-y-6'
                         child={
                           <div className='space-y-6'>
@@ -193,7 +193,89 @@ const Home: NextPage = () => {
                   className='space-y-6'
                   child={
                     <div className='space-y-6'>
-                      <p>  Writing...</p>
+                      <div className='border-l-4 hover:border-4 border-black border-l-white hover:border-white hover:p-2.5 duration-500'>
+                        <Link href='/Products/oshaberu'>
+                          <a className='space-y-6'>
+                            <p>  おしゃべる: [</p>
+                            <p>    自由な声と喋れるスマートスピーカーの追加コンテンツ,</p>
+                            <p>    DCON2021にて発表,</p>
+                            <p>  ],</p>
+                          </a>
+                        </Link>
+                      </div>
+                      <div className='border-l-4 hover:border-4 border-black border-l-white hover:border-white hover:p-2.5 duration-500'>
+                        <Link href='/Products/twattaa'>
+                          <a className='space-y-6'>
+                            <p>  Twattaa: [</p>
+                            <p>    授業の演習にて作成・発表した匿名掲示板,</p>
+                            <p>  ],</p>
+                          </a>
+                        </Link>
+                      </div>
+                      <div className='border-l-4 hover:border-4 border-black border-l-white hover:border-white hover:p-2.5 duration-500'>
+                        <Link href='/Products/learn-processing'>
+                          <a className='space-y-6'>
+                            <p>  LearnProcessing: [</p>
+                            <p>    部内用の発展的なProcessingの学習,</p>
+                            <p>  ],</p>
+                          </a>
+                        </Link>
+                      </div>
+                      <div className='border-l-4 hover:border-4 border-black border-l-white hover:border-white hover:p-2.5 duration-500'>
+                        <Link href='/Products/fall-texts'>
+                          <a className='space-y-6'>
+                            <p>  FallTexts: [</p>
+                            <p>    文字を落として、リアルタイムでみんなと共有,</p>
+                            <p>  ],</p>
+                          </a>
+                        </Link>
+                      </div>
+                      <div className='border-l-4 hover:border-4 border-black border-l-white hover:border-white hover:p-2.5 duration-500'>
+                        <Link href='/Products/shimale'>
+                          <a className='space-y-6'>
+                            <p>  シマエーる: [</p>
+                            <p>    学生向けコミュニケーションロボット,</p>
+                            <p>    高専プロコン2020にて発表,</p>
+                            <p>  ],</p>
+                          </a>
+                        </Link>
+                      </div>
+                      <div className='border-l-4 hover:border-4 border-black border-l-white hover:border-white hover:p-2.5 duration-500'>
+                        <Link href='/Products/shiritori-vs'>
+                          <a className='space-y-6'>
+                            <p>  しりとりVS: [</p>
+                            <p>    1人で限界までしりとりしたり、CPUと対戦したり,</p>
+                            <p>  ],</p>
+                          </a>
+                        </Link>
+                      </div>
+                      <div className='border-l-4 hover:border-4 border-black border-l-white hover:border-white hover:p-2.5 duration-500'>
+                        <Link href='/Products/hex-calcurator'>
+                          <a className='space-y-6'>
+                            <p>  HexCalcurator: [</p>
+                            <p>    16進数で計算できる電卓,</p>
+                            <p>  ],</p>
+                          </a>
+                        </Link>
+                      </div>
+                      <div className='border-l-4 hover:border-4 border-black border-l-white hover:border-white hover:p-2.5 duration-500'>
+                        <Link href='/Products/just10game'>
+                          <a className='space-y-6'>
+                            <p>  Just10Game: [</p>
+                            <p>    数字で10を作る落ち物ゲーム</p>
+                            <p>  ],</p>
+                          </a>
+                        </Link>
+                      </div>
+                      <div className='border-l-4 hover:border-4 border-black border-l-white hover:border-white hover:p-2.5 duration-500'>
+                        <Link href='/Products/yudetamago2'>
+                          <a className='space-y-6'>
+                            <p>  ゆでたまご２: [</p>
+                            <p>    ゆでたまごを作るクリックアクションゲーム,</p>
+                            <p>  ],</p>
+                          </a>
+                        </Link>
+                      </div>
                       <p>{'}'};</p>
                     </div>
                   }
