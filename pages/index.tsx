@@ -125,7 +125,9 @@ const Home: NextPage = () => {
                         child={
                           <div className='space-y-6'>
                             <p>    Result: 7th,</p>
-                            <p>    Product: おしゃべる,</p>
+                            <p>    Product: <Link href='/products/oshaberu'>
+                              <a className='border-b-2 hover:border-2 border-black border-b-white hover:border-white p-1 hover:p-2.5 duration-500'>おしゃべる</a>
+                              </Link>,</p>
                             <p>  {'}'},</p>
                           </div>
                         }
@@ -138,7 +140,9 @@ const Home: NextPage = () => {
                         child={
                           <div className='space-y-6'>
                             <p>    Result: ICTまちづくり賞,</p>
-                            <p>    Product: シマエーる,</p>
+                            <p>    Product: <Link href='/products/oshaberu'>
+                              <a className='border-b-2 hover:border-2 border-black border-b-white hover:border-white p-1 hover:p-2.5 duration-500'>シマエーる</a>
+                              </Link>,</p>
                             <p>  {'}'},</p>
                           </div>
                         }

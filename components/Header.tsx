@@ -1,12 +1,16 @@
 import type { NextPage } from 'next'
 import Link from 'next/link'
+import Image from 'next/image';
 
 const Header: NextPage = () => {
   return (
     <header className="flex justify-between items-center p-8">
       <Link href='/'>
         <a className='text-2xl font-bold'>
-          <h1>Hitsuji Rere</h1>
+          <h1>
+            <Image src='/images/rere.png' width={50} height={50} alt='character'/>
+            Hitsuji Rere
+          </h1>
         </a>
       </Link>
 

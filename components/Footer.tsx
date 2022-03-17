@@ -5,7 +5,7 @@ const Footer: NextPage = () => {
     <footer>
       <div className='m-10 text-center'>
         <p className=''>
-          Made by HitsujiRere in 2022
+          Made by HitsujiRere
         </p>
       </div>
     </footer>
