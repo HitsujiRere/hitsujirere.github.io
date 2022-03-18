@@ -140,7 +140,7 @@ const Home: NextPage = () => {
                         child={
                           <div className='space-y-6'>
                             <p>    Result: ICTまちづくり賞,</p>
-                            <p>    Product: <Link href='/products/oshaberu'>
+                            <p>    Product: <Link href='/products/shimale'>
                               <a className='border-b-2 hover:border-2 border-black border-b-white hover:border-white p-1 hover:p-2.5 duration-500'>シマエーる</a>
                               </Link>,</p>
                             <p>  {'}'},</p>
@@ -170,6 +170,9 @@ const Home: NextPage = () => {
                             <p>      自由部門: 特別賞,</p>
                             <p>      パテント審査部門: 奨励賞,</p>
                             <p>    {'}'},</p>
+                            <p>    Product: <Link href='/products/shimale'>
+                              <a className='border-b-2 hover:border-2 border-black border-b-white hover:border-white p-1 hover:p-2.5 duration-500'>シマエーる</a>
+                              </Link>,</p>
                             <p>  {'}'},</p>
                           </div>
                         }
