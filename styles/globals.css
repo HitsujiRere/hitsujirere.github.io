@@ -9,10 +9,9 @@
 
 html,
 body {
-  @apply bg-gray-100;
   padding: 0;
   margin: 0;
-  font-family: 'Press Start 2P', 'Misaki Gothic', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 

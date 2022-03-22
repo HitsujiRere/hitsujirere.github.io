@@ -3,7 +3,7 @@ import type { NextPage } from 'next'
 const Footer: NextPage = () => {
   return (
     <footer>
-      <div className='m-10 text-center'>
+      <div className='p-10 text-center'>
         <p className=''>
           Made by HitsujiRere
         </p>

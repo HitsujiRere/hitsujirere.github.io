@@ -14,7 +14,7 @@ const Header: NextPage = () => {
         </a>
       </Link>
 
-      <nav className='flex gap-10'>
+      <nav className='hidden md:flex gap-10'>
         <Link href='/#about'>
           <a className='text-lg font-bold'>
             About

@@ -15,7 +15,7 @@ const IndexHeader: NextPage = () => {
         </a>
       </Link>
 
-      <nav className='flex gap-10'>
+      <nav className='hidden md:flex gap-10'>
         <Scroll
           to="about"
           smooth={true}
