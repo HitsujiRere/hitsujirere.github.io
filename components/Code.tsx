@@ -1,12 +1,18 @@
-const Code = (props: {code: string, language: string}) => {
+import CodeMirror from '@uiw/react-codemirror';
+import { javascript } from '@codemirror/lang-javascript';
+
+import { EditorView } from "@codemirror/view"
+
+const Code = (props: {code: string}) => {
   return (
-    <div>
-      <pre>
-        <code className='text-xl text-gray-100'>
-          {props.code.trim()}
-        </code>
-      </pre>
-    </div>
+    <CodeMirror
+      value={props.code.trim()}
+      height='100%'
+      extensions={[javascript({ jsx: true, typescript: true })]}
+      theme='dark'
+      editable={false}
+      className='text-lg'
+    />
   );
 };
 
