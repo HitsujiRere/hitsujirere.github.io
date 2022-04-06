@@ -5,7 +5,7 @@ const WorkBoxImage = (props: { src: string, size?: string, position?: string} ) 
   return (
     <Link href='/'>
       <a
-        className={`h-60 rounded-xl bg-gray-100 ${props.size ?? "contain"} bg-no-repeat ${props.position ?? "center"}`}
+        className={`h-60 rounded-xl bg-gray-100 ${props.size ?? "bg-contain"} bg-no-repeat ${props.position ?? "bg-center"}`}
         style={{backgroundImage: `url(${props.src})`}}
       ></a>
     </Link>
@@ -31,20 +31,20 @@ const Works = () => {
       <div className='mx-auto max-w-screen-lg space-y-5'>
         <h2 className="text-2xl font-light text-yellow-400">WORKS</h2>
         <div className="grid md:grid-cols-2 gap-5 md:gap-20">
-          <WorkBoxImage src="/my-webpage.png" size="bg-cover" position="bg-top" />
-          <WorkBoxImage src="/DSC_2151.JPG" size="bg-cover" position="bg-center" />
-          <WorkBoxImage src="/おしゃべるロゴ.png" size="bg-contain" position="bg-center" />
-          <WorkBoxImage src="/twattaa.png" size="bg-cover" position="bg-top" />
-          <WorkBoxImage src="/LearnProcessing.png" size="bg-cover" position="bg-top" />
+          <WorkBoxImage src="/img/my-webpage.png" size="bg-cover" position="bg-top" />
+          <WorkBoxImage src="/img/LogicConnectBlock.jpg" size="bg-cover" position="bg-center" />
+          <WorkBoxImage src="/img/oshaberu_logo.png" size="bg-contain" position="bg-center" />
+          <WorkBoxImage src="/img/twattaa.png" size="bg-cover" position="bg-top" />
+          <WorkBoxImage src="/img/LearnProcessing.png" size="bg-cover" position="bg-top" />
           <WorkBoxText>
             <p className="text-7xl text-black">Fall Texts</p>
             <p className="text-xl  text-black">みんなで言葉を降らせよう</p>
           </WorkBoxText>
-          <WorkBoxImage src="/シマエーるロゴ.png" size="bg-contain" position="bg-center" />
-          <WorkBoxImage src="/siritoriVS.jpg" size="bg-cover" position="bg-top" />
-          <WorkBoxImage src="/HexCalcurator.png" size="bg-cover" position="bg-top" />
-          <WorkBoxImage src="/just10game.png" size="bg-cover" position="bg-center" />
-          <WorkBoxImage src="/yudetamago2.png" size="bg-cover" position="bg-top" />
+          <WorkBoxImage src="/img/shimale_logo.png" size="bg-contain" position="bg-center" />
+          <WorkBoxImage src="/img/siritoriVS.jpg" size="bg-cover" position="bg-top" />
+          <WorkBoxImage src="/img/HexCalcurator.png" size="bg-cover" position="bg-top" />
+          <WorkBoxImage src="/img/just10game.png" size="bg-cover" position="bg-center" />
+          <WorkBoxImage src="/img/yudetamago2.png" size="bg-cover" position="bg-top" />
         </div>
       </div>
     </div>

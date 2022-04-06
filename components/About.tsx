@@ -5,13 +5,15 @@ const About = () => {
     <div id="about" className="px-4 py-20 bg-gray-900 md:hover:bg-gray-800 duration-500">
       <div className="mx-auto max-w-screen-lg space-y-5">
         <h2 className="text-2xl font-light text-yellow-400">ABOUT</h2>
-        <div className='md:flex md:justify-between'>
+        <div className='md:flex md:justify-between space-x-1'>
           <div className='md:w-2/3 space-y-5'>
             <p className="text-5xl tracking-wide font-bold text-white">Rere / Dejima Mikihide</p>
-            <div className="text-gray-200 text-xl">
-              <p>あいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえお</p>
-              <p>about</p>
-              <p>about</p>
+            <p className="text-sm text-gray-400">石川工業高等専門学校 電子情報工学科 5年</p>
+            <div className="text-xl text-gray-200">
+              <p>私は「好奇心」がとても強く、何にでも興味があります。</p>
+              <p>Processing や Siv3D 、 Unity でゲームを作ったり、 Node.js でバックエンドの勉強を、 Next.js でフロントエンドの勉強をしています。</p>
+              <p>またオリジナルのプログラミング言語を作ったり、競技プログラミングを楽しんでいます。</p>
+              <p>高専プロコン2020 や DCON2021 にチームで出場させていただいた経験を活かして、チーム制作活動では個人の長所を活かせるチームづくりに取り組んでいます。</p>
             </div>
             <div className="flex space-x-5">
               <div className='text-green-300 hover:text-green-600 duration-500'>
@@ -32,9 +34,10 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className='w-1/3 hidden md:flex'>
-            <img src='/myself.png' />
-          </div>
+          <div
+            className='w-1/3 hidden md:flex bg-contain bg-no-repeat bg-center'
+            style={{backgroundImage: 'url(/img/myself.png)'}}
+          ></div>
         </div>
       </div>
     </div>

@@ -41,14 +41,14 @@ const FloatBoxSketch = () => {
   const draw = (p5: p5Types) => {
     p5.background(16);
 
-    while (p5.millis() >= timestamp + 1000) {
-      timestamp += 1000;
+    if (p5.millis() >= timestamp + 700) {
+      timestamp = p5.millis();
 
       const size = p5.random(20, 100);
 
       boxes.push({
         x: p5.random(0, p5.width),
-        y: -100 + 3 / size * (p5.millis() - timestamp),
+        y: -100,
         angle: p5.random(0, p5.TWO_PI),
         angleSpeed: p5.random(-0.0005, 0.0005),
         size: size,
