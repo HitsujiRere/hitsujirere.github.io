@@ -2,9 +2,9 @@ import Link from 'next/link'
 
 const About = () => {
   return (
-    <div className="px-4 py-20 bg-gray-900 hover:bg-gray-800 duration-500">
+    <div id="about" className="px-4 py-20 bg-gray-900 md:hover:bg-gray-800 duration-500">
       <div className="mx-auto max-w-screen-lg space-y-5">
-        <h2 id="about" className="text-2xl font-light text-yellow-400">ABOUT</h2>
+        <h2 className="text-2xl font-light text-yellow-400">ABOUT</h2>
         <div className='md:flex md:justify-between'>
           <div className='md:w-2/3 space-y-5'>
             <p className="text-5xl tracking-wide font-bold text-white">Rere / Dejima Mikihide</p>

@@ -87,9 +87,9 @@ class DejimaMikihide {
 
 const Profile = () => {
   return (
-    <div className='px-4 py-20 bg-gray-900 hover:bg-gray-800 duration-500'>
+    <div id="profile" className='px-4 py-20 bg-gray-900 md:hover:bg-gray-800 duration-500'>
       <div className='mx-auto max-w-screen-lg space-y-5'>
-        <h2 id="profile" className="text-2xl font-light text-yellow-400">PROFILE</h2>
+        <h2 className="text-2xl font-light text-yellow-400">PROFILE</h2>
         <Code code={profile}/>
       </div>
     </div>
