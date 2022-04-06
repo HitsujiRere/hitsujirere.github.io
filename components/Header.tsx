@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const Header = () => {
   return (
-    <header className="bg-gray-900 flex justify-between items-center p-8">
+    <header className="fixed w-screen flex justify-between items-center p-8">
       <Link href='/'>
         <a className='text-xl font-bold text-white'>
           <h1>Rere{"'"}s Portfolio</h1>

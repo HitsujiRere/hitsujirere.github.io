@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <header className="bg-gray-900 p-8 text-center">
+    <header className="p-8 text-center bg-gray-900 hover:bg-gray-800 duration-500">
       <p className='text-xs text-gray-200'>DEJIMA MIKIHIDE - 2022</p>
     </header>
   );

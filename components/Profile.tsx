@@ -50,34 +50,34 @@ class DejimaMikihide {
 
 const profile = `
 class DejimaMikihide {
-  realName = "出島 幹英";
-  penName = "ひつじ れれ";
+  realName = '出島 幹英';
+  penName = 'ひつじ れれ';
   birthday = new Date('2003-3-31');
   age = 19;
   languages = {
     good: [
-      "C", "C++", "C#", "JavaScript", "Python",
+      'C', 'C++', 'C#', 'JavaScript', 'Python',
     ],
     hadUsed: [
-      "Java", "TypeScript",
+      'Java', 'TypeScript',
     ],
     learning: [
-      "Rust", "TypeScript", "Go",
+      'Rust', 'TypeScript', 'Go',
     ],
   };
   frameworks = {
     good: [
-      "Node.js", "Processing", ".NET Framework",
+      'Node.js', 'Processing', '.NET Framework',
     ],
     hadUsed: [
-      "Next.js",
+      'Next.js',
     ],
   };
   skills = {
     competitiveProgramming: {
-      language: ["C++"],
+      language: ['C++'],
       AtCoder: {
-        user: "Deji",
+        user: 'Deji',
         highestRate: 1455,
       }
     }
@@ -87,9 +87,9 @@ class DejimaMikihide {
 
 const Profile = () => {
   return (
-    <div className='bg-gray-800 p-8'>
-      <div className='mx-auto max-w-screen-xl space-y-1'>
-        <h2 id="profile" className='text-2xl font-bold text-white'>PROFILE</h2>
+    <div className='px-4 py-20 bg-gray-900 hover:bg-gray-800 duration-500'>
+      <div className='mx-auto max-w-screen-lg space-y-5'>
+        <h2 id="profile" className="text-2xl font-light text-yellow-400">PROFILE</h2>
         <Code code={profile}/>
       </div>
     </div>
