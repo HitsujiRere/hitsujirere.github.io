@@ -1,6 +1,10 @@
+import FloatBoxSketch from "./FloatBoxSketch"
+
 const Start = () => {
   return (
-    <div id="start" className='h-screen bg-gray-900 md:hover:bg-gray-800 duration-500'>
+    <div id="start" className='h-screen bg-transparent duration-500'>
+      <FloatBoxSketch />
+
       <div className='h-full mx-auto max-w-screen-lg flex items-center px-4'>
         <div className="space-y-5">
           <h2 className="text-2xl font-light text-yellow-400">Let{"'"}s go!</h2>
