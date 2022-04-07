@@ -1,5 +1,4 @@
 import { ReactNode, createRef, useEffect, useState } from 'react'
-import Link from 'next/link'
 
 const HeaderLink = (props: {to: string, children: ReactNode}) => {
   const [target, setTarget] = useState<HTMLElement | null>();
@@ -13,7 +12,7 @@ const HeaderLink = (props: {to: string, children: ReactNode}) => {
     //   <a>{props.children}</a>
     // </Link>
     <a
-      href={`#${props.to}`}
+      href={`/#${props.to}`}
       className='cursor-pointer'
       onClick={(e) => {
         if (target) {
@@ -50,8 +49,6 @@ const HeaderLink = (props: {to: string, children: ReactNode}) => {
 }
 
 const Header = () => {
-  const ref = createRef();
-
   return (
     <>
       <div id="scroll-scapegoat" className='fixed'></div>

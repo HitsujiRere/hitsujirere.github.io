@@ -2,7 +2,7 @@ import FloatBoxSketch from "./FloatBoxSketch"
 
 const Start = () => {
   return (
-    <div id="start" className='h-screen bg-transparent duration-500'>
+    <div id="start" className='min-h-screen bg-transparent'>
       <FloatBoxSketch />
 
       <div className='h-full mx-auto max-w-screen-lg flex items-center px-4'>
