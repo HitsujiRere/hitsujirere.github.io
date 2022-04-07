@@ -31,7 +31,7 @@ const Works = () => {
         <h2 className="text-2xl font-light text-yellow-400">WORKS</h2>
         <div className="grid md:grid-cols-2 gap-5 md:gap-20">
           <WorkBoxImage href="/works/my-webpage" image="/img/my-webpage.png" size="bg-cover" position="bg-top" />
-          <WorkBoxImage href="/" image="/img/LogicConnectBlock.jpg" size="bg-cover" position="bg-center" />
+          <WorkBoxImage href="/works/logic-connect-block" image="/img/LogicConnectBlock/cover.jpg" size="bg-cover" position="bg-center" />
           <WorkBoxImage href="/" image="/img/oshaberu_logo.png" size="bg-contain" position="bg-center" />
           <WorkBoxImage href="/" image="/img/twattaa.png" size="bg-cover" position="bg-top" />
           <WorkBoxImage href="/" image="/img/LearnProcessing.png" size="bg-cover" position="bg-top" />

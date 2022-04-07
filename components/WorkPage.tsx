@@ -3,6 +3,7 @@ import Link from "next/link"
 const WorkPage = (props: {
     name: string,
     explains: string[],
+    charge?: string,
     languages: string,
     frameworks: string,
     feelings: string[],
@@ -14,7 +15,7 @@ const WorkPage = (props: {
   return (
     <div className='md:h-screen bg-gray-900'>
       <div className="md:pt-24 md:h-full md:flex md:justify-between md:items-center">
-        <div className="md:w-1/3 md:h-full px-4 py-4 space-y-16 md:text-right">
+        <div className="md:w-1/3 md:h-full px-4 py-4 space-y-12 md:text-right">
           <div className="space-y-4">
             <p className="text-5xl font-bold text-white">{props.name}</p>
             <div>
@@ -25,6 +26,14 @@ const WorkPage = (props: {
               })}
             </div>
           </div>
+          {props.charge && (
+            <div className="space-y-4">
+              <h2 className="text-2xl font-light text-yellow-400">Charge</h2>
+              <div>
+                <p className="text-2xl text-white">{props.charge}</p>
+              </div>
+            </div>
+          )}
           <div className="space-y-4">
             <h2 className="text-2xl font-light text-yellow-400">Language and Frameworks</h2>
             <div>

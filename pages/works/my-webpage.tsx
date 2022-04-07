@@ -29,8 +29,6 @@ const Home: NextPage = () => {
           images={["/img/my-webpage.png"]}
         />
       </main>
-
-      {/* <Footer /> */}
     </div>
   )
 }
