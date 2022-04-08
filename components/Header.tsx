@@ -1,4 +1,4 @@
-import { ReactNode, createRef, useEffect, useState } from 'react'
+import { ReactNode, useEffect, useState } from 'react';
 
 const HeaderLink = (props: {to: string, children: ReactNode}) => {
   const [target, setTarget] = useState<HTMLElement | null>();
@@ -16,9 +16,9 @@ const HeaderLink = (props: {to: string, children: ReactNode}) => {
       className='cursor-pointer'
       onClick={(e) => {
         if (target) {
-          const scapegoat = document.getElementById("scroll-scapegoat");
+          const scapegoat = document.getElementById('scroll-scapegoat');
 
-          target.id = "";
+          target.id = '';
           console.log(scapegoat);
           if (scapegoat) {
             scapegoat.id = props.to;
@@ -28,7 +28,7 @@ const HeaderLink = (props: {to: string, children: ReactNode}) => {
 
           target.id = props.to;
           if (scapegoat) {
-            scapegoat.id = "scroll-scapegoat";
+            scapegoat.id = 'scroll-scapegoat';
           }
 
           const headerOffset = 0;
@@ -36,7 +36,7 @@ const HeaderLink = (props: {to: string, children: ReactNode}) => {
           const offsetPosition = targetPosition - headerOffset + window.pageYOffset;
           window.scrollTo({
             top: offsetPosition,
-            behavior: "smooth"
+            behavior: 'smooth'
           });
 
           e.preventDefault();
@@ -46,7 +46,7 @@ const HeaderLink = (props: {to: string, children: ReactNode}) => {
       {props.children}
     </a>
   );
-}
+};
 
 const Header = () => {
   return (
@@ -55,7 +55,7 @@ const Header = () => {
 
       <header className="w-screen p-8 bg-gray-900 md:bg-transparent md:fixed md:flex md:justify-between md:items-center md:z-10">
         <HeaderLink to='start'>
-          <h1 className='text-xl font-bold text-white'>Rere{"'"}s Portfolio</h1>
+          <h1 className='text-xl font-bold text-white'>Rere{'\''}s Portfolio</h1>
         </HeaderLink>
 
         <nav className='hidden md:flex md:gap-10'>

@@ -1,4 +1,4 @@
-import Code from './Code'
+import Code from './Code';
 
 const calcAge = (birthdate: Date) => {
   const today = new Date();
@@ -9,51 +9,16 @@ const calcAge = (birthdate: Date) => {
 	} else {
     return age - 1;
   }
-}
+};
 
-const birthday = new Date("2003-3-31");
-
-class DejimaMikihide {
-  realName = "出島 幹英";
-  penName = "ひつじ れれ";
-  birthday = new Date('2003-3-31');
-  age = 19;
-  languages = {
-    good: [
-      "C", "C++", "C#", "JavaScript", "Python",
-    ],
-    hadUsed: [
-      "Java", "TypeScript",
-    ],
-    learning: [
-      "Rust", "TypeScript", "Go",
-    ],
-  };
-  frameworks = {
-    good: [
-      "Node.js", "Processing", ".NET Framework",
-    ],
-    hadUsed: [
-      "Next.js",
-    ],
-  };
-  skills = {
-    competitiveProgramming: {
-      language: ["C++"],
-      AtCoder: {
-        user: "Deji",
-        highestRate: 1455,
-      }
-    }
-  };
-}
+const birthday = new Date('2003-3-31');
 
 const profile = `
 class DejimaMikihide {
   realName = '出島 幹英';
   penName = 'ひつじ れれ';
   birthday = new Date('2003-3-31');
-  age = 19;
+  age = ${calcAge(birthday)};
   languages = {
     good: [
       'C', 'C++', 'C#', 'JavaScript', 'Python',

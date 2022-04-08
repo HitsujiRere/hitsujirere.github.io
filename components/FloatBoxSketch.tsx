@@ -1,4 +1,4 @@
-import dynamic from 'next/dynamic'
+import dynamic from 'next/dynamic';
 
 /* SSG */
 // import Sketch from 'react-p5';
@@ -7,7 +7,7 @@ const Sketch = dynamic(() => import('react-p5'), {
    ssr: false,
 });
 
-import p5Types from "p5";
+import p5Types from 'p5';
 
 interface Box {
   x: number,
@@ -61,9 +61,9 @@ const FloatBoxSketch = () => {
 
       p5.push();
       p5.translate(box.x, box.y);
-      p5.rotate(box.angle)
+      p5.rotate(box.angle);
       p5.noStroke();
-      p5.fill("#4e54c880");
+      p5.fill('#4e54c880');
       p5.rectMode(p5.CENTER);
       p5.rect(0, 0, box.size, box.size, box.size / 5);
       p5.pop();

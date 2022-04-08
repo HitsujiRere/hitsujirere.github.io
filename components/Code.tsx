@@ -1,8 +1,6 @@
 import CodeMirror from '@uiw/react-codemirror';
 import { javascript } from '@codemirror/lang-javascript';
 
-import { EditorView } from "@codemirror/view"
-
 const Code = (props: { code: string }) => {
   return (
     <CodeMirror
@@ -10,7 +8,6 @@ const Code = (props: { code: string }) => {
       height='100%'
       extensions={[javascript({ jsx: true, typescript: true })]}
       theme='dark'
-      // editable={false}
       className='text-lg'
     />
   );

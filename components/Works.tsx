@@ -1,11 +1,11 @@
-import Link from "next/link"
-import { ReactNode } from "react"
+import Link from 'next/link';
+import { ReactNode } from 'react';
 
 const WorkBoxImage = (props: { href: string, image: string, size?: string, position?: string} ) => {
   return (
     <Link href={props.href}>
       <a
-        className={`h-60 rounded-xl bg-gray-100 ${props.size ?? "bg-contain"} bg-no-repeat ${props.position ?? "bg-center"}`}
+        className={`h-60 rounded-xl bg-gray-100 ${props.size ?? 'bg-contain'} bg-no-repeat ${props.position ?? 'bg-center'}`}
         style={{backgroundImage: `url(${props.image})`}}
       ></a>
     </Link>

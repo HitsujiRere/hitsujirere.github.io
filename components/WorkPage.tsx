@@ -1,4 +1,4 @@
-import Link from "next/link"
+import Link from 'next/link';
 
 const WorkPage = (props: {
     name: string,
@@ -82,7 +82,7 @@ const WorkPage = (props: {
         <div className="md:w-2/3 md:h-full p-4 md:overflow-y-scroll md:hide-scrollbar space-y-4">
           {props.images.map((image, index) => {
             return (
-              <img key={index} src={image}></img>
+              <img key={index} src={image} alt="this image is "></img>
             );
           })}
         </div>
