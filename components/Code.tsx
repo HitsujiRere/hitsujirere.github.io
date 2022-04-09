@@ -5,10 +5,10 @@ const Code = (props: { code: string }) => {
   return (
     <CodeMirror
       value={props.code.trim()}
-      height='100%'
+      height="100%"
       extensions={[javascript({ jsx: true, typescript: true })]}
-      theme='dark'
-      className='text-lg'
+      theme="dark"
+      className="text-lg"
     />
   );
 };

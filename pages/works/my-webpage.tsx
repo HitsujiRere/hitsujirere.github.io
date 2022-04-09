@@ -16,10 +16,10 @@ const Home: NextPage = () => {
 
       <main>
         <WorkPage
-          name='My Portfolio by Next.js'
+          name="My Portfolio by Next.js"
           explains={['自分についてや、今まで作った作品をまとめたウェブページ']}
-          languages='Typescript'
-          frameworks='Next.js, Tailwind CSS, p5.js'
+          languages="Typescript"
+          frameworks="Next.js, Tailwind CSS, p5.js"
           feelings={[
             '自分のウェブページを作るのは3回目。',
             'Next.js と Tailwind CSS を使えるようになったので、これらを駆使しておしゃれに作ることができた。'
