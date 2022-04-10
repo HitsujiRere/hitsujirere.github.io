@@ -25,7 +25,7 @@ const Home: NextPage = () => {
 
         <Profile />
 
-        <Works />
+        <Works allWorks={false} />
       </main>
 
       <Footer />

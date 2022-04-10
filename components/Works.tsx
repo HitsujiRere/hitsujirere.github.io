@@ -19,7 +19,7 @@ const WorkBoxImage = (props: { href: string, image: string, size: string, positi
 const WorkBoxText = (props: { href: string, children?: ReactNode } ) => {
   return (
     <Link href={props.href}>
-      <a className="h-60 p-4 rounded-xl bg-gray-100 flex items-center">
+      <a className="h-60 p-4 rounded-xl bg-gray-300 flex items-center">
         <div className="w-full text-center space-y-5 select-none">
           {props.children}
         </div>
@@ -28,7 +28,7 @@ const WorkBoxText = (props: { href: string, children?: ReactNode } ) => {
   );
 };
 
-const Works = () => {
+const Works = (props: {allWorks: boolean}) => {
   return (
     <div id="works" className="px-4 py-20 bg-gray-900 md:hover:bg-gray-800 duration-500">
       <div className="mx-auto max-w-screen-lg space-y-5">
@@ -38,16 +38,26 @@ const Works = () => {
           <WorkBoxImage href="/works/logic-connect-block" image="/img/LogicConnectBlock/cover.jpg" size="object-cover" position="object-center" />
           <WorkBoxImage href="/works/oshaberu" image="/img/oshaberu/logo.png" size="object-contain" position="object-center" />
           <WorkBoxImage href="/works/twattaa" image="/img/twattaa/1.png" size="object-cover" position="object-top" />
-          <WorkBoxImage href="/" image="/img/LearnProcessing.png" size="object-cover" position="object-top" />
-          <WorkBoxText href="/">
-            <p className="text-7xl text-black">Fall Texts</p>
-            <p className="text-xl  text-black">みんなで言葉を降らせよう</p>
-          </WorkBoxText>
-          <WorkBoxImage href="/" image="/img/shimale_logo.png" size="object-contain" position="object-center" />
-          <WorkBoxImage href="/" image="/img/siritoriVS.jpg" size="object-cover" position="object-top" />
-          <WorkBoxImage href="/" image="/img/HexCalcurator.png" size="object-cover" position="object-top" />
-          <WorkBoxImage href="/" image="/img/just10game.png" size="object-cover" position="object-center" />
-          <WorkBoxImage href="/" image="/img/yudetamago2.png" size="object-cover" position="object-top" />
+          <WorkBoxImage href="/works/LearnProcessing" image="/img/LearnProcessing.png" size="object-cover" position="object-top" />
+          {props.allWorks ? (
+            <>
+              <WorkBoxText href="/">
+                <p className="text-7xl text-black">Fall Texts</p>
+                <p className="text-xl  text-black">みんなで言葉を降らせよう</p>
+              </WorkBoxText>
+              <WorkBoxImage href="/" image="/img/shimale_logo.png" size="object-contain" position="object-center" />
+              <WorkBoxImage href="/" image="/img/siritoriVS.jpg" size="object-cover" position="object-top" />
+              <WorkBoxImage href="/" image="/img/HexCalcurator.png" size="object-cover" position="object-top" />
+              <WorkBoxImage href="/" image="/img/just10game.png" size="object-cover" position="object-center" />
+              <WorkBoxImage href="/" image="/img/yudetamago2.png" size="object-cover" position="object-top" />
+            </>
+          ) : (
+            <>
+              <WorkBoxText href="/works">
+                <p className="text-5xl text-black">And more..</p>
+              </WorkBoxText>
+            </>
+          )}
         </div>
       </div>
     </div>
