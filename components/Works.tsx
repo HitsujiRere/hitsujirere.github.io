@@ -20,7 +20,7 @@ const WorkBoxText = (props: { href: string, children?: ReactNode } ) => {
   return (
     <Link href={props.href}>
       <a className="h-60 p-4 rounded-xl bg-gray-100 flex items-center">
-        <div className="w-full text-center space-y-5">
+        <div className="w-full text-center space-y-5 select-none">
           {props.children}
         </div>
       </a>
@@ -36,8 +36,8 @@ const Works = () => {
         <div className="grid md:grid-cols-2 gap-5 md:gap-20">
           <WorkBoxImage href="/works/my-webpage" image="/img/my-webpage.png" size="object-cover" position="object-top" />
           <WorkBoxImage href="/works/logic-connect-block" image="/img/LogicConnectBlock/cover.jpg" size="object-cover" position="object-center" />
-          <WorkBoxImage href="/" image="/img/oshaberu_logo.png" size="object-contain" position="object-center" />
-          <WorkBoxImage href="/" image="/img/twattaa.png" size="object-cover" position="object-top" />
+          <WorkBoxImage href="/works/oshaberu" image="/img/oshaberu/logo.png" size="object-contain" position="object-center" />
+          <WorkBoxImage href="/works/twattaa" image="/img/twattaa/1.png" size="object-cover" position="object-top" />
           <WorkBoxImage href="/" image="/img/LearnProcessing.png" size="object-cover" position="object-top" />
           <WorkBoxText href="/">
             <p className="text-7xl text-black">Fall Texts</p>

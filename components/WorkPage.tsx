@@ -6,7 +6,7 @@ const WorkPage = (props: {
     charge?: string,
     languages: string,
     frameworks: string,
-    feelings: string[],
+    feelings?: string[],
     linkWork?: string,
     linkGitHub?: string,
     images: string[]
@@ -41,16 +41,18 @@ const WorkPage = (props: {
               <p className="text-2xl text-white">{props.frameworks}</p>
             </div>
           </div>
-          <div className="space-y-4">
-            <h2 className="text-2xl font-light text-yellow-400">Feelings</h2>
-            <div>
-              {props.feelings.map((text, index) => {
-                return (
-                  <p key={index} className="text-2xl text-white">{text}</p>
-                );
-              })}
+          {props.feelings && (
+            <div className="space-y-4">
+              <h2 className="text-2xl font-light text-yellow-400">Feelings</h2>
+              <div>
+                {props.feelings.map((text, index) => {
+                  return (
+                    <p key={index} className="text-2xl text-white">{text}</p>
+                  );
+                })}
+              </div>
             </div>
-          </div>
+          )}
           {(props.linkWork || props.linkGitHub) && (
             <div className="space-y-4">
               <h2 className="text-2xl font-light text-yellow-400">Links</h2>

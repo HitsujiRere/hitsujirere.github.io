@@ -7,8 +7,8 @@ const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Rere{'\''}s Portfolio</title>
-        <meta name="description" content="Rere's Portfolio" />
+        <title>Rere{'\''}s Portfolio - My Portfolio</title>
+        <meta name="description" content="Rere's Portfolio - My Portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
