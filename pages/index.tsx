@@ -21,7 +21,7 @@ const Home: NextPage = () => {
       <main>
         <Start />
 
-        <About />
+        <About allAbout={false} />
 
         <Profile />
 

@@ -4,8 +4,8 @@ const WorkPage = (props: {
     name: string,
     explains: string[],
     charge?: string,
-    languages: string,
-    frameworks: string,
+    languages?: string,
+    frameworks?: string,
     feelings?: string[],
     linkWork?: string,
     linkGitHub?: string,
@@ -34,13 +34,15 @@ const WorkPage = (props: {
               </div>
             </div>
           )}
-          <div className="space-y-4">
-            <h2 className="text-2xl font-light text-yellow-400">Language and Frameworks</h2>
-            <div>
-              <p className="text-2xl text-white">{props.languages}</p>
-              <p className="text-2xl text-white">{props.frameworks}</p>
+          {(props.languages || props.frameworks) && (
+            <div className="space-y-4">
+              <h2 className="text-2xl font-light text-yellow-400">Language and Frameworks</h2>
+              <div>
+                {props.languages && <p className="text-2xl text-white">{props.languages}</p>}
+                {props.frameworks && <p className="text-2xl text-white">{props.frameworks}</p>}
+              </div>
             </div>
-          </div>
+          )}
           {props.feelings && (
             <div className="space-y-4">
               <h2 className="text-2xl font-light text-yellow-400">Feelings</h2>

@@ -19,7 +19,7 @@ const WorkBoxImage = (props: { href: string, image: string, size: string, positi
 const WorkBoxText = (props: { href: string, children?: ReactNode } ) => {
   return (
     <Link href={props.href}>
-      <a className="h-60 p-4 rounded-xl bg-gray-300 flex items-center">
+      <a className="h-60 p-4 rounded-xl bg-gray-100 flex items-center">
         <div className="w-full text-center space-y-5 select-none">
           {props.children}
         </div>
@@ -38,7 +38,7 @@ const Works = (props: {allWorks: boolean}) => {
           <WorkBoxImage href="/works/logic-connect-block" image="/img/LogicConnectBlock/cover.jpg" size="object-cover" position="object-center" />
           <WorkBoxImage href="/works/oshaberu" image="/img/oshaberu/logo.png" size="object-contain" position="object-center" />
           <WorkBoxImage href="/works/twattaa" image="/img/twattaa/1.png" size="object-cover" position="object-top" />
-          <WorkBoxImage href="/works/LearnProcessing" image="/img/LearnProcessing.png" size="object-cover" position="object-top" />
+          <WorkBoxImage href="/works/learn-processing" image="/img/LearnProcessing.png" size="object-cover" position="object-top object-left" />
           {props.allWorks ? (
             <>
               <WorkBoxText href="/">
@@ -52,11 +52,11 @@ const Works = (props: {allWorks: boolean}) => {
               <WorkBoxImage href="/" image="/img/yudetamago2.png" size="object-cover" position="object-top" />
             </>
           ) : (
-            <>
-              <WorkBoxText href="/works">
-                <p className="text-5xl text-black">And more..</p>
-              </WorkBoxText>
-            </>
+            <Link href="/works">
+              <a className="h-60 p-4 rounded-xl border-2 border-gray-300 flex items-center justify-center">
+                <p className="text-3xl text-gray-300 select-none">MORE</p>
+              </a>
+            </Link>
           )}
         </div>
       </div>
