@@ -9,7 +9,7 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    plugin(function({ addComponents }) {
+    plugin(function ({ addComponents }) {
       addComponents({
         '.hide-scrollbar': {
           /* IE and Edge */
@@ -21,7 +21,7 @@ module.exports = {
             display: 'none'
           }
         },
-      })
+      });
     })
   ],
 }
