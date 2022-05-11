@@ -21,11 +21,11 @@ const Home: NextPage = () => {
       <main>
         <Start />
 
-        <About allAbout={false} />
+        <About />
 
         <Profile />
 
-        <Works allWorks={false} />
+        <Works />
       </main>
 
       <Footer />
