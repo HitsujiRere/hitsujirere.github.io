@@ -1,5 +1,4 @@
-import SyntaxHighlighter from 'react-syntax-highlighter';
-import { style } from './SyntaxHighlightStyle';
+import Code from './Code';
 
 const calcAge = (birthdate: Date, today: Date) => {
   const birthday = new Date(today.getFullYear(), birthdate.getMonth(), birthdate.getDate());
@@ -42,9 +41,9 @@ const Profile = () => {
       <div className="mx-auto max-w-screen-lg space-y-5">
         <h2 className="text-2xl font-light text-yellow-400">PROFILE</h2>
         <div className="flex justify-center text-lg tracking-wider">
-          <SyntaxHighlighter language="javascript" style={style} showLineNumbers>
+          <Code language="javascript">
             {profile}
-          </SyntaxHighlighter>
+          </Code>
         </div>
       </div>
     </div>
