@@ -4,7 +4,7 @@ import dynamic from 'next/dynamic';
 // import Sketch from 'react-p5';
 /* SSR */
 const Sketch = dynamic(() => import('react-p5'), {
-   ssr: false,
+  ssr: false,
 });
 
 import p5Types from 'p5';

@@ -1,7 +1,7 @@
 import { ReactNode, useEffect, useState } from 'react';
 import Link from 'next/link';
 
-const HeaderLink = (props: {to: string, children: ReactNode}) => {
+const HeaderLink = (props: { to: string, children: ReactNode }) => {
   const [target, setTarget] = useState<HTMLElement | null>();
 
   useEffect(() => {
