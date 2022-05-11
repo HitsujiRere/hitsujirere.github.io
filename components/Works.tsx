@@ -1,30 +1,49 @@
 import Link from 'next/link';
 import { ReactNode, useState } from 'react';
 
-const WorkBoxImage = (props: { href: string, image: string, size: string, position: string }) => {
+const WorkBoxImage = (props: { href?: string, image: string, size: string, position: string }) => {
   return (
-    <Link href={props.href}>
-      <a className="h-60">
+    props.href ? (
+      <Link href={props.href}>
+        <a className="h-60">
+          <img
+            src={props.image}
+            className={`h-full w-full rounded-xl ${props.size} ${props.position} ${props.size === 'object-contain' && 'bg-gray-100'}`}
+            alt="cover image"
+            loading="lazy"
+          />
+        </a>
+      </Link>
+    ) : (
+      <div className="h-60">
         <img
           src={props.image}
           className={`h-full w-full rounded-xl ${props.size} ${props.position} ${props.size === 'object-contain' && 'bg-gray-100'}`}
           alt="cover image"
           loading="lazy"
         />
-      </a>
-    </Link>
+      </div>
+    )
   );
 };
 
-const WorkBoxText = (props: { href: string, children?: ReactNode }) => {
+const WorkBoxText = (props: { href?: string, children?: ReactNode }) => {
   return (
-    <Link href={props.href}>
-      <a className="h-60 p-4 rounded-xl bg-gray-100 flex items-center">
+    props.href ? (
+      <Link href={props.href}>
+        <a className="h-60 p-4 rounded-xl bg-gray-100 flex items-center">
+          <div className="w-full text-center space-y-5 select-none">
+            {props.children}
+          </div>
+        </a>
+      </Link>
+    ) : (
+      <div className="h-60 p-4 rounded-xl bg-gray-100 flex items-center">
         <div className="w-full text-center space-y-5 select-none">
           {props.children}
         </div>
-      </a>
-    </Link>
+      </div>
+    )
   );
 };
 
@@ -43,15 +62,15 @@ const Works = () => {
           <WorkBoxImage href="/works/learn-processing" image="/img/LearnProcessing.png" size="object-cover" position="object-top object-left" />
           {isDetailsOpened ? (
             <>
-              <WorkBoxText href="/">
+              <WorkBoxText>
                 <p className="text-7xl text-black">Fall Texts</p>
                 <p className="text-xl  text-black">みんなで言葉を降らせよう</p>
               </WorkBoxText>
-              <WorkBoxImage href="/" image="/img/shimale_logo.png" size="object-contain" position="object-center" />
-              <WorkBoxImage href="/" image="/img/siritoriVS.jpg" size="object-cover" position="object-top" />
-              <WorkBoxImage href="/" image="/img/HexCalcurator.png" size="object-cover" position="object-top" />
-              <WorkBoxImage href="/" image="/img/just10game.png" size="object-cover" position="object-center" />
-              <WorkBoxImage href="/" image="/img/yudetamago2.png" size="object-cover" position="object-top" />
+              <WorkBoxImage image="/img/shimale_logo.png" size="object-contain" position="object-center" />
+              <WorkBoxImage image="/img/siritoriVS.jpg" size="object-cover" position="object-top" />
+              <WorkBoxImage image="/img/HexCalcurator.png" size="object-cover" position="object-top" />
+              <WorkBoxImage image="/img/just10game.png" size="object-cover" position="object-center" />
+              <WorkBoxImage image="/img/yudetamago2.png" size="object-cover" position="object-top" />
             </>
           ) : (
             <div
