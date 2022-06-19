@@ -49,13 +49,21 @@ const About = () => {
                     <p className="pl-10">パテント審査部門 : 奨励賞</p>
                   </div>
                 </div>
+                <div className="space-y-5">
+                  <h3 className="text-2xl font-light text-yellow-400">CERTIFICATION</h3>
+                  <div className="text-xl text-gray-200 space-y-2">
+                    <p>ITパスポート</p>
+                  </div>
+                </div>
               </>
             )}
           </div>
-          <div
-            className="w-1/3 hidden md:flex bg-contain bg-no-repeat bg-center"
-            style={{ backgroundImage: 'url(/img/myself.png)' }}
-          ></div>
+          <img
+            src="/img/myself.png"
+            className="w-1/3 h-1/3 hidden md:flex"
+            alt="My picture"
+            loading="lazy"
+          />
         </div>
         {!isDetailsOpened && (
           <div className="flex justify-center">

@@ -18,13 +18,14 @@ class DejimaMikihide {
   age = ${calcAge(new Date('2003-3-31'), new Date())};
   languages = {
     good: [ 'C', 'C++', 'C#', 'JavaScript', 'Python', ],
-    hadUsed: [ 'Java', 'TypeScript', ],
-    learning: [ 'Rust', 'TypeScript', 'Go', ]
+    haveUsed: [ 'Java', 'TypeScript', 'Rust', ],
+    learning: [ 'Dart', 'TypeScript', ],
+    wantToLearn: [ 'Rust', 'Go', ],
   };
   frameworks = {
     good: [ 'Node.js', 'Processing', '.NET Framework', ],
-    hadUsed: [ 'React', 'Next.js', ],
-    learning: [ 'React', 'Next.js', ]
+    haveUsed: [ 'Unity', 'React', 'Next.js', ],
+    learning: [ 'Flutter', 'Unity', ],
   };
   skills = {
     competitiveProgramming: {
