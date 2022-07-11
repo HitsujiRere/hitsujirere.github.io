@@ -4,7 +4,7 @@ import { ReactNode } from 'react';
 const WorkBoxImage = (props: { href?: string; image: string; size: string; position: string }) => {
   return props.href ? (
     <Link href={props.href}>
-      <a className='h-60'>
+      <a className='h-60 '>
         <img
           src={props.image}
           className={`h-full w-full rounded-xl ${props.size} ${props.position} ${

@@ -68,12 +68,12 @@ const Works = () => {
               />
             </>
           ) : (
-            <div
-              className='h-60 p-4 rounded-xl border-2 border-gray-300 flex items-center justify-center cursor-pointer'
-              onClick={() => setDetailsOpened(true)}
+            <button
+              className='h-60 p-4 rounded-xl border-2 border-gray-300 flex items-center justify-center'
+              onClick={() => setDetailsOpened(!isDetailsOpened)}
             >
               <p className='text-3xl text-gray-300 select-none'>MORE</p>
-            </div>
+            </button>
           )}
         </div>
       </div>

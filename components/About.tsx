@@ -72,27 +72,30 @@ const About = () => {
                 </Link>
               </div>
             </div>
-            {isDetailsOpened && (
-              <>
-                <div className='space-y-5'>
-                  <h3 className='text-2xl font-light text-yellow-400'>AWARDS</h3>
-                  <div className='text-xl text-gray-200 space-y-2'>
-                    <p>第2回全国高等専門学校 ディープラーニングコンテスト2021 : 7位</p>
-                    <p>Hokuriku Innovation Trial-2020 : ICTまちづくり賞</p>
-                    <p>パソコン甲子園2020 プログラミング部門 : 本選出場</p>
-                    <p>全国高専プログラミングコンテスト 第31回苫小牧大会(2020)</p>
-                    <p className='pl-10'>自由部門 : 特別賞</p>
-                    <p className='pl-10'>パテント審査部門 : 奨励賞</p>
-                  </div>
+            <div
+              className={
+                'space-y-5 overflow-hidden transition-all duration-1000 ' +
+                (isDetailsOpened ? 'max-h-screen opacity-100 ' : 'max-h-0 opacity-0 ')
+              }
+            >
+              <div className='space-y-5'>
+                <h3 className='text-2xl font-light text-yellow-400'>AWARDS</h3>
+                <div className='text-xl text-gray-200 space-y-2'>
+                  <p>第2回全国高等専門学校 ディープラーニングコンテスト2021 : 7位</p>
+                  <p>Hokuriku Innovation Trial-2020 : ICTまちづくり賞</p>
+                  <p>パソコン甲子園2020 プログラミング部門 : 本選出場</p>
+                  <p>全国高専プログラミングコンテスト 第31回苫小牧大会(2020)</p>
+                  <p className='pl-10'>自由部門 : 特別賞</p>
+                  <p className='pl-10'>パテント審査部門 : 奨励賞</p>
                 </div>
-                <div className='space-y-5'>
-                  <h3 className='text-2xl font-light text-yellow-400'>CERTIFICATION</h3>
-                  <div className='text-xl text-gray-200 space-y-2'>
-                    <p>ITパスポート</p>
-                  </div>
+              </div>
+              <div className='space-y-5'>
+                <h3 className='text-2xl font-light text-yellow-400'>CERTIFICATION</h3>
+                <div className='text-xl text-gray-200 space-y-2'>
+                  <p>ITパスポート</p>
                 </div>
-              </>
-            )}
+              </div>
+            </div>
           </div>
           <img
             src='/img/myself.png'
@@ -101,16 +104,16 @@ const About = () => {
             loading='lazy'
           />
         </div>
-        {!isDetailsOpened && (
-          <div className='flex justify-center'>
-            <div
-              className='px-4 py-2 rounded-xl border-2 border-gray-200 cursor-pointer'
-              onClick={() => setDetailsOpened(true)}
-            >
-              <div className='text-2xl text-gray-200 select-none'>MORE</div>
+        <div className='flex justify-center'>
+          <button
+            className='px-4 py-2 rounded-xl border-2 border-gray-200'
+            onClick={() => setDetailsOpened(!isDetailsOpened)}
+          >
+            <div className='text-2xl text-gray-200 select-none'>
+              {isDetailsOpened ? 'CLOSE' : 'MORE'}
             </div>
-          </div>
-        )}
+          </button>
+        </div>
       </div>
     </div>
   );
