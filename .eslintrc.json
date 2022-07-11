@@ -1,13 +1,19 @@
 {
   "extends": [
-    "eslint:recommended",
-    "next",
-    "next/core-web-vitals"
+    "next/core-web-vitals",
+    "plugin:import/recommended",
+    "plugin:import/warnings",
+    "prettier"
   ],
   "rules": {
-    "semi": ["error", "always"],
-    "quotes": ["error", "single"],
-    "jsx-quotes": ["error", "prefer-double"],
+    "import/order": [
+      "error",
+      {
+        "alphabetize": {
+          "order": "asc"
+        }
+      }
+    ],
     "@next/next/no-img-element": "off"
   }
 }

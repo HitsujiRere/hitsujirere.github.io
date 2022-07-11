@@ -1,7 +1,7 @@
-import { ReactNode, useEffect, useState } from 'react';
 import Link from 'next/link';
+import { ReactNode, useEffect, useState } from 'react';
 
-const HeaderLink = (props: { to: string, children: ReactNode }) => {
+const HeaderLink = (props: { to: string; children: ReactNode }) => {
   const [target, setTarget] = useState<HTMLElement | null>();
 
   useEffect(() => {
@@ -11,7 +11,7 @@ const HeaderLink = (props: { to: string, children: ReactNode }) => {
   return (
     <Link href={`/#${props.to}`}>
       <a
-        className="cursor-pointer"
+        className='cursor-pointer'
         onClick={(e) => {
           if (target) {
             const scapegoat = document.getElementById('scroll-scapegoat');
@@ -34,7 +34,7 @@ const HeaderLink = (props: { to: string, children: ReactNode }) => {
             const offsetPosition = targetPosition - headerOffset + window.pageYOffset;
             window.scrollTo({
               top: offsetPosition,
-              behavior: 'smooth'
+              behavior: 'smooth',
             });
 
             e.preventDefault();

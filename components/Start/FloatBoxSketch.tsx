@@ -10,10 +10,10 @@ const Sketch = dynamic(() => import('react-p5'), {
 import p5Types from 'p5';
 
 interface Box {
-  x: number,
-  y: number,
-  angle: number,
-  angleSpeed: number,
+  x: number;
+  y: number;
+  angle: number;
+  angleSpeed: number;
   size: number;
 }
 
@@ -29,7 +29,7 @@ const FloatBoxSketch = () => {
       for (let i = 0; i < 10; i++) {
         boxes.push({
           x: p5.random(0, p5.width),
-          y: p5.height / 10 * i,
+          y: (p5.height / 10) * i,
           angle: p5.random(0, p5.TWO_PI),
           angleSpeed: p5.random(-0.0005, 0.0005),
           size: p5.random(20, 100),
@@ -56,7 +56,7 @@ const FloatBoxSketch = () => {
     }
 
     boxes.forEach((box) => {
-      box.y += 3 / box.size * p5.deltaTime;
+      box.y += (3 / box.size) * p5.deltaTime;
       box.angle += box.angleSpeed * p5.deltaTime;
 
       p5.push();
@@ -79,7 +79,7 @@ const FloatBoxSketch = () => {
       setup={setup}
       draw={draw}
       windowResized={windowResized}
-      className="fixed inset-0 -z-10 bg-gray-900"
+      className='fixed inset-0 -z-10 bg-gray-900'
     />
   );
 };
