@@ -1,3 +1,4 @@
+import Section from '../Section';
 import Code from './Code';
 
 const calcAge = (birthdate: Date, today: Date) => {
@@ -38,14 +39,14 @@ class DejimaMikihide {
 
 const Profile = () => {
   return (
-    <div id='profile' className='px-4 py-20 bg-gray-900 md:hover:bg-gray-800 duration-500'>
-      <div className='mx-auto max-w-screen-lg space-y-5'>
+    <Section id='profile'>
+      <div className='space-y-5'>
         <h2 className='text-2xl font-light text-yellow-400'>PROFILE</h2>
         <div className='flex justify-center text-lg tracking-wider'>
           <Code language='javascript'>{profile}</Code>
         </div>
       </div>
-    </div>
+    </Section>
   );
 };
 

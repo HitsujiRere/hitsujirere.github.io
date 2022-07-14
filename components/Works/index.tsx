@@ -1,12 +1,13 @@
 import { useState } from 'react';
+import Section from '../Section';
 import { WorkBoxImage, WorkBoxText } from './WorkBox';
 
 const Works = () => {
   const [isDetailsOpened, setDetailsOpened] = useState(false);
 
   return (
-    <div id='works' className='px-4 py-20 bg-gray-900 md:hover:bg-gray-800 duration-500'>
-      <div className='mx-auto max-w-screen-lg space-y-5'>
+    <Section id='works'>
+      <div className='space-y-5'>
         <h2 className='text-2xl font-light text-yellow-400'>WORKS</h2>
         <div className='grid md:grid-cols-2 gap-5 md:gap-20'>
           <WorkBoxImage
@@ -77,7 +78,7 @@ const Works = () => {
           )}
         </div>
       </div>
-    </div>
+    </Section>
   );
 };
 
