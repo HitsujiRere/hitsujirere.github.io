@@ -11,8 +11,8 @@ const About = () => {
         <h2 className='text-2xl font-light text-yellow-400'>ABOUT</h2>
         <div className='md:flex md:justify-between space-x-1'>
           <div className='md:w-2/3 space-y-5'>
-            <p className='text-5xl tracking-wide font-bold text-white'>Rere / Dejima Mikihide</p>
-            <p className='text-sm text-gray-400'>石川工業高等専門学校 電子情報工学科 5年</p>
+            <p className='text-5xl tracking-wide font-bold text-white'>Hitsuji Rere</p>
+            <p className='text-sm text-gray-400'>ある工業高等専門学校の5年</p>
             <div className='text-xl text-gray-200'>
               <p>私は「好奇心」がとても強く、何にでも興味があります。</p>
               <p>

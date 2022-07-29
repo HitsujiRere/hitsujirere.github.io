@@ -12,11 +12,9 @@ const calcAge = (birthdate: Date, today: Date) => {
 };
 
 const profile = `
-class DejimaMikihide {
-  realName = '出島 幹英';
+class HitsujiRere {
   penName = 'ひつじ れれ';
-  birthday = new Date('2003-3-31');
-  age = ${calcAge(new Date('2003-3-31'), new Date())};
+  birthday = new Date('3/31');
   languages = {
     good: [ 'C', 'C++', 'C#', 'JavaScript', 'Python', ],
     haveUsed: [ 'Java', 'TypeScript', 'Rust', ],
