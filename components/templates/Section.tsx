@@ -1,11 +1,6 @@
 import { createRef, ReactNode, useEffect, useState } from 'react';
 
-type Props = {
-  children?: ReactNode;
-  id: string;
-};
-
-const Section: React.FC<Props> = (props: { children?: ReactNode; id: string }) => {
+const Section = (props: { children?: ReactNode; id: string }) => {
   const page = createRef<HTMLDivElement>();
   const [watching, setWatching] = useState(false);
 
