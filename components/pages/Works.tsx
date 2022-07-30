@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { WorkBoxImage, WorkBoxText } from '../organisms/WorkBox';
-import Section from '../templates/Section';
+import { Section } from '../templates/Section';
 
-const Works = () => {
+export const Works = () => {
   const [isDetailsOpened, setDetailsOpened] = useState(false);
 
   return (
@@ -81,5 +81,3 @@ const Works = () => {
     </Section>
   );
 };
-
-export default Works;

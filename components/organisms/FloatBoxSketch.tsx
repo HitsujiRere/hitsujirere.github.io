@@ -17,7 +17,7 @@ interface Box {
   size: number;
 }
 
-const FloatBoxSketch = () => {
+export const FloatBoxSketch = () => {
   let boxes: Box[] = [];
   let timestamp = 0;
 
@@ -86,5 +86,3 @@ const FloatBoxSketch = () => {
     />
   );
 };
-
-export default FloatBoxSketch;

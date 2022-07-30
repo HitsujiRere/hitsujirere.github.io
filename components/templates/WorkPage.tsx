@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-const WorkPage = (props: {
+export const WorkPage = (props: {
   name: string;
   explains: string[];
   charge?: string;
@@ -125,5 +125,3 @@ const WorkPage = (props: {
     </div>
   );
 };
-
-export default WorkPage;

@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import { useState } from 'react';
-import Section from '../templates/Section';
+import { Section } from '../templates/Section';
 
-const About = () => {
+export const About = () => {
   const [isDetailsOpened, setDetailsOpened] = useState(false);
 
   return (
@@ -119,5 +119,3 @@ const About = () => {
     </Section>
   );
 };
-
-export default About;

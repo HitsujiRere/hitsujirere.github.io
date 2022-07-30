@@ -1,6 +1,6 @@
-import FloatBoxSketch from '../organisms/FloatBoxSketch';
+import { FloatBoxSketch } from '../organisms/FloatBoxSketch';
 
-const Start = () => {
+export const Start = () => {
   return (
     <div id='start'>
       <FloatBoxSketch />
@@ -20,5 +20,3 @@ const Start = () => {
     </div>
   );
 };
-
-export default Start;

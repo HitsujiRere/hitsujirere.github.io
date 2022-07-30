@@ -1,5 +1,5 @@
-import Code from '../organisms/Code';
-import Section from '../templates/Section';
+import { Code } from '../organisms/Code';
+import { Section } from '../templates/Section';
 
 const calcAge = (birthdate: Date, today: Date) => {
   const birthday = new Date(today.getFullYear(), birthdate.getMonth(), birthdate.getDate());
@@ -35,7 +35,7 @@ class HitsujiRere {
 }
 `.trim();
 
-const Profile = () => {
+export const Profile = () => {
   return (
     <Section id='profile'>
       <div className='space-y-5'>
@@ -47,5 +47,3 @@ const Profile = () => {
     </Section>
   );
 };
-
-export default Profile;

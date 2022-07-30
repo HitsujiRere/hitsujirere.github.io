@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { ReactNode, useEffect, useState } from 'react';
 
-const HeaderLink = (props: { to: string; children: ReactNode }) => {
+export const HeaderLink = (props: { to: string; children: ReactNode }) => {
   const [target, setTarget] = useState<HTMLElement | null>();
 
   useEffect(() => {
@@ -46,5 +46,3 @@ const HeaderLink = (props: { to: string; children: ReactNode }) => {
     </Link>
   );
 };
-
-export default HeaderLink;

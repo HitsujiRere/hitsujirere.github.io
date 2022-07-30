@@ -1,7 +1,12 @@
 import Link from 'next/link';
 import { ReactNode } from 'react';
 
-const WorkBoxImage = (props: { href?: string; image: string; size: string; position: string }) => {
+export const WorkBoxImage = (props: {
+  href?: string;
+  image: string;
+  size: string;
+  position: string;
+}) => {
   return props.href ? (
     <Link href={props.href}>
       <a className='h-60 '>
@@ -29,7 +34,7 @@ const WorkBoxImage = (props: { href?: string; image: string; size: string; posit
   );
 };
 
-const WorkBoxText = (props: { href?: string; children?: ReactNode }) => {
+export const WorkBoxText = (props: { href?: string; children?: ReactNode }) => {
   return props.href ? (
     <Link href={props.href}>
       <a className='h-60 p-4 rounded-xl bg-gray-100 flex items-center'>
@@ -42,5 +47,3 @@ const WorkBoxText = (props: { href?: string; children?: ReactNode }) => {
     </div>
   );
 };
-
-export { WorkBoxImage, WorkBoxText };

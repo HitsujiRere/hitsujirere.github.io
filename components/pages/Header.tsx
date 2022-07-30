@@ -1,6 +1,6 @@
-import HeaderLink from '../molecules/HeaderLink';
+import { HeaderLink } from '../molecules/HeaderLink';
 
-const Header = () => {
+export const Header = () => {
   return (
     <>
       <div id='scroll-scapegoat' className='fixed'></div>
@@ -25,5 +25,3 @@ const Header = () => {
     </>
   );
 };
-
-export default Header;

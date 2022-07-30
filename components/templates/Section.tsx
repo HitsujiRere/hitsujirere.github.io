@@ -1,6 +1,6 @@
 import { createRef, ReactNode, useEffect, useState } from 'react';
 
-const Section = (props: { children?: ReactNode; id: string }) => {
+export const Section = (props: { children?: ReactNode; id: string }) => {
   const page = createRef<HTMLDivElement>();
   const [watching, setWatching] = useState(false);
 
@@ -28,5 +28,3 @@ const Section = (props: { children?: ReactNode; id: string }) => {
     </div>
   );
 };
-
-export default Section;
