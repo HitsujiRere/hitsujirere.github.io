@@ -18,8 +18,7 @@ interface Box {
 }
 
 const FloatBoxSketch = () => {
-  const boxes: Box[] = [];
-
+  let boxes: Box[] = [];
   let timestamp = 0;
 
   const setup = (p5: p5Types, canvasParentRef: Element) => {
@@ -39,10 +38,12 @@ const FloatBoxSketch = () => {
   };
 
   const draw = (p5: p5Types) => {
+    const millis = p5.millis();
+
     p5.background(16);
 
-    if (p5.millis() >= timestamp + 700) {
-      timestamp = p5.millis();
+    if (millis >= timestamp + 700) {
+      timestamp = millis;
 
       const size = p5.random(20, 100);
 
@@ -53,6 +54,8 @@ const FloatBoxSketch = () => {
         angleSpeed: p5.random(-0.0005, 0.0005),
         size: size,
       });
+
+      boxes = boxes.filter((box) => box.y <= p5.height * 2);
     }
 
     boxes.forEach((box) => {
