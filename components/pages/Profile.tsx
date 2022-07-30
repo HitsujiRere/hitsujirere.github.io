@@ -1,5 +1,5 @@
-import Section from '../Section';
-import Code from './Code';
+import Code from '../organisms/Code';
+import Section from '../templates/Section';
 
 const calcAge = (birthdate: Date, today: Date) => {
   const birthday = new Date(today.getFullYear(), birthdate.getMonth(), birthdate.getDate());

@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import Section from '../Section';
-import { WorkBoxImage, WorkBoxText } from './WorkBox';
+import { WorkBoxImage, WorkBoxText } from '../organisms/WorkBox';
+import Section from '../templates/Section';
 
 const Works = () => {
   const [isDetailsOpened, setDetailsOpened] = useState(false);

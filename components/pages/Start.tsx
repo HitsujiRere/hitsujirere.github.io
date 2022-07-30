@@ -1,4 +1,4 @@
-import FloatBoxSketch from './FloatBoxSketch';
+import FloatBoxSketch from '../organisms/FloatBoxSketch';
 
 const Start = () => {
   return (

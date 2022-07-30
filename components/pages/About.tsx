@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useState } from 'react';
-import Section from './Section';
+import Section from '../templates/Section';
 
 const About = () => {
   const [isDetailsOpened, setDetailsOpened] = useState(false);
