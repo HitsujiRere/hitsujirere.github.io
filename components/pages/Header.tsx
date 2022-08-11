@@ -1,4 +1,4 @@
-import { HeaderLink } from '../molecules/HeaderLink';
+import { HeaderLink } from '@/components/molecules/HeaderLink';
 
 export const Header = () => {
   return (

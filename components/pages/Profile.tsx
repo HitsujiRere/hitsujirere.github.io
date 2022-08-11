@@ -1,5 +1,5 @@
-import { Code } from '../organisms/Code';
-import { Section } from '../templates/Section';
+import { Code } from '@/components/organisms/Code';
+import { Section } from '@/components/templates/Section';
 
 const calcAge = (birthdate: Date, today: Date) => {
   const birthday = new Date(today.getFullYear(), birthdate.getMonth(), birthdate.getDate());
