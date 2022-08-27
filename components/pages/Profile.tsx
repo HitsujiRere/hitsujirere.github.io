@@ -1,4 +1,5 @@
-import { Code } from '@/components/organisms/Code';
+import { Code } from '@/components/atoms/Code';
+import { H2 } from '@/components/atoms/H2';
 import { Section } from '@/components/templates/Section';
 
 const calcAge = (birthdate: Date, today: Date) => {
@@ -39,7 +40,7 @@ export const Profile = () => {
   return (
     <Section id='profile'>
       <div className='space-y-5'>
-        <h2 className='text-2xl font-light text-yellow-400'>PROFILE</h2>
+        <H2 title='PROFILE' />
         <div className='flex justify-center text-lg tracking-wider'>
           <Code language='javascript'>{profile}</Code>
         </div>

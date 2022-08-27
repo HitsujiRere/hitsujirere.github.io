@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { useState } from 'react';
+import { H2 } from '@/components/atoms/H2';
 import { Section } from '@/components/templates/Section';
 
 export const About = () => {
@@ -8,7 +9,7 @@ export const About = () => {
   return (
     <Section id='about'>
       <div className='space-y-5'>
-        <h2 className='text-2xl font-light text-yellow-400'>ABOUT</h2>
+        <H2 title='ABOUT' />
         <div className='md:flex md:justify-between space-x-1'>
           <div className='md:w-2/3 space-y-5'>
             <p className='text-5xl tracking-wide font-bold text-white'>Hitsuji Rere</p>

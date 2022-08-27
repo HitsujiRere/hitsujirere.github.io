@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { WorkBoxImage, WorkBoxText } from '@/components/organisms/WorkBox';
+import { H2 } from '@/components/atoms/H2';
+import { WorkBoxImage, WorkBoxText } from '@/components/molecules/WorkBox';
 import { Section } from '@/components/templates/Section';
 
 export const Works = () => {
@@ -8,7 +9,7 @@ export const Works = () => {
   return (
     <Section id='works'>
       <div className='space-y-5'>
-        <h2 className='text-2xl font-light text-yellow-400'>WORKS</h2>
+        <H2 title='WORKS' />
         <div className='grid md:grid-cols-2 gap-5 md:gap-20'>
           <WorkBoxImage
             href='/works/my-webpage'

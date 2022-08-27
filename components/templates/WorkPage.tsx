@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { H2 } from '@/components/atoms/H2';
 
 export const WorkPage = (props: {
   name: string;
@@ -29,7 +30,7 @@ export const WorkPage = (props: {
           </div>
           {props.charge && (
             <div className='space-y-4'>
-              <h2 className='text-2xl font-light text-yellow-400'>Charge</h2>
+              <H2 title='Charge' />
               <div>
                 <p className='text-2xl text-white'>{props.charge}</p>
               </div>
@@ -37,7 +38,7 @@ export const WorkPage = (props: {
           )}
           {(props.languages || props.frameworks) && (
             <div className='space-y-4'>
-              <h2 className='text-2xl font-light text-yellow-400'>Language and Frameworks</h2>
+              <H2 title='Language and Frameworks' />
               <div>
                 {props.languages && <p className='text-2xl text-white'>{props.languages}</p>}
                 {props.frameworks && <p className='text-2xl text-white'>{props.frameworks}</p>}
@@ -46,7 +47,7 @@ export const WorkPage = (props: {
           )}
           {props.feelings && (
             <div className='space-y-4'>
-              <h2 className='text-2xl font-light text-yellow-400'>Feelings</h2>
+              <H2 title='Feelings' />
               <div>
                 {props.feelings.map((text, index) => {
                   return (
@@ -60,7 +61,7 @@ export const WorkPage = (props: {
           )}
           {(props.linkWork || props.linkGitHub) && (
             <div className='space-y-4'>
-              <h2 className='text-2xl font-light text-yellow-400'>Links</h2>
+              <H2 title='Links' />
               <div className='space-y-2'>
                 {props.linkWork && (
                   <div className='text-green-300 hover:text-green-600 duration-500'>
