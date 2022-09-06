@@ -14,25 +14,26 @@ const calcAge = (birthdate: Date, today: Date) => {
 
 const profile = `
 class HitsujiRere {
-  penName = 'ひつじ れれ';
-  birthday = new Date('3/31');
-  languages = {
-    good: [ 'C', 'C++', 'C#', 'JavaScript', 'Python', ],
-    haveUsed: [ 'Java', 'TypeScript', 'Rust', ],
-    learning: [ 'Dart', 'TypeScript', ],
-    wantToLearn: [ 'Rust', 'Go', ],
-  };
-  frameworks = {
-    good: [ 'Node.js', 'Processing', '.NET Framework', ],
-    haveUsed: [ 'Unity', 'React', 'Next.js', ],
-    learning: [ 'Flutter', 'Unity', ],
-  };
-  skills = {
-    competitiveProgramming: {
-      language: [ 'C++', ],
-      AtCoder: { user: 'Deji', highestRate: 1455 }
-    }
-  };
+  constructor() {
+    this.penName = 'ひつじ れれ';
+    this.birthday = new Date('3/31');
+    this.languages = {
+      good: [ 'C', 'C++', 'C#', 'JavaScript', 'TypeScript', 'Python', ],
+      haveUsed: [ 'Java', ],
+      learning: [ 'Rust', ],
+    };
+    this.frameworks = {
+      good: [ 'Node.js', 'Processing', ],
+      haveUsed: [ 'Unity', 'React (Next.js)', 'Vue.js (Nuxt.js)', ],
+      learning: [ 'Unity', ],
+    };
+    this.skills = {
+      competitiveProgramming: {
+        language: [ 'C++', ],
+        AtCoder: { user: 'Deji', highestRate: 1455 }
+      }
+    };
+  }
 }
 `.trim();
 
