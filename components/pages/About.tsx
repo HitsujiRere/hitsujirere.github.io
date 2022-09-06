@@ -80,7 +80,7 @@ export const About = () => {
         </div>
         <div className='flex justify-center'>
           <button
-            className='px-4 py-2 rounded-xl border-2 border-gray-200'
+            className='px-4 py-2 rounded-xl border-2 border-gray-200 hover:scale-110 duration-500'
             onClick={() => setDetailsOpened(!isDetailsOpened)}
           >
             <div className='text-2xl text-gray-200 select-none'>
