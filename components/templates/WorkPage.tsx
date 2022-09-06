@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { H2 } from '@/components/atoms/H2';
+import { IconLink } from '@/components/atoms/IconLink';
 
 export const WorkPage = (props: {
   name: string;
@@ -62,56 +63,22 @@ export const WorkPage = (props: {
           {(props.linkWork || props.linkGitHub) && (
             <div className='space-y-4'>
               <H2 title='Links' />
-              <div className='space-y-2'>
+              <div className='flex flex-col space-y-2'>
                 {props.linkWork && (
-                  <div className='text-green-300 hover:text-green-600 duration-500'>
-                    <Link href={props.linkWork}>
-                      <a className='flex justify-start md:justify-end'>
-                        <p className='text-xl'>Work Website</p>
-                        <svg
-                          className='h-8 w-8'
-                          width='24'
-                          height='24'
-                          viewBox='0 0 24 24'
-                          strokeWidth='2'
-                          stroke='currentColor'
-                          fill='none'
-                          strokeLinecap='round'
-                          strokeLinejoin='round'
-                        >
-                          {' '}
-                          <path stroke='none' d='M0 0h24v24H0z' />{' '}
-                          <path d='M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5' />{' '}
-                          <line x1='10' y1='14' x2='20' y2='4' />{' '}
-                          <polyline points='15 4 20 4 20 9' />
-                        </svg>
-                      </a>
-                    </Link>
-                  </div>
+                  <IconLink
+                    text='Work Website'
+                    to={props.linkWork}
+                    icon='external'
+                    className='justify-end'
+                  />
                 )}
                 {props.linkGitHub && (
-                  <div className='text-green-300 hover:text-green-600 duration-500'>
-                    <Link href={props.linkGitHub}>
-                      <a className='flex justify-start md:justify-end'>
-                        <p className='text-xl'>GitHub Repository</p>
-                        <svg
-                          className='h-8 w-8'
-                          width='24'
-                          height='24'
-                          viewBox='0 0 24 24'
-                          strokeWidth='2'
-                          stroke='currentColor'
-                          fill='none'
-                          strokeLinecap='round'
-                          strokeLinejoin='round'
-                        >
-                          {' '}
-                          <path stroke='none' d='M0 0h24v24H0z' />{' '}
-                          <path d='M9 19c-4.286 1.35-4.286-2.55-6-3m12 5v-3.5c0-1 .099-1.405-.5-2 2.791-.3 5.5-1.366 5.5-6.04a4.567 4.567 0 0 0 -1.333 -3.21 4.192 4.192 0 00-.08-3.227s-1.05-.3-3.476 1.267a12.334 12.334 0 0 0 -6.222 0C6.462 2.723 5.413 3.023 5.413 3.023a4.192 4.192 0 0 0 -.08 3.227A4.566 4.566 0 004 9.486c0 4.64 2.709 5.68 5.5 6.014-.591.589-.56 1.183-.5 2V21' />
-                        </svg>
-                      </a>
-                    </Link>
-                  </div>
+                  <IconLink
+                    text='GitHub Repository'
+                    to={props.linkGitHub}
+                    icon='github'
+                    className='justify-end'
+                  />
                 )}
               </div>
             </div>
