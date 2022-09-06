@@ -2,9 +2,6 @@ import { HeaderLink } from '@/components/molecules/HeaderLink';
 
 export const Header = () => {
   return (
-    <>
-      <div id='scroll-scapegoat' className='fixed'></div>
-
       <header className='w-screen p-8 bg-gray-900 md:bg-transparent md:fixed md:flex md:justify-between md:items-center md:z-10'>
         <HeaderLink to='start'>
           <h1 className='text-xl font-bold text-white'>Rere{"'"}s Portfolio</h1>
@@ -22,6 +19,5 @@ export const Header = () => {
           </HeaderLink>
         </nav>
       </header>
-    </>
   );
 };
