@@ -2,7 +2,7 @@ import { HeaderLink } from '@/components/molecules/HeaderLink';
 
 export const Header = () => {
   return (
-    <header className='w-screen p-8 bg-gray-900 md:bg-transparent md:fixed md:flex md:justify-between md:items-center md:z-10'>
+    <header className='w-screen bg-gray-900 p-8 md:fixed md:z-10 md:flex md:items-center md:justify-between md:bg-transparent'>
       <HeaderLink to='start'>
         <h1 className='text-xl font-bold text-white'>Rere{"'"}s Portfolio</h1>
       </HeaderLink>

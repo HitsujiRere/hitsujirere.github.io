@@ -12,9 +12,9 @@ export const About = () => {
     <Section id='about'>
       <div className='space-y-5'>
         <H2 title='ABOUT' />
-        <div className='md:flex md:justify-between space-x-1'>
-          <div className='md:w-2/3 space-y-5'>
-            <p className='text-5xl tracking-wide font-bold text-white'>Hitsuji Rere</p>
+        <div className='space-x-1 md:flex md:justify-between'>
+          <div className='space-y-5 md:w-2/3'>
+            <p className='text-5xl font-bold tracking-wide text-white'>Hitsuji Rere</p>
             <p className='text-sm text-gray-400'>ある工業高等専門学校の5年</p>
             <img
               src='/img/myself.png'
@@ -48,7 +48,7 @@ export const About = () => {
             >
               <div className='space-y-5'>
                 <H3 title='AWARDS' />
-                <div className='text-xl text-gray-200 space-y-2'>
+                <div className='space-y-2 text-xl text-gray-200'>
                   <p>第2回全国高等専門学校 ディープラーニングコンテスト2021 : 7位</p>
                   <p>Hokuriku Innovation Trial-2020 : ICTまちづくり賞</p>
                   <p>パソコン甲子園2020 プログラミング部門 : 本選出場</p>
@@ -59,13 +59,13 @@ export const About = () => {
               </div>
               <div className='space-y-5'>
                 <H3 title='CERTIFICATION' />
-                <div className='text-xl text-gray-200 space-y-2'>
+                <div className='space-y-2 text-xl text-gray-200'>
                   <p>ITパスポート</p>
                 </div>
               </div>
               <div className='space-y-5'>
                 <H3 title='PARTTIME-JOB' />
-                <div className='text-xl text-gray-200 space-y-2'>
+                <div className='space-y-2 text-xl text-gray-200'>
                   <p>株式会社エニーアップ：2022年6月~</p>
                 </div>
               </div>
@@ -73,17 +73,17 @@ export const About = () => {
           </div>
           <img
             src='/img/myself.png'
-            className='w-1/3 h-1/3 hidden md:flex'
+            className='hidden h-1/3 w-1/3 md:flex'
             alt='My picture'
             loading='lazy'
           />
         </div>
         <div className='flex justify-center'>
           <button
-            className='px-4 py-2 rounded-xl border-2 border-gray-200 hover:scale-110 duration-500'
+            className='rounded-xl border-2 border-gray-200 px-4 py-2 duration-500 hover:scale-110'
             onClick={() => setDetailsOpened(!isDetailsOpened)}
           >
-            <div className='text-2xl text-gray-200 select-none'>
+            <div className='select-none text-2xl text-gray-200'>
               {isDetailsOpened ? 'CLOSE' : 'MORE'}
             </div>
           </button>

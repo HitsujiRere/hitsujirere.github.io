@@ -10,7 +10,7 @@ export const Works = () => {
     <Section id='works'>
       <div className='space-y-5'>
         <H2 title='WORKS' />
-        <div className='grid md:grid-cols-2 gap-5 md:gap-20'>
+        <div className='grid gap-5 md:grid-cols-2 md:gap-20'>
           <WorkBoxImage
             href='/works/my-webpage'
             image='/img/my-webpage.png'
@@ -72,10 +72,10 @@ export const Works = () => {
           ) : (
             <div className='overflow-hidden rounded-xl border-2 border-gray-300 '>
               <button
-                className='w-full h-60 p-4 flex items-center justify-center hover:scale-125 duration-500 '
+                className='flex h-60 w-full items-center justify-center p-4 duration-500 hover:scale-125 '
                 onClick={() => setDetailsOpened(!isDetailsOpened)}
               >
-                <p className='text-3xl text-gray-300 select-none'>MORE</p>
+                <p className='select-none text-3xl text-gray-300'>MORE</p>
               </button>
             </div>
           )}

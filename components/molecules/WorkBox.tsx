@@ -11,7 +11,7 @@ export const WorkBoxImage = (props: {
     <div className='overflow-hidden rounded-xl'>
       <img
         src={props.image}
-        className={`w-full h-60 hover:scale-110 duration-500 ${props.size}
+        className={`h-60 w-full duration-500 hover:scale-110 ${props.size}
           ${props.position} ${props.size === 'object-contain' && 'bg-gray-100'}`}
         alt='cover image'
         loading='lazy'
@@ -31,8 +31,8 @@ export const WorkBoxImage = (props: {
 export const WorkBoxText = (props: { href?: string; children?: ReactNode }) => {
   const inner = (
     <div className='overflow-hidden rounded-xl'>
-      <div className='h-60 p-4 hover:scale-110 duration-500 bg-gray-100 flex items-center'>
-        <div className='w-full text-center space-y-5 select-none'>{props.children}</div>
+      <div className='flex h-60 items-center bg-gray-100 p-4 duration-500 hover:scale-110'>
+        <div className='w-full select-none space-y-5 text-center'>{props.children}</div>
       </div>
     </div>
   );

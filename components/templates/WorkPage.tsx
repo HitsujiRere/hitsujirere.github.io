@@ -14,9 +14,9 @@ export const WorkPage = (props: {
   images: string[];
 }) => {
   return (
-    <div className='md:h-screen bg-gray-900'>
-      <div className='md:pt-24 md:h-full md:flex md:justify-between md:items-center'>
-        <div className='md:w-2/5 md:h-full px-4 py-4 md:overflow-y-scroll md:hide-scrollbar space-y-12 md:text-right'>
+    <div className='bg-gray-900 md:h-screen'>
+      <div className='md:flex md:h-full md:items-center md:justify-between md:pt-24'>
+        <div className='space-y-12 px-4 py-4 md:hide-scrollbar md:h-full md:w-2/5 md:overflow-y-scroll md:text-right'>
           <div className='space-y-4'>
             <p className='text-5xl font-bold text-white'>{props.name}</p>
             <div>
@@ -84,7 +84,7 @@ export const WorkPage = (props: {
             </div>
           )}
         </div>
-        <div className='md:w-3/5 md:h-full p-4 md:overflow-y-scroll md:hide-scrollbar space-y-4'>
+        <div className='space-y-4 p-4 md:hide-scrollbar md:h-full md:w-3/5 md:overflow-y-scroll'>
           {props.images.map((image, index) => {
             return <img key={index} src={image} alt='work image' loading='lazy' />;
           })}

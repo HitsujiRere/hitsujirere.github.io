@@ -6,7 +6,7 @@ export const Start = () => {
     <div id='start'>
       <FloatBoxSketch />
 
-      <div className='h-screen mx-auto max-w-screen-lg bg-transparent flex items-center px-4'>
+      <div className='mx-auto flex h-screen max-w-screen-lg items-center bg-transparent px-4'>
         <div className='space-y-5'>
           <H2 title="Let's go!" />
           <p className='text-5xl font-bold text-white'>What will we make with a computer?</p>
