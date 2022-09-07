@@ -38,7 +38,7 @@ export const About = () => {
             </div>
             <div className='flex space-x-5'>
               <IconLink text='@HitsujiRere' to='https://twitter.com/HitsujiRere' icon='twitter' />
-              <IconLink text='@HitsujiRere' to='https://github.com/HitsujiRere' icon='github' />
+              <IconLink text='HitsujiRere' to='https://github.com/HitsujiRere' icon='github' />
             </div>
             <div
               className={
