@@ -70,12 +70,14 @@ export const Works = () => {
               />
             </>
           ) : (
-            <button
-              className='h-60 p-4 rounded-xl border-2 border-gray-300 flex items-center justify-center'
-              onClick={() => setDetailsOpened(!isDetailsOpened)}
-            >
-              <p className='text-3xl text-gray-300 select-none'>MORE</p>
-            </button>
+            <div className='overflow-hidden rounded-xl border-2 border-gray-300 '>
+              <button
+                className='w-full h-60 p-4 flex items-center justify-center hover:scale-125 duration-500 '
+                onClick={() => setDetailsOpened(!isDetailsOpened)}
+              >
+                <p className='text-3xl text-gray-300 select-none'>MORE</p>
+              </button>
+            </div>
           )}
         </div>
       </div>
