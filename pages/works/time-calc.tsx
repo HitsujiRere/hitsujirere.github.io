@@ -23,7 +23,7 @@ const Home: NextPage = () => {
           feelings={[
             '自分のためのサイト',
             'localstorageによる履歴保存機能があります',
-            '（デザインをきれいにしたいな）'
+            '（デザインをきれいにしたいな）',
           ]}
           linkWork='https://hitsujirere.github.io/time-calc'
           linkGitHub='https://github.com/HitsujiRere/time-calc'
