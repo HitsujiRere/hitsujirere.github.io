@@ -16,6 +16,7 @@ export const IconLink = (
       <a
         {...aProps}
         className={`flex text-green-500 duration-500 hover:text-green-300 ${aProps.className}`}
+        target="__blank"
       >
         <IconContext.Provider value={{ size: '2rem' }}>
           {icon === 'github' && <RiGithubLine />}

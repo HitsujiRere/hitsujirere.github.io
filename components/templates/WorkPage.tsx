@@ -37,9 +37,9 @@ export const WorkPage = (props: {
               </div>
             </div>
           )}
-          {(props.languages || props.frameworks) && (
+          {(props.languages || props.frameworks || props.library) && (
             <div className='space-y-4'>
-              <H2 title='Language and Frameworks' />
+              <H2 title='Language, Frameworks and Library' />
               <div>
                 {props.languages && <p className='text-2xl text-white'>{props.languages}</p>}
                 {props.frameworks && <p className='text-2xl text-white'>{props.frameworks}</p>}
@@ -86,7 +86,9 @@ export const WorkPage = (props: {
         </div>
         <div className='space-y-4 p-4 md:hide-scrollbar md:h-full md:w-3/5 md:overflow-y-scroll'>
           {props.images.map((image, index) => {
-            return <img key={index} src={image} alt='work image' loading='lazy' />;
+            return (
+              <img key={index} src={image} className='w-full' alt='work image' loading='lazy' />
+            );
           })}
         </div>
       </div>

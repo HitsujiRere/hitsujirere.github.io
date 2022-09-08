@@ -12,6 +12,12 @@ export const Works = () => {
         <H2 title='WORKS' />
         <div className='grid gap-5 md:grid-cols-2 md:gap-20'>
           <WorkBoxImage
+            href='/works/time-calc'
+            image='/img/time-calc.png'
+            size='object-cover'
+            position='object-top'
+          />
+          <WorkBoxImage
             href='/works/my-webpage'
             image='/img/my-webpage.png'
             size='object-cover'
