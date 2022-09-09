@@ -37,7 +37,7 @@ export const WorkPage = (props: {
               </div>
             </div>
           )}
-          {(props.languages || props.frameworks || props.library) && (
+          {(props.languages || props.frameworks) && (
             <div className='space-y-4'>
               <H2 title='Language, Frameworks and Library' />
               <div>
