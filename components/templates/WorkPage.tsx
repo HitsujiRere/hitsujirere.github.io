@@ -14,12 +14,12 @@ export const WorkPage = (props: {
   images: string[];
 }) => {
   return (
-    <div className='h-screen flex-col bg-gray-900 md:flex'>
+    <div className='flex-col bg-gray-900 md:flex md:h-screen'>
       <div className='h-max'>
         <Header />
       </div>
 
-      <main className='flex-1 flex-row-reverse gap-4 p-4 md:flex md:items-start md:justify-between md:overflow-y-auto'>
+      <main className='flex flex-1 flex-col gap-y-8 gap-x-4 p-4 md:flex-row-reverse md:items-start md:justify-between md:overflow-y-auto'>
         <div className='space-y-8 scrollbar-thin scrollbar-thumb-blue-700 scrollbar-thumb-rounded-full md:h-full md:w-2/5 md:overflow-y-auto md:pr-4'>
           <div className='space-y-4'>
             <p className='text-5xl font-bold text-white'>{props.name}</p>

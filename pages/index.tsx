@@ -16,7 +16,7 @@ const Home: NextPage = () => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <header className='top-0 z-10 md:fixed '>
+      <header className='absolute top-0 z-10 md:fixed'>
         <Header />
       </header>
 
