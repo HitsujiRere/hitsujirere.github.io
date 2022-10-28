@@ -1,6 +1,6 @@
-import Link from 'next/link';
 import { H2 } from '@/components/atoms/H2';
 import { IconLink } from '@/components/atoms/IconLink';
+import { Header } from '@/components/pages/Header';
 
 export const WorkPage = (props: {
   name: string;
@@ -14,16 +14,13 @@ export const WorkPage = (props: {
   images: string[];
 }) => {
   return (
-    <div className='bg-gray-900 md:h-screen'>
-      <div className='md:flex md:h-full md:items-center md:justify-between md:pt-24'>
-        <div className='m-4 space-y-4 md:h-full md:w-3/5 md:overflow-y-scroll md:pr-4 md:scrollbar-thin md:scrollbar-thumb-blue-700 md:scrollbar-thumb-rounded-full'>
-          {props.images.map((image, index) => {
-            return (
-              <img key={index} src={image} className='w-full' alt='work image' loading='lazy' />
-            );
-          })}
-        </div>
-        <div className='m-4 space-y-12 md:h-full md:w-2/5 md:pr-4 md:scrollbar-thin md:scrollbar-thumb-blue-700 md:scrollbar-thumb-rounded-full'>
+    <div className='flex-col bg-gray-900 md:flex md:h-screen'>
+      <div className='h-max'>
+        <Header />
+      </div>
+
+      <main className='flex flex-1 flex-col gap-y-8 gap-x-4 p-4 md:flex-row-reverse md:items-start md:justify-between md:overflow-y-auto'>
+        <div className='space-y-8 scrollbar-thin scrollbar-thumb-blue-700 scrollbar-thumb-rounded-full md:h-full md:w-2/5 md:overflow-y-auto md:pr-4'>
           <div className='space-y-4'>
             <p className='text-5xl font-bold text-white'>{props.name}</p>
             <div>
@@ -81,7 +78,14 @@ export const WorkPage = (props: {
             </div>
           )}
         </div>
-      </div>
+        <div className='space-y-4 scrollbar-thin scrollbar-thumb-blue-700 scrollbar-thumb-rounded-full md:h-full md:w-3/5 md:overflow-y-auto md:pr-4'>
+          {props.images.map((image, index) => {
+            return (
+              <img key={index} src={image} className='w-full' alt='work image' loading='lazy' />
+            );
+          })}
+        </div>
+      </main>
     </div>
   );
 };
