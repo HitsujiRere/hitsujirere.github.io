@@ -23,10 +23,8 @@ export const HeaderLink = (props: { to: string; children: ReactNode }) => {
   }, [props.to, target]);
 
   return (
-    <Link href={`/#${props.to}`}>
-      <a className='cursor-pointer' onClick={onClick}>
-        {props.children}
-      </a>
+    <Link href={props.to ? `/#${props.to}` : '/'} className='cursor-pointer' onClick={onClick}>
+      {props.children}
     </Link>
   );
 };

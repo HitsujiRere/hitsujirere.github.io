@@ -7,6 +7,7 @@ module.exports = {
   },
   plugins: [
     require('tailwind-scrollbar'),
+    require('tailwind-scrollbar')({ nocompatible: true }),
     plugin(function ({ addComponents }) {
       addComponents({
         '.hide-scrollbar': {
@@ -22,7 +23,4 @@ module.exports = {
       });
     }),
   ],
-  variants: {
-      scrollbar: ['rounded']
-  }
 };
