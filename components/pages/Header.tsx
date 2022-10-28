@@ -5,7 +5,7 @@ export const Header = () => {
   const router = useRouter();
 
   return (
-    <header className='w-screen bg-gray-900 p-8 md:fixed md:z-10 md:flex md:items-center md:justify-between md:bg-transparent'>
+    <div className='w-screen bg-transparent p-4 md:flex md:items-center md:justify-between md:px-8'>
       <HeaderLink to={router.pathname === '/' ? 'start' : ''}>
         <h1 className='text-xl font-bold text-white'>Rere{"'"}s Portfolio</h1>
       </HeaderLink>
@@ -21,6 +21,6 @@ export const Header = () => {
           <p className='text-xl font-bold text-gray-200'>WORKS</p>
         </HeaderLink>
       </nav>
-    </header>
+    </div>
   );
 };
