@@ -1,9 +1,12 @@
+import { useRouter } from 'next/router';
 import { HeaderLink } from '@/components/molecules/HeaderLink';
 
 export const Header = () => {
+  const router = useRouter();
+
   return (
     <header className='w-screen bg-gray-900 p-8 md:fixed md:z-10 md:flex md:items-center md:justify-between md:bg-transparent'>
-      <HeaderLink to='start'>
+      <HeaderLink to={router.pathname === '/' ? 'start' : ''}>
         <h1 className='text-xl font-bold text-white'>Rere{"'"}s Portfolio</h1>
       </HeaderLink>
 
