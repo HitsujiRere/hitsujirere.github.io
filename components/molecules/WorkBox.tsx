@@ -19,13 +19,7 @@ export const WorkBoxImage = (props: {
     </div>
   );
 
-  return props.href ? (
-    <Link href={props.href}>
-      <a>{inner}</a>
-    </Link>
-  ) : (
-    inner
-  );
+  return props.href ? <Link href={props.href}>{inner}</Link> : inner;
 };
 
 export const WorkBoxText = (props: { href?: string; children?: ReactNode }) => {
@@ -37,11 +31,5 @@ export const WorkBoxText = (props: { href?: string; children?: ReactNode }) => {
     </div>
   );
 
-  return props.href ? (
-    <Link href={props.href}>
-      <a>{inner}</a>
-    </Link>
-  ) : (
-    inner
-  );
+  return props.href ? <Link href={props.href}>{inner}</Link> : inner;
 };
