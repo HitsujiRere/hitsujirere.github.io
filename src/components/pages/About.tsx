@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { useState } from 'react';
 import { H2 } from '@/components/atoms/H2';
 import { H3 } from '@/components/atoms/H3';

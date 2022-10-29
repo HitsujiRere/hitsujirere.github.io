@@ -1,5 +1,7 @@
 import dynamic from 'next/dynamic';
 
+import p5Types from 'p5';
+
 /* SSG */
 // import Sketch from 'react-p5';
 
@@ -7,8 +9,6 @@ import dynamic from 'next/dynamic';
 const Sketch = dynamic(() => import('react-p5'), {
   ssr: false,
 });
-
-import p5Types from 'p5';
 
 interface Box {
   x: number;
