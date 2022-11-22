@@ -12,7 +12,7 @@ export const IconLink = (props: {
   return (
     <Link
       href={to}
-      className={`flex text-green-500 duration-500 hover:text-green-300`}
+      className='flex text-green-500 duration-500 hover:text-green-300'
       target='__blank'
     >
       <IconContext.Provider value={{ size: '2rem' }}>
