@@ -1,6 +1,8 @@
+import classNames from 'classnames';
 import dynamic from 'next/dynamic';
 
 import p5Types from 'p5';
+import { useState } from 'react';
 
 /* SSG */
 // import Sketch from 'react-p5';
@@ -19,6 +21,8 @@ interface Box {
 }
 
 export const FloatBoxSketch = () => {
+  const [drawing, SetDrawing] = useState(false);
+
   let boxes: Box[] = [];
   let timestamp = 0;
 
@@ -36,6 +40,8 @@ export const FloatBoxSketch = () => {
         });
       }
     }
+
+    SetDrawing(true);
   };
 
   const draw = (p5: p5Types) => {
@@ -79,11 +85,15 @@ export const FloatBoxSketch = () => {
   };
 
   return (
-    <Sketch
-      setup={setup}
-      draw={draw}
-      windowResized={windowResized}
-      className='fixed inset-0 -z-10 bg-gray-900'
-    />
+    <div className='fixed inset-0 -z-10 bg-[#101010]'>
+      <div
+        className={classNames('transition-opacity duration-1000', {
+          'opacity-0': !drawing,
+          'opacity-100': drawing,
+        })}
+      >
+        <Sketch setup={setup} draw={draw} windowResized={windowResized} />
+      </div>
+    </div>
   );
 };
