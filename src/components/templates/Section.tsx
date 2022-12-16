@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import { createRef, ReactNode, useEffect, useState } from 'react';
 
 export const Section = (props: { children?: ReactNode; id: string }) => {
@@ -22,7 +23,11 @@ export const Section = (props: { children?: ReactNode; id: string }) => {
     <div
       ref={page}
       id={props.id}
-      className={`px-4 py-20 ${watching ? 'bg-gray-800' : 'bg-gray-900'} duration-500 `}
+      className={classNames(
+        'px-4 py-20',
+        { 'bg-gray-800': watching, 'bg-gray-900': !watching },
+        'duration-500',
+      )}
     >
       <div className='mx-auto max-w-screen-lg'>{props.children}</div>
     </div>

@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import Link from 'next/link';
 import { ReactNode } from 'react';
 
@@ -11,8 +12,12 @@ export const WorkBoxImage = (props: {
     <div className='overflow-hidden rounded-xl'>
       <img
         src={props.image}
-        className={`h-60 w-full duration-500 hover:scale-110 ${props.size}
-          ${props.position} ${props.size === 'object-contain' && 'bg-gray-100'}`}
+        className={classNames(
+          'h-60 w-full duration-500 hover:scale-110',
+          props.size,
+          props.position,
+          { 'bg-gray-100': props.size === 'object-contain' },
+        )}
         alt='cover image'
         loading='lazy'
       />

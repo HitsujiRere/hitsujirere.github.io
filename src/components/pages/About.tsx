@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import classNames from 'classnames';
 import { useState } from 'react';
 import { H2 } from '@/components/atoms/H2';
 import { H3 } from '@/components/atoms/H3';
@@ -41,10 +41,10 @@ export const About = () => {
               <IconLink text='HitsujiRere' to='https://github.com/HitsujiRere' icon='github' />
             </div>
             <div
-              className={
-                'space-y-5 overflow-hidden transition-all duration-1000 ' +
-                (isDetailsOpened ? 'max-h-screen opacity-100 ' : 'max-h-0 opacity-0 ')
-              }
+              className={classNames('space-y-5 overflow-hidden transition-all duration-1000', {
+                'max-h-screen opacity-100': isDetailsOpened,
+                'max-h-0 opacity-0': !isDetailsOpened,
+              })}
             >
               <div className='space-y-5'>
                 <H3 title='AWARDS' />
