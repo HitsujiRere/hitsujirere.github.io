@@ -5,12 +5,13 @@ import { RiArrowDownSLine, RiArrowUpSLine } from 'react-icons/ri';
 import { H2 } from '@/components/atoms/H2';
 import { H3 } from '@/components/atoms/H3';
 import { IconLink } from '@/components/atoms/IconLink';
+import { Section } from '@/components/templates/Section';
 
 export const About = () => {
   const [isDetailsOpened, setDetailsOpened] = useState(false);
 
   return (
-    <section id='about' className='mx-4 sm:mx-[10vw]'>
+    <Section id='about'>
       <H2 title='ABOUT' />
       <div className='my-4'>
         <p className='my-4 text-5xl font-bold tracking-tight'>Hitsuji Rere</p>
@@ -75,6 +76,6 @@ export const About = () => {
           </div>
         </button>
       </div>
-    </section>
+    </Section>
   );
 };
