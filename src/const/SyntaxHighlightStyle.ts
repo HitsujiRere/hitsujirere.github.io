@@ -1,5 +1,5 @@
-// I referred to vs2015
-// import { vs2015 } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
+// I referred to vs
+// import { vs } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
 
 import React from 'react';
 
@@ -9,134 +9,91 @@ const style: { [key: string]: React.CSSProperties } = {
     overflowX: 'auto',
     padding: '0.5em',
     background: 'transparent',
-    color: '#DCDCDC',
-  },
-  'hljs-keyword': {
-    color: '#569CD6',
-  },
-  'hljs-literal': {
-    color: '#569CD6',
-  },
-  'hljs-symbol': {
-    color: '#569CD6',
-  },
-  'hljs-name': {
-    color: '#569CD6',
-  },
-  'hljs-link': {
-    color: '#569CD6',
-    textDecoration: 'underline',
-  },
-  'hljs-built_in': {
-    color: '#4EC9B0',
-  },
-  'hljs-type': {
-    color: '#4EC9B0',
-  },
-  'hljs-number': {
-    color: '#B8D7A3',
-  },
-  'hljs-class': {
-    color: '#B8D7A3',
-  },
-  'hljs-string': {
-    color: '#FCD34D',
-  },
-  'hljs-meta-string': {
-    color: '#FCD34D',
-  },
-  'hljs-regexp': {
-    color: '#9A5334',
-  },
-  'hljs-template-tag': {
-    color: '#9A5334',
-  },
-  'hljs-subst': {
-    color: '#DCDCDC',
-  },
-  'hljs-function': {
-    color: '#DCDCDC',
-  },
-  'hljs-title': {
-    color: '#DCDCDC',
-  },
-  'hljs-params': {
-    color: '#DCDCDC',
-  },
-  'hljs-formula': {
-    color: '#DCDCDC',
+    color: '#202020',
   },
   'hljs-comment': {
-    color: '#57A64A',
-    fontStyle: 'italic',
+    color: '#008000',
   },
   'hljs-quote': {
-    color: '#57A64A',
-    fontStyle: 'italic',
-  },
-  'hljs-doctag': {
-    color: '#608B4E',
-  },
-  'hljs-meta': {
-    color: '#9B9B9B',
-  },
-  'hljs-meta-keyword': {
-    color: '#9B9B9B',
-  },
-  'hljs-tag': {
-    color: '#9B9B9B',
+    color: '#008000',
   },
   'hljs-variable': {
-    color: '#BD63C5',
+    color: '#008000',
   },
-  'hljs-template-variable': {
-    color: '#BD63C5',
+  'hljs-keyword': {
+    color: '#00f',
   },
-  'hljs-attr': {
-    color: '#9CDCFE',
+  'hljs-selector-tag': {
+    color: '#00f',
   },
-  'hljs-attribute': {
-    color: '#9CDCFE',
+  'hljs-built_in': {
+    color: '#00f',
   },
-  'hljs-builtin-name': {
-    color: '#9CDCFE',
+  'hljs-name': {
+    color: '#00f',
+  },
+  'hljs-tag': {
+    color: '#00f',
+  },
+  'hljs-string': {
+    color: '#a31515',
+  },
+  'hljs-title': {
+    color: '#a31515',
   },
   'hljs-section': {
-    color: 'gold',
+    color: '#a31515',
+  },
+  'hljs-attribute': {
+    color: '#a31515',
+  },
+  'hljs-literal': {
+    color: '#a31515',
+  },
+  'hljs-template-tag': {
+    color: '#a31515',
+  },
+  'hljs-template-variable': {
+    color: '#a31515',
+  },
+  'hljs-type': {
+    color: '#a31515',
+  },
+  'hljs-addition': {
+    color: '#a31515',
+  },
+  'hljs-deletion': {
+    color: '#2b91af',
+  },
+  'hljs-selector-attr': {
+    color: '#2b91af',
+  },
+  'hljs-selector-pseudo': {
+    color: '#2b91af',
+  },
+  'hljs-meta': {
+    color: '#2b91af',
+  },
+  'hljs-doctag': {
+    color: '#808080',
+  },
+  'hljs-attr': {
+    color: '#f00',
+  },
+  'hljs-symbol': {
+    color: '#00b0e8',
+  },
+  'hljs-bullet': {
+    color: '#00b0e8',
+  },
+  'hljs-link': {
+    color: '#00b0e8',
   },
   'hljs-emphasis': {
     fontStyle: 'italic',
   },
   'hljs-strong': {
     fontWeight: 'bold',
-  },
-  'hljs-bullet': {
-    color: '#D7BA7D',
-  },
-  'hljs-selector-tag': {
-    color: '#D7BA7D',
-  },
-  'hljs-selector-id': {
-    color: '#D7BA7D',
-  },
-  'hljs-selector-class': {
-    color: '#D7BA7D',
-  },
-  'hljs-selector-attr': {
-    color: '#D7BA7D',
-  },
-  'hljs-selector-pseudo': {
-    color: '#D7BA7D',
-  },
-  'hljs-addition': {
-    backgroundColor: '#144212',
-    display: 'inline-block',
-    width: '100%',
-  },
-  'hljs-deletion': {
-    backgroundColor: '#600',
-    display: 'inline-block',
-    width: '100%',
   },
 };
 
