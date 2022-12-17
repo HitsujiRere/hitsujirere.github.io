@@ -35,7 +35,7 @@ export const FloatBoxSketch = () => {
         y: p5.random(-1, 1),
         angle: p5.random(0, p5.TWO_PI),
         angleSpeed: p5.random(-0.0005, 0.0005),
-        size: p5.random(0.01, 0.1),
+        size: p5.random(0.02, 0.1),
       });
     }
 
@@ -57,7 +57,7 @@ export const FloatBoxSketch = () => {
         y: -0.2,
         angle: p5.random(0, p5.TWO_PI),
         angleSpeed: p5.random(-0.0005, 0.0005),
-        size: p5.random(0.01, 0.1),
+        size: p5.random(0.02, 0.1),
       });
 
       boxes.current = boxes.current.filter((box) => box.y < 1.2);

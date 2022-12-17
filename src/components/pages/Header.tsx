@@ -5,13 +5,13 @@ export const Header = () => {
   const router = useRouter();
 
   return (
-    <header className='absolute top-0 left-0 right-0 z-10 mx-[5vw] mt-8 md:fixed'>
-      <div className='md:flex md:items-center md:justify-between'>
+    <header className='fixed top-0 left-0 right-0 z-10 mx-[5vw] mt-8 hidden sm:block'>
+      <div className='sm:flex sm:items-center sm:justify-between'>
         <HeaderLink to={router.pathname === '/' ? 'start' : ''}>
           <h1 className='text-2xl font-bold text-gray-800'>Hitsuji Rere</h1>
         </HeaderLink>
 
-        <nav className='hidden md:flex md:gap-10'>
+        <nav className='hidden sm:flex sm:gap-10'>
           <HeaderLink to='about'>
             <p className='text-xl font-bold text-gray-800'>ABOUT</p>
           </HeaderLink>
