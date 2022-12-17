@@ -23,7 +23,7 @@ export const Section = (props: { children?: ReactNode; id: string }) => {
     <div
       ref={page}
       id={props.id}
-      className={classNames('py-12 duration-1000 ', {
+      className={classNames('py-12 duration-300 ', {
         'backdrop-blur': watching,
         'backdrop-blur-none': !watching,
       })}
