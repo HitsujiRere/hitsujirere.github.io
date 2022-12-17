@@ -1,94 +1,80 @@
 import classNames from 'classnames';
 import { useState } from 'react';
+import { IconContext } from 'react-icons';
+import { RiArrowDownSLine, RiArrowUpSLine } from 'react-icons/ri';
 import { H2 } from '@/components/atoms/H2';
 import { H3 } from '@/components/atoms/H3';
 import { IconLink } from '@/components/atoms/IconLink';
-import { Section } from '@/components/templates/Section';
 
 export const About = () => {
   const [isDetailsOpened, setDetailsOpened] = useState(false);
 
   return (
-    <Section id='about'>
-      <div className='space-y-5'>
-        <H2 title='ABOUT' />
-        <div className='space-x-1 md:flex md:justify-between'>
-          <div className='space-y-5 md:w-2/3'>
-            <p className='text-5xl font-bold tracking-wide text-white'>Hitsuji Rere</p>
-            <p className='text-sm text-gray-400'>ある工業高等専門学校の5年</p>
-            <img
-              src='/img/myself.png'
-              className='w-full md:hidden'
-              alt='My picture'
-              loading='lazy'
-            />
-            <div className='text-xl text-gray-200'>
-              <p>私は「好奇心」がとても強く、何にでも興味があります。</p>
-              <p>
-                Processing や Siv3D 、 Unity でゲームを作ったり、 Node.js でバックエンドの勉強を、
-                Next.js でフロントエンドの勉強をしています。
-              </p>
-              <p>
-                またオリジナルのプログラミング言語を作ったり、競技プログラミングを楽しんでいます。
-              </p>
-              <p>
-                高専プロコン2020 や DCON2021
-                にチームで出場させていただいた経験を活かして、チーム制作活動では個人の長所を活かせるチームづくりに取り組んでいます。
-              </p>
-            </div>
-            <div className='flex space-x-5'>
-              <IconLink text='@HitsujiRere' to='https://twitter.com/HitsujiRere' icon='twitter' />
-              <IconLink text='HitsujiRere' to='https://github.com/HitsujiRere' icon='github' />
-            </div>
-            <div
-              className={classNames('space-y-5 overflow-hidden transition-all duration-1000', {
-                'max-h-screen opacity-100': isDetailsOpened,
-                'max-h-0 opacity-0': !isDetailsOpened,
-              })}
-            >
-              <div className='space-y-5'>
-                <H3 title='AWARDS' />
-                <div className='space-y-2 text-xl text-gray-200'>
-                  <p>第2回全国高等専門学校 ディープラーニングコンテスト2021 : 7位</p>
-                  <p>Hokuriku Innovation Trial-2020 : ICTまちづくり賞</p>
-                  <p>パソコン甲子園2020 プログラミング部門 : 本選出場</p>
-                  <p>全国高専プログラミングコンテスト 第31回苫小牧大会(2020)</p>
-                  <p className='pl-10'>自由部門 : 特別賞</p>
-                  <p className='pl-10'>パテント審査部門 : 奨励賞</p>
-                </div>
-              </div>
-              <div className='space-y-5'>
-                <H3 title='CERTIFICATION' />
-                <div className='space-y-2 text-xl text-gray-200'>
-                  <p>ITパスポート</p>
-                </div>
-              </div>
-              <div className='space-y-5'>
-                <H3 title='PARTTIME-JOB' />
-                <div className='space-y-2 text-xl text-gray-200'>
-                  <p>株式会社エニーアップ：2022年6月~</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <img
-            src='/img/myself.png'
-            className='hidden h-1/3 w-1/3 md:flex'
-            alt='My picture'
-            loading='lazy'
-          />
-        </div>
-        <div className='flex justify-center'>
-          <button
-            className='rounded-xl border-2 border-gray-200 px-4 py-2 duration-500 hover:scale-110'
-            onClick={() => setDetailsOpened(!isDetailsOpened)}
-          >
-            <div className='select-none text-2xl text-gray-200'>
-              {isDetailsOpened ? 'CLOSE' : 'MORE'}
-            </div>
-          </button>
-        </div>
+    <section id='about' className='mx-4 sm:mx-[10vw]'>
+      <H2 title='ABOUT' />
+      <div className='my-4'>
+        <p className='my-4 text-5xl font-bold tracking-tight'>Hitsuji Rere</p>
+        <p className='text-gray-600'>情報系工業高等専門学校 5年</p>
       </div>
-    </Section>
+      <div className='my-4 space-y-1'>
+        <p>私は「好奇心」がとても強く、何にでも興味があります。</p>
+        <p>
+          ProcessingやSiv3D、Unityでゲームを作ったり、Node.jsでバックエンドを、Next.jsでフロントエンドをしています。
+        </p>
+        <p>またオリジナルのプログラミング言語を作ったり、競技プログラミングを楽しんでいます。</p>
+      </div>
+      <div className='my-4 flex flex-col gap-2 sm:flex-row sm:gap-4'>
+        <IconLink text='@HitsujiRere' to='https://twitter.com/HitsujiRere' icon='twitter' />
+        <IconLink text='HitsujiRere' to='https://github.com/HitsujiRere' icon='github' />
+      </div>
+
+      <div
+        className={classNames('space-y-8 overflow-hidden transition-all duration-1000', {
+          'max-h-screen opacity-100': isDetailsOpened,
+          'max-h-0 opacity-0': !isDetailsOpened,
+        })}
+      >
+        <section>
+          <H3 title='AWARDS' />
+          <ul className='space-y-2'>
+            <li>第2回全国高等専門学校 ディープラーニングコンテスト2021 : 7位</li>
+            <li>Hokuriku Innovation Trial-2020 : ICTまちづくり賞 </li>
+            <li>パソコン甲子園2020 プログラミング部門 : 本選出場</li>
+            <li>
+              全国高専プログラミングコンテスト 第31回苫小牧大会(2020)
+              <ul className='ml-8'>
+                <li>自由部門 : 特別賞</li>
+                <li>パテント審査部門 : 奨励賞</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <H3 title='CERTIFICATION' />
+          <ul className='space-y-2'>
+            <li>ITパスポート</li>
+          </ul>
+        </section>
+        <section>
+          <H3 title='PARTTIME-JOB' />
+          <ul className='space-y-2'>
+            <li>株式会社エニーアップ：2022年6月~</li>
+          </ul>
+        </section>
+      </div>
+
+      <div className='flex justify-center'>
+        <button
+          className='px-4 py-2 duration-500 hover:scale-110'
+          onClick={() => setDetailsOpened(!isDetailsOpened)}
+        >
+          <div className='select-none text-2xl'>
+            <IconContext.Provider value={{ size: '2rem' }}>
+              {isDetailsOpened ? <RiArrowUpSLine /> : <RiArrowDownSLine />}
+            </IconContext.Provider>
+          </div>
+        </button>
+      </div>
+    </section>
   );
 };
