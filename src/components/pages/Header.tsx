@@ -11,16 +11,18 @@ export const Header = () => {
           <h1 className='text-2xl font-bold text-gray-800'>Hitsuji Rere</h1>
         </HeaderLink>
 
-        <nav className='hidden sm:flex sm:gap-10'>
-          <HeaderLink to='about'>
-            <p className='text-xl font-bold text-gray-800'>ABOUT</p>
-          </HeaderLink>
-          <HeaderLink to='profile'>
-            <p className='text-xl font-bold text-gray-800'>PROFILE</p>
-          </HeaderLink>
-          <HeaderLink to='works'>
-            <p className='text-xl font-bold text-gray-800'>WORKS</p>
-          </HeaderLink>
+        <nav>
+          <ul className='hidden sm:flex sm:gap-10'>
+            <li className='text-xl font-bold text-gray-800'>
+              <HeaderLink to='about'>ABOUT</HeaderLink>
+            </li>
+            <li className='text-xl font-bold text-gray-800'>
+              <HeaderLink to='profile'>PROFILE</HeaderLink>
+            </li>
+            <li className='text-xl font-bold text-gray-800'>
+              <HeaderLink to='works'>WORKS</HeaderLink>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
