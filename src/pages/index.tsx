@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import { FloatBoxSketch } from '@/components/organisms/FloatBoxSketch';
 import { About } from '@/components/pages/About';
 import { Footer } from '@/components/pages/Footer';
 import { Header } from '@/components/pages/Header';
@@ -16,9 +17,9 @@ const Home: NextPage = () => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <header className='absolute top-0 z-10 md:fixed'>
-        <Header />
-      </header>
+      <Header />
+
+      <FloatBoxSketch />
 
       <main>
         <Start />
