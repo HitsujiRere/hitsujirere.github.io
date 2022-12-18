@@ -9,7 +9,7 @@ export const Works = () => {
   return (
     <Section id='works'>
       <H2 title='WORKS' />
-      <div className='grid gap-4 md:grid-cols-2 md:gap-[5vw]'>
+      <div className='grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-[5vw]'>
         <WorkBoxImage
           href='/works/time-calc'
           image='/img/time-calc.png'
@@ -71,7 +71,7 @@ export const Works = () => {
             <WorkBoxImage image='/img/yudetamago2.png' size='object-cover' position='object-top' />
           </>
         ) : (
-          <div className='col-span-2 overflow-hidden rounded-xl border-2 border-gray-300'>
+          <div className='overflow-hidden rounded-xl border-2 border-gray-300 md:col-span-2'>
             <button
               className='flex h-20 w-full items-center justify-center p-4 duration-500 hover:scale-110'
               onClick={() => setDetailsOpened(!isDetailsOpened)}
