@@ -5,9 +5,9 @@ export const Header = () => {
   const router = useRouter();
 
   return (
-    <div className='hidden px-[5vw] pt-8 sm:flex sm:items-center sm:justify-between'>
+    <div className='flex py-2 px-[5vw] max-sm:border-b max-sm:border-y-zinc-100 max-sm:backdrop-blur sm:items-center sm:justify-between sm:py-8'>
       <HeaderLink to={router.pathname === '/' ? 'start' : ''}>
-        <p className='text-2xl font-bold text-gray-800'>Hitsuji Rere</p>
+        <p className='text-xl font-bold text-gray-800 sm:text-2xl'>Hitsuji Rere</p>
       </HeaderLink>
 
       <nav>
