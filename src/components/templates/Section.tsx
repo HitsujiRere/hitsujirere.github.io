@@ -23,13 +23,12 @@ export const Section = (props: { children?: ReactNode; id: string }) => {
     <div
       ref={page}
       id={props.id}
-      className={classNames(
-        'px-4 py-20',
-        { 'bg-gray-800': watching, 'bg-gray-900': !watching },
-        'duration-500',
-      )}
+      className={classNames('border-y border-y-zinc-100 py-16 duration-300', {
+        'backdrop-blur': watching,
+        'backdrop-blur-none': !watching,
+      })}
     >
-      <div className='mx-auto max-w-screen-lg'>{props.children}</div>
+      <div className='mx-4 sm:mx-[10vw]'>{props.children}</div>
     </div>
   );
 };

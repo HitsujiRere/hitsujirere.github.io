@@ -40,11 +40,9 @@ class HitsujiRere {
 export const Profile = () => {
   return (
     <Section id='profile'>
-      <div className='space-y-5'>
-        <H2 title='PROFILE' />
-        <div className='flex justify-center text-lg tracking-wider'>
-          <Code language='javascript'>{profile}</Code>
-        </div>
+      <H2 title='PROFILE' />
+      <div className='flex justify-center'>
+        <Code language='javascript'>{profile}</Code>
       </div>
     </Section>
   );

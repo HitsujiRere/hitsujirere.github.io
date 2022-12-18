@@ -8,7 +8,7 @@ module.exports = {
   plugins: [
     require('tailwind-scrollbar'),
     require('tailwind-scrollbar')({ nocompatible: true }),
-    plugin(function ({ addComponents }) {
+    plugin(function ({ addComponents, addBase }) {
       addComponents({
         '.hide-scrollbar': {
           /* IE and Edge */
@@ -19,6 +19,11 @@ module.exports = {
           '&::-webkit-scrollbar': {
             display: 'none',
           },
+        },
+      });
+      addBase({
+        html: {
+          fontSize: '20px',
         },
       });
     }),

@@ -5,21 +5,23 @@ export const Header = () => {
   const router = useRouter();
 
   return (
-    <div className='w-screen bg-transparent p-4 md:flex md:items-center md:justify-between md:px-8'>
+    <div className='hidden px-[5vw] pt-8 sm:flex sm:items-center sm:justify-between'>
       <HeaderLink to={router.pathname === '/' ? 'start' : ''}>
-        <h1 className='text-xl font-bold text-white'>Rere{"'"}s Portfolio</h1>
+        <p className='text-2xl font-bold text-gray-800'>Hitsuji Rere</p>
       </HeaderLink>
 
-      <nav className='hidden md:flex md:gap-10'>
-        <HeaderLink to='about'>
-          <p className='text-xl font-bold text-gray-200'>ABOUT</p>
-        </HeaderLink>
-        <HeaderLink to='profile'>
-          <p className='text-xl font-bold text-gray-200'>PROFILE</p>
-        </HeaderLink>
-        <HeaderLink to='works'>
-          <p className='text-xl font-bold text-gray-200'>WORKS</p>
-        </HeaderLink>
+      <nav>
+        <ul className='hidden sm:flex sm:gap-10'>
+          <li className='text-xl font-bold text-gray-800'>
+            <HeaderLink to='about'>ABOUT</HeaderLink>
+          </li>
+          <li className='text-xl font-bold text-gray-800'>
+            <HeaderLink to='profile'>PROFILE</HeaderLink>
+          </li>
+          <li className='text-xl font-bold text-gray-800'>
+            <HeaderLink to='works'>WORKS</HeaderLink>
+          </li>
+        </ul>
       </nav>
     </div>
   );

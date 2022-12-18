@@ -8,7 +8,7 @@ export const Code = (props: { children: (string | string[]) & ReactNode; languag
       language={props.language}
       style={style}
       showLineNumbers
-      className='text-base'
+      className='text-xs lg:text-base'
     >
       {props.children}
     </SyntaxHighlighter>

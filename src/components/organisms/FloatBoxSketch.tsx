@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import dynamic from 'next/dynamic';
 
 import p5Types from 'p5';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 
 /* SSG */
 // import Sketch from 'react-p5';
@@ -23,22 +23,20 @@ interface Box {
 export const FloatBoxSketch = () => {
   const [drawing, SetDrawing] = useState(false);
 
-  let boxes: Box[] = [];
+  let boxes = useRef<Box[]>([]);
   let timestamp = 0;
 
   const setup = (p5: p5Types, canvasParentRef: Element) => {
     p5.createCanvas(p5.windowWidth, p5.windowHeight).parent(canvasParentRef);
 
-    if (boxes.length === 0) {
-      for (let i = 0; i < 10; i++) {
-        boxes.push({
-          x: p5.random(0, p5.width),
-          y: (p5.height / 10) * i,
-          angle: p5.random(0, p5.TWO_PI),
-          angleSpeed: p5.random(-0.0005, 0.0005),
-          size: p5.random(20, 100),
-        });
-      }
+    for (let i = 0; i < 10; i++) {
+      boxes.current.push({
+        x: p5.random(),
+        y: p5.random(-1, 1),
+        angle: p5.random(0, p5.TWO_PI),
+        angleSpeed: p5.random(-0.0005, 0.0005),
+        size: p5.random(0.02, 0.1),
+      });
     }
 
     SetDrawing(true);
@@ -47,35 +45,39 @@ export const FloatBoxSketch = () => {
   const draw = (p5: p5Types) => {
     const millis = p5.millis();
 
-    p5.background(16);
+    p5.background('#f4f4f5');
 
-    if (millis >= timestamp + 700) {
+    if (millis >= timestamp + 500) {
       timestamp = millis;
 
-      const size = p5.random(20, 100);
-
-      boxes.push({
-        x: p5.random(0, p5.width),
-        y: -100,
+      boxes.current.push({
+        x: p5.random(),
+        y: -0.2,
         angle: p5.random(0, p5.TWO_PI),
         angleSpeed: p5.random(-0.0005, 0.0005),
-        size: size,
+        size: p5.random(0.02, 0.1),
       });
 
-      boxes = boxes.filter((box) => box.y <= p5.height * 2);
+      boxes.current = boxes.current.filter((box) => box.y < 1.2);
     }
 
-    boxes.forEach((box) => {
-      box.y += (3 / box.size) * p5.deltaTime;
+    boxes.current.forEach((box) => {
+      box.y += (0.00001 / box.size) * p5.deltaTime;
       box.angle += box.angleSpeed * p5.deltaTime;
 
       p5.push();
-      p5.translate(box.x, box.y);
+      p5.translate(box.x * p5.width, box.y * p5.height);
       p5.rotate(box.angle);
       p5.noStroke();
-      p5.fill('#4e54c880');
+      p5.fill('#4ade8080');
       p5.rectMode(p5.CENTER);
-      p5.rect(0, 0, box.size, box.size, box.size / 5);
+      p5.rect(
+        0,
+        0,
+        box.size * Math.min(p5.width, p5.height),
+        box.size * Math.min(p5.width, p5.height),
+        (box.size * Math.min(p5.width, p5.height)) / 4,
+      );
       p5.pop();
     });
   };
@@ -85,7 +87,7 @@ export const FloatBoxSketch = () => {
   };
 
   return (
-    <div className='fixed inset-0 -z-10 bg-[#101010]'>
+    <div className='fixed inset-0 -z-10 bg-zinc-100'>
       <div
         className={classNames('transition-opacity duration-1000', {
           'opacity-0': !drawing,
