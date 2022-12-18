@@ -43,8 +43,6 @@ export const FloatBoxSketch = () => {
   };
 
   const draw = (p5: p5Types) => {
-    console.log(boxes);
-
     const millis = p5.millis();
 
     p5.background('#f4f4f5');
