@@ -12,7 +12,7 @@ const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>{"Rere's Portfolio"}</title>
+        <title>Hitsuji Rere 🐏</title>
         <meta name='description' content="Rere's Portfolio" />
         <link rel='icon' href='/favicon.ico' />
       </Head>
