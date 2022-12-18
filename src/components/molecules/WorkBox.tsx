@@ -32,7 +32,7 @@ export const WorkBoxText = (props: { href?: string; children?: ReactNode }) => {
   const inner = (
     <div className='overflow-hidden rounded-xl'>
       <div
-        className={classNames('flex h-60 items-center bg-gray-100 p-4', {
+        className={classNames('flex aspect-[4/3] w-full items-center bg-gray-100 p-4', {
           'duration-500 hover:scale-110': props.href,
         })}
       >

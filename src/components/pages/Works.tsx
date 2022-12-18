@@ -71,12 +71,12 @@ export const Works = () => {
             <WorkBoxImage image='/img/yudetamago2.png' size='object-cover' position='object-top' />
           </>
         ) : (
-          <div className='overflow-hidden rounded-xl border-2 border-gray-300 '>
+          <div className='col-span-2 overflow-hidden rounded-xl border-2 border-gray-300'>
             <button
-              className='flex aspect-[2/1] w-full items-center justify-center p-4 duration-500 hover:scale-125 '
+              className='flex h-20 w-full items-center justify-center p-4 duration-500 hover:scale-110'
               onClick={() => setDetailsOpened(!isDetailsOpened)}
             >
-              <p className='select-none text-3xl'>MORE</p>
+              <p className='select-none text-2xl'>MORE</p>
             </button>
           </div>
         )}
