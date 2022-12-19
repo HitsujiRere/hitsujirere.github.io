@@ -23,9 +23,9 @@ export const Section = (props: { children?: ReactNode; id: string }) => {
     <div
       ref={page}
       id={props.id}
-      className={classNames('border-y border-y-zinc-100 py-16 duration-300', {
-        'backdrop-blur': watching,
-        'backdrop-blur-none': !watching,
+      className={classNames('border-y py-16 duration-300', {
+        'border-y-zinc-100 backdrop-blur': watching,
+        'border-y-transparent backdrop-blur-none': !watching,
       })}
     >
       <div className='mx-4 sm:mx-[10vw]'>{props.children}</div>

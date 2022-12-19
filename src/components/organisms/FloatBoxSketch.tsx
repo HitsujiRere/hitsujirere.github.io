@@ -44,8 +44,9 @@ export const FloatBoxSketch = () => {
 
   const draw = (p5: p5Types) => {
     const millis = p5.millis();
+    const mwh = Math.min(p5.width, p5.height);
 
-    p5.background('#f4f4f5');
+    p5.background('#f4f4f5'); // zinq-100
 
     if (millis >= timestamp + 500) {
       timestamp = millis;
@@ -65,19 +66,13 @@ export const FloatBoxSketch = () => {
       box.y += (0.00001 / box.size) * p5.deltaTime;
       box.angle += box.angleSpeed * p5.deltaTime;
 
+      p5.fill('#4ade8080'); // green-400
+      p5.noStroke();
+      p5.rectMode(p5.CENTER);
       p5.push();
       p5.translate(box.x * p5.width, box.y * p5.height);
       p5.rotate(box.angle);
-      p5.noStroke();
-      p5.fill('#4ade8080');
-      p5.rectMode(p5.CENTER);
-      p5.rect(
-        0,
-        0,
-        box.size * Math.min(p5.width, p5.height),
-        box.size * Math.min(p5.width, p5.height),
-        (box.size * Math.min(p5.width, p5.height)) / 4,
-      );
+      p5.rect(0, 0, box.size * mwh, box.size * mwh, (box.size * mwh) / 4);
       p5.pop();
     });
   };

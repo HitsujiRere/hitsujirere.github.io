@@ -18,7 +18,7 @@ export const Works = () => {
         />
         <WorkBoxImage
           href='/works/my-webpage'
-          image='/img/my-webpage.png'
+          image='/img/my-webpage/v2.png'
           size='object-cover'
           position='object-top'
         />

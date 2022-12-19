@@ -5,11 +5,11 @@ import { Header } from '@/components/pages/Header';
 
 export const WorkPage = (props: {
   name: string;
-  explains: string[];
+  explain: string;
   charge?: string;
-  languages?: string;
-  frameworks?: string;
-  feelings?: string[];
+  language?: string;
+  framework?: string;
+  feeling?: string;
   linkWork?: string;
   linkGitHub?: string;
   images: string[];
@@ -31,15 +31,7 @@ export const WorkPage = (props: {
           <div className='space-y-4 scrollbar-thin scrollbar-thumb-green-500 scrollbar-thumb-rounded-full md:h-full md:w-2/5 md:overflow-y-auto md:pr-2'>
             <div>
               <h2 className='mb-8 text-3xl font-bold'>{props.name}</h2>
-              <div>
-                {props.explains.map((text, index) => {
-                  return (
-                    <p key={index} className='text-gray-600'>
-                      {text}
-                    </p>
-                  );
-                })}
-              </div>
+              <p className='whitespace-pre-line'>{props.explain}</p>
             </div>
             {props.charge && (
               <div>
@@ -49,23 +41,19 @@ export const WorkPage = (props: {
                 </div>
               </div>
             )}
-            {(props.languages || props.frameworks) && (
+            {(props.language || props.framework) && (
               <div>
                 <H3 title='Language, Frameworks and Library' />
-                <div>
-                  {props.languages && <p>{props.languages}</p>}
-                  {props.frameworks && <p>{props.frameworks}</p>}
+                <div className='space-y-2'>
+                  {props.language && <p>{props.language}</p>}
+                  {props.framework && <p>{props.framework}</p>}
                 </div>
               </div>
             )}
-            {props.feelings && (
+            {props.feeling && (
               <div>
                 <H3 title='Feelings' />
-                <div>
-                  {props.feelings.map((text, index) => {
-                    return <p key={index}>{text}</p>;
-                  })}
-                </div>
+                <p className='whitespace-pre-line'>{props.feeling}</p>
               </div>
             )}
             {(props.linkWork || props.linkGitHub) && (
