@@ -6,16 +6,14 @@ const Home: NextPage = () => {
   return (
     <WorkPage
       name='おしゃべる'
-      explains={[
-        '自由な声とおしゃべりできるスマートスピーカーの追加コンテンツ',
-        'DCON2021にて発表し、7位を獲得した。',
-      ]}
+      explain={`
+        自由な声とおしゃべりできるスマートスピーカーの追加コンテンツです。
+        DCON2021にて発表し、7位を獲得しました。
+      `.trim()}
       charge='音声合成, APIサーバ'
-      languages='JavaScript, Python'
-      frameworks='Node.js, Tacotron2'
-      feelings={[
-        '初めて深層学習を用いたが、うまくチームメンバーなどの音声を合成することができた。',
-      ]}
+      language='JavaScript, Python'
+      framework='Node.js, Tacotron2'
+      feeling='初めて深層学習を用いたましたが、うまくチームメンバーなどの音声を合成することができました。'
       linkGitHub='https://github.com/HitsujiRere/hitsujirere.github.io'
       images={[
         '/img/oshaberu/cover.png',
