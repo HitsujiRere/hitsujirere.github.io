@@ -16,20 +16,19 @@ const profile = `
 class HitsujiRere {
   constructor() {
     this.penName = 'ひつじ れれ';
-    this.birthday = new Date('3/31');
     this.languages = {
       good: [ 'C', 'C++', 'C#', 'JavaScript', 'TypeScript', 'Python', ],
-      haveUsed: [ 'Java', ],
+      haveUsed: [ ],
       learning: [ 'Rust', ],
     };
     this.frameworks = {
       good: [ 'Node.js', 'Processing', ],
       haveUsed: [ 'Unity', 'React (Next.js)', 'Vue.js (Nuxt.js)', ],
-      learning: [ 'Unity', ],
+      learning: [ 'React (Next.js)', 'Vue.js (Nuxt.js)', ],
     };
     this.skills = {
       competitiveProgramming: {
-        language: [ 'C++', ],
+        language: [ 'Rust', 'C++', ],
         AtCoder: { user: 'Deji', highestRate: 1455 }
       }
     };
