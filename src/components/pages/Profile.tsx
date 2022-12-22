@@ -2,16 +2,6 @@ import { Code } from '@/components/atoms/Code';
 import { H2 } from '@/components/atoms/H2';
 import { Section } from '@/components/templates/Section';
 
-const calcAge = (birthdate: Date, today: Date) => {
-  const birthday = new Date(today.getFullYear(), birthdate.getMonth(), birthdate.getDate());
-  const age = today.getFullYear() - birthdate.getFullYear();
-  if (today >= birthday) {
-    return age;
-  } else {
-    return age - 1;
-  }
-};
-
 const profile = `
 class HitsujiRere {
   constructor() {
