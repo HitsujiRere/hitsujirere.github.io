@@ -11,6 +11,12 @@ export const Works = () => {
       <H2 title='WORKS' />
       <div className='grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-[5vw]'>
         <WorkBoxImage
+          href='/works/scratch2verilog'
+          image='/img/scratch2verilog/logo.png'
+          size='object-contain'
+          position='object-center'
+        />
+        <WorkBoxImage
           href='/works/time-calc'
           image='/img/time-calc.png'
           size='object-cover'
