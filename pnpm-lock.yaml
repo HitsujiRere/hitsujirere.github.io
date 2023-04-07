@@ -1,6 +1,9 @@
 lockfileVersion: '6.0'
 
 devDependencies:
+  '@fontsource/zen-maru-gothic':
+    specifier: ^4.5.16
+    version: 4.5.16
   '@sveltejs/adapter-auto':
     specifier: ^2.0.0
     version: 2.0.0(@sveltejs/kit@1.15.1)
@@ -288,6 +291,10 @@ packages:
   /@eslint/js@8.37.0:
     resolution: {integrity: sha512-x5vzdtOOGgFVDCUs81QRB2+liax8rFg3+7hqM+QhBG0/G3F1ZsoYl97UrqgHgQ9KKT7G6c4V+aTUCgu/n22v1A==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    dev: true
+
+  /@fontsource/zen-maru-gothic@4.5.16:
+    resolution: {integrity: sha512-KM3z1IfKRF3p9nE2TEyVSbQUHhrpSh14cUZ8B6asjOzgzS8PXXyUDD+vmvptIswI3C/1tMQUBns8mzuub3lHZQ==}
     dev: true
 
   /@humanwhocodes/config-array@0.11.8:
