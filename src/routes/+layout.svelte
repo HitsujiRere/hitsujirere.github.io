@@ -1,16 +1,21 @@
 <script lang="ts">
-	import { page } from '$app/stores';
 	import '../app.css';
 
 	import '@fontsource/zen-maru-gothic';
 	import '@fontsource/zen-maru-gothic/700.css';
 
+	import { title } from '$lib/stores/title';
+
 	import Link from './Link.svelte';
 </script>
 
-<div class="flex">
+<svelte:head>
+	<title>{$title}</title>
+</svelte:head>
+
+<div class="h-screen flex">
 	<div class="w-1/2 flex justify-center">
-		<div class="h-screen flex flex-col justify-center gap-12">
+		<div class="flex flex-col justify-center gap-12">
 			<h1 class="text-3xl">
 				<a href="/">ひつじれれ</a>
 			</h1>

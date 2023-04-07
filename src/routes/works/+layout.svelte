@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { title } from '$lib/stores/title';
 
-	title.clearSubtitle();
+	title.setSubtitle('Works');
 </script>
 
-<h2>Hello!</h2>
+<slot />
