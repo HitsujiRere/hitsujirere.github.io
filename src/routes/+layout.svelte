@@ -1,11 +1,10 @@
 <script lang="ts">
 	import '../app.css';
-
 	import '@fontsource/zen-maru-gothic';
+	import '@fontsource/zen-maru-gothic/500.css';
 	import '@fontsource/zen-maru-gothic/700.css';
 
 	import { title } from '$lib/stores/title';
-
 	import Link from './Link.svelte';
 </script>
 
@@ -29,8 +28,8 @@
 			</ul>
 		</div>
 	</div>
-	<div class="w-1/2 p-2">
-		<div class="h-full p-2 overflow-y-auto">
+	<div class="w-1/2">
+		<div class="h-full p-4 overflow-y-auto">
 			<slot />
 		</div>
 	</div>
