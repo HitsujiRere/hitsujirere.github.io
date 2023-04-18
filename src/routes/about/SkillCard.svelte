@@ -2,12 +2,15 @@
 	import { StarRegular, StarSolid } from 'svelte-awesome-icons';
 
 	export let name: string;
-	export let icon: string;
+	export let icon: string | undefined = undefined;
 	export let stars: number | undefined = undefined;
 </script>
 
-<div class="p-2 flex flex-col items-center border-2 rounded gap-1">
-	<img src={icon} alt={name} class="w-10" />
+<div class="p-2 flex flex-col justify-center items-center border-2 rounded gap-1">
+	{#if icon}
+		<img src={icon} alt={name} class="h-10" />
+	{/if}
+	<slot name="icon" />
 	<span>{name}</span>
 	{#if stars}
 		<div class="flex justify-center">

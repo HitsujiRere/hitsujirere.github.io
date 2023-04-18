@@ -4,6 +4,7 @@
 	import '@fontsource/zen-maru-gothic/500.css';
 	import '@fontsource/zen-maru-gothic/700.css';
 
+	import { page } from '$app/stores';
 	import { title } from '$lib/stores/title';
 	import Link from './Link.svelte';
 </script>
@@ -13,7 +14,7 @@
 </svelte:head>
 
 <div class="h-screen flex">
-	<div class="w-1/2 flex justify-center">
+	<div class="w-1/3 flex justify-center max-xl:w-1/3" class:max-lg:hidden={$page.route.id !== ''}>
 		<div class="flex flex-col justify-center gap-12">
 			<h1 class="text-3xl">
 				<a href="/">ひつじれれ</a>
@@ -28,8 +29,8 @@
 			</ul>
 		</div>
 	</div>
-	<div class="w-1/2">
-		<div class="h-full p-4 overflow-y-auto">
+	<div class="flex-1">
+		<div class="h-full p-4 overflow-y-auto space-y-8">
 			<slot />
 		</div>
 	</div>
