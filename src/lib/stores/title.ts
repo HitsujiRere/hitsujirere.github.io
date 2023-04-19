@@ -6,7 +6,7 @@ const createTitle = () => {
 	return {
 		subscribe,
 		setSubtitle: (subtitle: string) => {
-			set(`ひつじれれ🐏 - ${subtitle}`);
+			set(`${subtitle} - ひつじれれ🐏`);
 		},
 		clearSubtitle: () => {
 			set(`ひつじれれ🐏`);

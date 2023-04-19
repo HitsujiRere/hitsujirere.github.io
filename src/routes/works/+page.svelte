@@ -1,2 +1,2 @@
-<h2>This page is my Works.</h2>
-<a href="/works/cat">Cat page</a>
+<h2>Works</h2>
+<p>🚧工事中🚧</p>
