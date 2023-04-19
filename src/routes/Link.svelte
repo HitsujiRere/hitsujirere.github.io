@@ -7,6 +7,6 @@
 {#if $page.route.id?.startsWith(to)}
 	<span class="text-xl font-bold">-</span>
 {/if}
-<a href={to} class="px-2 text-xl font-bold hover:underline underline-offset-8">
+<a href={to} class="px-2 text-xl font-bold underline-offset-8 hover:underline">
 	<slot />
 </a>

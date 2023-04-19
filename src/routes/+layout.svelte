@@ -13,8 +13,8 @@
 	<title>{$title}</title>
 </svelte:head>
 
-<div class="h-screen flex">
-	<div class="w-1/3 flex justify-center max-xl:w-1/3" class:max-lg:hidden={$page.route.id !== ''}>
+<div class="flex h-screen">
+	<div class="flex w-1/3 justify-center max-xl:w-1/3" class:max-lg:hidden={$page.route.id !== ''}>
 		<div class="flex flex-col justify-center gap-12">
 			<h1 class="text-3xl">
 				<a href="/">ひつじれれ</a>
@@ -30,7 +30,7 @@
 		</div>
 	</div>
 	<div class="flex-1">
-		<div class="h-full p-4 overflow-y-auto space-y-8">
+		<div class="h-full space-y-8 overflow-y-auto p-4">
 			<slot />
 		</div>
 	</div>

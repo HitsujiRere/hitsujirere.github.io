@@ -6,7 +6,7 @@
 	export let stars: number | undefined = undefined;
 </script>
 
-<div class="p-2 flex flex-col justify-center items-center border-2 rounded gap-1">
+<div class="flex flex-col items-center justify-center gap-1 rounded border-2 p-2">
 	{#if icon}
 		<img src={icon} alt={name} class="h-10" />
 	{/if}

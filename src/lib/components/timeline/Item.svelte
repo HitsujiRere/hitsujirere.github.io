@@ -7,7 +7,7 @@
 	.item {
 		--timeline-space-width: 1rem;
 		margin-left: var(--timeline-space-width);
-		@apply my-4 relative;
+		@apply relative my-4;
 	}
 
 	.circle {
@@ -18,6 +18,6 @@
 			0px - var(--timeline-space-width) - var(--timeline-circle-size) / 2 -
 				var(--timeline-line-width) / 2
 		);
-		@apply absolute bg-white border-4 border-green-500 rounded-full;
+		@apply absolute rounded-full border-4 border-green-500 bg-white;
 	}
 </style>
