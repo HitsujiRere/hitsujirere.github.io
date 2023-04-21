@@ -7,7 +7,7 @@
 
 <h2 class="text-xl font-bold">ABOUT</h2>
 
-<div class="space-y-4">
+<div class="space-y-4 skew-x-6">
 	<div>
 		<h3 class="text-2xl font-medium">ひつじれれ</h3>
 		<p class="text-sm text-gray-600">石川高専 → 金沢大学の3年生</p>
@@ -23,7 +23,7 @@
 	</div>
 </div>
 
-<div class="space-y-4">
+<div class="space-y-4 skew-x-6">
 	<h3 class="text-lg font-medium">Award</h3>
 	<ul class="space-y-2">
 		<li>第2回全国高等専門学校 ディープラーニングコンテスト2021 : 7位</li>
@@ -39,7 +39,7 @@
 	</ul>
 </div>
 
-<div class="space-y-4">
+<div class="space-y-4 skew-x-6">
 	<h3 class="text-lg font-medium">Skill</h3>
 	<div class="space-y-2">
 		<h4>Language</h4>
@@ -66,7 +66,7 @@
 	</div>
 </div>
 
-<div class="space-y-4">
+<div class="space-y-4 skew-x-6">
 	<h3 class="text-lg font-medium">Hobby</h3>
 	<div class="flex flex-wrap items-center gap-4">
 		<SkillCard name="AtCoder" icon="https://img.atcoder.jp/assets/top/img/logo_bk.svg">
@@ -78,7 +78,7 @@
 	</div>
 </div>
 
-<div class="space-y-4">
+<div class="space-y-4 skew-x-6">
 	<h3 class="text-lg font-medium">History</h3>
 	<div class="ml-2">
 		<Timeline>

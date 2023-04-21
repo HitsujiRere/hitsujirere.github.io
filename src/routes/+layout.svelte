@@ -14,9 +14,10 @@
 </svelte:head>
 
 <div class="flex h-screen">
-	<div class="flex w-1/3 justify-center max-xl:w-1/3" class:max-lg:hidden={$page.route.id !== ''}>
-		<div class="flex flex-col justify-center gap-12">
-			<h1 class="text-3xl">
+	<div class="relative flex min-w-[20rem] justify-center">
+		<div class="absolute h-full w-[calc(20rem+tan(6deg)*100vh)] -skew-x-[6deg] bg-white" />
+		<div class="z-10 flex flex-col justify-center gap-12">
+			<h1 class="text-3xl text-black">
 				<a href="/">ひつじれれ</a>
 			</h1>
 			<ul class="flex flex-col items-end gap-6">
@@ -29,8 +30,10 @@
 			</ul>
 		</div>
 	</div>
+	<div class="min-w-[calc(tan(6deg)*100vh)]" />
+	
 	<div class="flex-1">
-		<div class="h-full space-y-8 overflow-y-auto p-4">
+		<div class="h-full -skew-x-[6deg] overflow-y-auto space-y-8 p-4">
 			<slot />
 		</div>
 	</div>
