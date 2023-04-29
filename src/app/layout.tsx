@@ -1,9 +1,9 @@
 import { Metadata } from 'next';
+import { Zen_Maru_Gothic } from 'next/font/google';
 import { Sidebar } from './Sidebar';
 import './globals.css';
-import { Zen_Maru_Gothic } from 'next/font/google';
 
-const zenMaruGothic = Zen_Maru_Gothic({ weight: ['400', '700'], subsets: ['latin'] });
+const zenMaruGothic = Zen_Maru_Gothic({ weight: ['400', '500', '700'], subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'ひつじれれ🐏',
@@ -16,7 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={zenMaruGothic.className}>
         <div className='flex h-screen bg-stone-100'>
           <Sidebar />
-          <main className='flex-1 p-4'>{children}</main>
+          <main className='h-screen flex-1 overflow-auto p-8'>{children}</main>
         </div>
       </body>
     </html>
