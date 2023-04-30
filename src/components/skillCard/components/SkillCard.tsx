@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { type IconType } from 'react-icons';
 import { MdStar, MdStarBorder } from 'react-icons/md';
 
@@ -19,7 +20,7 @@ export const SkillCard = ({
   children?: ReactNode;
 }) => {
   return (
-    <div className='flex flex-col items-center justify-evenly gap-1 rounded border-2 p-2'>
+    <li className='flex flex-col items-center justify-evenly gap-1 rounded border-2 border-gray-200 p-2'>
       {Icon && <Icon size='2.5rem' color={iconColor} />}
       {iconSrc && (
         <div className='relative aspect-square h-10'>
@@ -42,6 +43,6 @@ export const SkillCard = ({
       )}
 
       {children}
-    </div>
+    </li>
   );
 };

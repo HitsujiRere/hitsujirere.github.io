@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { MdEngineering } from 'react-icons/md';
 import {
   SiC,
@@ -15,6 +16,7 @@ import {
   SiUnity,
   SiVuedotjs,
 } from 'react-icons/si';
+import AwardBox from '@/components/awardBox';
 import SkillCard from '@/components/skillCard';
 import Timeline from '@/components/timeLine';
 
@@ -30,24 +32,24 @@ export default function Home() {
         </div>
         <p>元気に過ごしています</p>
         <div className='flex gap-2'>
-          <a href='https://twitter.com/HitsujiRere' target='_blank' className='p-1'>
-            <SiTwitter size='1.5rem' color='#1DA1F2' />
-          </a>
-          <a href='https://github.com/HitsujiRere' target='_blank' className='p-1'>
-            <SiGithub size='1.5rem' color='#181717' />
-          </a>
+          <Link href='https://twitter.com/HitsujiRere' target='_blank' className='p-1'>
+            <SiTwitter size='1.75rem' color='#1DA1F2' />
+          </Link>
+          <Link href='https://github.com/HitsujiRere' target='_blank' className='p-1'>
+            <SiGithub size='1.75rem' color='#181717' />
+          </Link>
         </div>
       </div>
 
       <div className='space-y-4'>
         <h2 className='text-2xl font-medium'>Award</h2>
-        <ul className='list-inside list-disc space-y-2'>
+        <ul className='list-disc space-y-2 pl-8 [&>li]:pl-2'>
           <li>第2回全国高等専門学校 ディープラーニングコンテスト2021 : 7位</li>
           <li>Hokuriku Innovation Trial-2020 : ICTまちづくり賞</li>
           <li>パソコン甲子園2020 プログラミング部門 : 本選出場</li>
           <li>
             全国高専プログラミングコンテスト 第31回苫小牧大会(2020)
-            <ul className='ml-8'>
+            <ul>
               <li>自由部門 : 特別賞</li>
               <li>パテント審査部門 : 奨励賞</li>
             </ul>
@@ -56,10 +58,26 @@ export default function Home() {
       </div>
 
       <div className='space-y-4'>
+        <h2 className='text-2xl font-medium'>Award</h2>
+        <ul className='flex flex-col items-start gap-4'>
+          <AwardBox>第2回全国高等専門学校 ディープラーニングコンテスト2021 : 7位</AwardBox>
+          <AwardBox>Hokuriku Innovation Trial-2020 : ICTまちづくり賞</AwardBox>
+          <AwardBox>パソコン甲子園2020 プログラミング部門 : 本選出場</AwardBox>
+          <AwardBox>
+            全国高専プログラミングコンテスト 第31回苫小牧大会(2020)
+            <ul className='flex flex-wrap gap-x-4 gap-y-2'>
+              <li>自由部門 : 特別賞</li>
+              <li>パテント審査部門 : 奨励賞</li>
+            </ul>
+          </AwardBox>
+        </ul>
+      </div>
+
+      <div className='space-y-4'>
         <h2 className='text-2xl font-medium'>Skill</h2>
         <div className='space-y-2'>
           <h3 className='text-xl'>Language</h3>
-          <div className='flex flex-wrap gap-4'>
+          <ul className='flex flex-wrap gap-4'>
             <SkillCard name='C' icon={SiC} iconColor='#A8B9CC' stars={4} />
             <SkillCard name='C++' icon={SiCplusplus} iconColor='#00599C' stars={4} />
             <SkillCard name='C#' icon={SiCsharp} iconColor='#239120' stars={3} />
@@ -74,26 +92,26 @@ export default function Home() {
               iconColor='#006699'
               stars={5}
             />
-          </div>
+          </ul>
         </div>
         <div className='space-y-2'>
           <h3 className='text-xl'>Library / Framework</h3>
-          <div className='flex flex-wrap gap-4'>
+          <ul className='flex flex-wrap gap-4'>
             <SkillCard name='React' icon={SiReact} iconColor='#61DAFB' stars={3} />
             <SkillCard name='Vue.js' icon={SiVuedotjs} iconColor='#4FC08D' stars={4} />
             <SkillCard name='Unity' icon={SiUnity} iconColor='#333333' stars={2} />
-          </div>
+          </ul>
         </div>
       </div>
 
       <div className='space-y-4'>
         <h2 className='text-2xl font-medium'>Hobby</h2>
-        <div className='flex flex-wrap gap-4'>
+        <ul className='flex flex-wrap gap-4'>
           <SkillCard name='AtCoder' iconSrc='/atcoder-logo.svg'>
             Highest Rate: 1455
           </SkillCard>
           <SkillCard name='🚧追記予定🚧' icon={MdEngineering} iconColor='#292524' />
-        </div>
+        </ul>
       </div>
 
       <div className='space-y-4'>

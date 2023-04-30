@@ -3,7 +3,7 @@ import { Zen_Maru_Gothic } from 'next/font/google';
 import { Sidebar } from './Sidebar';
 import './globals.css';
 
-const zenMaruGothic = Zen_Maru_Gothic({ weight: ['400', '500', '700'], subsets: ['latin'] });
+const zenMaruGothic = Zen_Maru_Gothic({ weight: ['400', '500', '700', '900'], subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'ひつじれれ🐏',

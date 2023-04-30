@@ -46,8 +46,8 @@ export const Sidebar = () => {
           width(),
         )}
       >
-        <nav className='flex min-w-[240px] flex-col gap-12'>
-          <Link href='/' className='text-4xl font-bold text-black'>
+        <nav className='flex min-w-max flex-col gap-12'>
+          <Link href='/' className='text-4xl font-black text-black'>
             ひつじれれ
           </Link>
           <ul className='ml-4 flex flex-col gap-8'>
