@@ -1,4 +1,4 @@
-import { ComponentPropsWithoutRef, ReactNode } from 'react';
+import { ComponentPropsWithoutRef } from 'react';
 import Link, { LinkProps } from 'next/link';
 
 export type WrapLinkProps = Omit<ComponentPropsWithoutRef<'a'>, keyof LinkProps> &

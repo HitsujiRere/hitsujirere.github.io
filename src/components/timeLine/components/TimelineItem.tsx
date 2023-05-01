@@ -1,4 +1,4 @@
-import { ComponentPropsWithoutRef, ReactNode } from 'react';
+import { ComponentPropsWithoutRef } from 'react';
 import classNames from 'classnames';
 
 export const TimelineItem = ({ className, ...rest }: ComponentPropsWithoutRef<'li'>) => {
