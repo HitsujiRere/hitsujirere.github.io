@@ -16,9 +16,9 @@ import {
   SiUnity,
   SiVuedotjs,
 } from 'react-icons/si';
-import AwardBox from '@/components/awardBox';
-import SkillCard from '@/components/skillCard';
-import Timeline from '@/components/timeLine';
+import { AwardCard } from '@/components/awardCard';
+import { SkillCard } from '@/components/skillCard';
+import { Timeline, TimelineItem } from '@/components/timeLine';
 
 export default function Home() {
   return (
@@ -43,33 +43,17 @@ export default function Home() {
 
       <div className='space-y-4'>
         <h2 className='text-2xl font-medium'>Award</h2>
-        <ul className='list-disc space-y-2 pl-8 [&>li]:pl-2'>
-          <li>第2回全国高等専門学校 ディープラーニングコンテスト2021 : 7位</li>
-          <li>Hokuriku Innovation Trial-2020 : ICTまちづくり賞</li>
-          <li>パソコン甲子園2020 プログラミング部門 : 本選出場</li>
-          <li>
-            全国高専プログラミングコンテスト 第31回苫小牧大会(2020)
-            <ul>
-              <li>自由部門 : 特別賞</li>
-              <li>パテント審査部門 : 奨励賞</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-
-      <div className='space-y-4'>
-        <h2 className='text-2xl font-medium'>Award</h2>
         <ul className='flex flex-col items-start gap-4'>
-          <AwardBox>第2回全国高等専門学校 ディープラーニングコンテスト2021 : 7位</AwardBox>
-          <AwardBox>Hokuriku Innovation Trial-2020 : ICTまちづくり賞</AwardBox>
-          <AwardBox>パソコン甲子園2020 プログラミング部門 : 本選出場</AwardBox>
-          <AwardBox>
+          <AwardCard>第2回全国高等専門学校 ディープラーニングコンテスト2021 : 7位</AwardCard>
+          <AwardCard>Hokuriku Innovation Trial-2020 : ICTまちづくり賞</AwardCard>
+          <AwardCard>パソコン甲子園2020 プログラミング部門 : 本選出場</AwardCard>
+          <AwardCard>
             全国高専プログラミングコンテスト 第31回苫小牧大会(2020)
             <ul className='flex flex-wrap gap-x-4 gap-y-2'>
               <li>自由部門 : 特別賞</li>
               <li>パテント審査部門 : 奨励賞</li>
             </ul>
-          </AwardBox>
+          </AwardCard>
         </ul>
       </div>
 
@@ -107,7 +91,12 @@ export default function Home() {
       <div className='space-y-4'>
         <h2 className='text-2xl font-medium'>Hobby</h2>
         <ul className='flex flex-wrap gap-4'>
-          <SkillCard name='AtCoder' iconSrc='/atcoder-logo.svg'>
+          <SkillCard
+            name='AtCoder'
+            iconSrc='/atcoder-logo.svg'
+            href='https://atcoder.jp/users/Deji'
+            target='_blank'
+          >
             Highest Rate: 1455
           </SkillCard>
           <SkillCard name='🚧追記予定🚧' icon={MdEngineering} iconColor='#292524' />
@@ -118,21 +107,21 @@ export default function Home() {
         <h2 className='text-2xl font-medium'>History</h2>
         <div className='ml-2'>
           <Timeline>
-            <Timeline.Item>
+            <TimelineItem>
               <p className='text-sm text-gray-600'>2023-04</p>
               <p className='text-lg'>某大学 情報系学科に3年次編入</p>
-            </Timeline.Item>
-            <Timeline.Item>
+            </TimelineItem>
+            <TimelineItem>
               <p className='text-sm text-gray-600'>2023-03</p>
               <p className='text-lg'>某工業高等専門学校 卒業</p>
-            </Timeline.Item>
-            <Timeline.Item>
+            </TimelineItem>
+            <TimelineItem>
               <p className='text-lg'>🚧追記予定🚧</p>
-            </Timeline.Item>
-            <Timeline.Item>
+            </TimelineItem>
+            <TimelineItem>
               <p className='text-gray-600'>2018-04</p>
               <p className='text-lg'>某工業高等専門学校 入学</p>
-            </Timeline.Item>
+            </TimelineItem>
           </Timeline>
         </div>
       </div>
