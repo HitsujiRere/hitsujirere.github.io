@@ -32,14 +32,14 @@ export const Sidebar = () => {
     if (!opened) {
       return 'w-0';
     } else if (path === '/') {
-      return 'w-[calc(max(300px,40vw))]';
+      return 'w-[calc(90vw-tan(5deg)*100vh)] md:w-[calc(max(300px,40vw))]';
     } else {
-      return 'w-[300px]';
+      return 'w-[calc(90vw-tan(5deg)*100vh)] md:w-[300px]';
     }
   };
 
   return (
-    <div className='relative mr-[calc(tan(5deg)*50vh)] pr-[calc(tan(5deg)*50vh)]'>
+    <div className='fixed z-50 mr-[calc(tan(5deg)*50vh)] pr-[calc(tan(5deg)*50vh)] md:relative'>
       <nav
         className={classNames(
           'relative z-10 flex h-screen items-center justify-center overflow-hidden transition-[width] duration-700 ease-out',
