@@ -13,7 +13,7 @@ export const LineCard = ({
 }) => {
   return (
     <li>
-      <WrapLink href={href} target={target}>
+      <WrapLink href={href}>
         <div
           className={classNames(
             'flex h-full flex-wrap gap-x-4 gap-y-2 rounded border-2 border-stone-200 bg-stone-50 p-2',
