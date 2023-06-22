@@ -7,8 +7,8 @@
     "feeling": "工業高等専門学校の卒業研究として行いました．",
     "linkWork": "https://xcratch.github.io/editor/#https://HitsujiRere.github.io/scratch2verilog/projects/example.sb3",
     "linkGitHub": "https://github.com/HitsujiRere/scratch2verilog",
-    "coverImage": "/img/scratch2verilog/logo.png",
-    "images": ["/img/scratch2verilog/presentation 0.png"]
+    "coverImage": "/works-img/scratch2verilog/logo.png",
+    "images": ["/works-img/scratch2verilog/presentation 0.png"]
   },
   {
     "id": "time-calc",
@@ -19,7 +19,7 @@
     "feeling": "自分用のサイトです。\nlocalstorageによる履歴保存機能があります。",
     "linkWork": "https://hitsujirere.github.io/time-calc",
     "linkGitHub": "https://github.com/HitsujiRere/time-calc",
-    "coverImage": "/img/time-calc.png",
-    "images": ["/img/time-calc.png"]
+    "coverImage": "/works-img/time-calc.png",
+    "images": ["/works-img/time-calc.png"]
   }
 ]
