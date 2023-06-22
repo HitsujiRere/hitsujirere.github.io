@@ -1,16 +1,8 @@
-import { HTMLAttributeAnchorTarget, ReactNode } from 'react';
+import { ReactNode } from 'react';
 import classNames from 'classnames';
 import { WrapLink } from '@/components/wrapLink';
 
-export const LineCard = ({
-  href,
-  target,
-  children,
-}: {
-  href?: string;
-  target?: HTMLAttributeAnchorTarget;
-  children: ReactNode;
-}) => {
+export const LineCard = ({ href, children }: { href?: string; children: ReactNode }) => {
   return (
     <li>
       <WrapLink href={href}>
