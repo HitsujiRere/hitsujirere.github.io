@@ -23,14 +23,14 @@ import { Timeline, TimelineItem } from '@/components/timeLine';
 export default function Home() {
   return (
     <div className='space-y-8'>
-      <div className='space-y-4'>
+      <div className='space-y-2'>
         <div>
           <h1 className='space-x-2'>
             <span className='text-3xl font-bold'>ひつじれれ</span>
             <span className='text-lg font-normal'>@HitsujiRere</span>
           </h1>
         </div>
-        <p>元気に過ごしています</p>
+        <p>高専 -編入-{'>'} 大学3回生</p>
         <div className='flex gap-2'>
           <Link href='https://twitter.com/HitsujiRere' target='_blank' className='p-1'>
             <SiTwitter size='1.75rem' color='#1DA1F2' />
@@ -104,23 +104,30 @@ export default function Home() {
       </div>
 
       <div className='space-y-4'>
+        <h2 className='text-2xl font-medium'>Part-time Job</h2>
+        <ul className='flex flex-col items-start gap-4'>
+          <AwardCard>株式会社エニーアップ : 2022-6~</AwardCard>
+        </ul>
+      </div>
+
+      <div className='space-y-4'>
         <h2 className='text-2xl font-medium'>History</h2>
         <div className='ml-2'>
           <Timeline>
             <TimelineItem>
-              <p className='text-sm text-gray-600'>2023-04</p>
-              <p className='text-lg'>某大学 情報系学科に3年次編入</p>
-            </TimelineItem>
-            <TimelineItem>
-              <p className='text-sm text-gray-600'>2023-03</p>
-              <p className='text-lg'>某工業高等専門学校 卒業</p>
+              <p className='text-gray-600'>2018-04</p>
+              <p className='text-lg'>■■工業高等専門学校 情報系学科 入学</p>
             </TimelineItem>
             <TimelineItem>
               <p className='text-lg'>🚧追記予定🚧</p>
             </TimelineItem>
             <TimelineItem>
-              <p className='text-gray-600'>2018-04</p>
-              <p className='text-lg'>某工業高等専門学校 入学</p>
+              <p className='text-sm text-gray-600'>2023-03</p>
+              <p className='text-lg'>■■工業高等専門学校 卒業</p>
+            </TimelineItem>
+            <TimelineItem>
+              <p className='text-sm text-gray-600'>2023-04</p>
+              <p className='text-lg'>■■大学 情報系学科に3年次編入</p>
             </TimelineItem>
           </Timeline>
         </div>
