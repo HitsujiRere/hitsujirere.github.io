@@ -16,8 +16,9 @@ import {
   SiUnity,
   SiVuedotjs,
 } from 'react-icons/si';
-import { AwardCard } from '@/components/awardCard';
-import { SkillCard } from '@/components/skillCard';
+import { IconCard, IconCardList } from '@/components/iconCard';
+import { LineCard, LineCardList } from '@/components/lineCard';
+import { SkillCard, SkillCardList } from '@/components/skillCard';
 import { Timeline, TimelineItem } from '@/components/timeLine';
 
 export default function Home() {
@@ -43,25 +44,25 @@ export default function Home() {
 
       <div className='space-y-4'>
         <h2 className='text-2xl font-medium'>Award</h2>
-        <ul className='flex flex-col items-start gap-4'>
-          <AwardCard>第2回全国高等専門学校 ディープラーニングコンテスト2021 : 7位</AwardCard>
-          <AwardCard>Hokuriku Innovation Trial-2020 : ICTまちづくり賞</AwardCard>
-          <AwardCard>パソコン甲子園2020 プログラミング部門 : 本選出場</AwardCard>
-          <AwardCard>
+        <LineCardList>
+          <LineCard>第2回全国高等専門学校 ディープラーニングコンテスト2021 : 7位</LineCard>
+          <LineCard>Hokuriku Innovation Trial-2020 : ICTまちづくり賞</LineCard>
+          <LineCard>パソコン甲子園2020 プログラミング部門 : 本選出場</LineCard>
+          <LineCard>
             全国高専プログラミングコンテスト 第31回苫小牧大会(2020)
             <ul className='flex flex-wrap gap-x-4 gap-y-2'>
               <li>自由部門 : 特別賞</li>
               <li>パテント審査部門 : 奨励賞</li>
             </ul>
-          </AwardCard>
-        </ul>
+          </LineCard>
+        </LineCardList>
       </div>
 
       <div className='space-y-4'>
         <h2 className='text-2xl font-medium'>Skill</h2>
         <div className='space-y-2'>
           <h3 className='text-xl'>Language</h3>
-          <ul className='flex flex-wrap gap-4'>
+          <SkillCardList>
             <SkillCard name='C' icon={SiC} iconColor='#A8B9CC' stars={4} />
             <SkillCard name='C++' icon={SiCplusplus} iconColor='#00599C' stars={4} />
             <SkillCard name='C#' icon={SiCsharp} iconColor='#239120' stars={3} />
@@ -76,38 +77,33 @@ export default function Home() {
               iconColor='#006699'
               stars={5}
             />
-          </ul>
+          </SkillCardList>
         </div>
         <div className='space-y-2'>
           <h3 className='text-xl'>Library / Framework</h3>
-          <ul className='flex flex-wrap gap-4'>
+          <SkillCardList>
             <SkillCard name='React' icon={SiReact} iconColor='#61DAFB' stars={3} />
             <SkillCard name='Vue.js' icon={SiVuedotjs} iconColor='#4FC08D' stars={4} />
             <SkillCard name='Unity' icon={SiUnity} iconColor='#333333' stars={2} />
-          </ul>
+          </SkillCardList>
         </div>
       </div>
 
       <div className='space-y-4'>
         <h2 className='text-2xl font-medium'>Hobby</h2>
-        <ul className='flex flex-wrap gap-4'>
-          <SkillCard
-            name='AtCoder'
-            iconSrc='/atcoder-logo.svg'
-            href='https://atcoder.jp/users/Deji'
-            target='_blank'
-          >
+        <IconCardList>
+          <IconCard name='AtCoder' iconSrc='/atcoder-logo.svg' href='https://atcoder.jp/users/Deji'>
             Highest Rate: 1455
-          </SkillCard>
-          <SkillCard name='🚧追記予定🚧' icon={MdEngineering} iconColor='#292524' />
-        </ul>
+          </IconCard>
+          <IconCard name='🚧追記予定🚧' icon={MdEngineering} iconColor='#292524' />
+        </IconCardList>
       </div>
 
       <div className='space-y-4'>
         <h2 className='text-2xl font-medium'>Part-time Job</h2>
-        <ul className='flex flex-col items-start gap-4'>
-          <AwardCard>株式会社エニーアップ : 2022-06~</AwardCard>
-        </ul>
+        <LineCardList>
+          <LineCard>株式会社エニーアップ : 2022-06~</LineCard>
+        </LineCardList>
       </div>
 
       <div className='space-y-4'>

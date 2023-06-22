@@ -2,7 +2,7 @@ import { HTMLAttributeAnchorTarget, ReactNode } from 'react';
 import classNames from 'classnames';
 import { WrapLink } from '@/components/wrapLink';
 
-export const AwardCard = ({
+export const LineCard = ({
   href,
   target,
   children,

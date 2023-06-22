@@ -1,4 +1,2 @@
-import { Timeline } from './components/Timeline';
-import { TimelineItem } from './components/TimelineItem';
-
-export { Timeline, TimelineItem };
+export { Timeline } from './components/Timeline';
+export { TimelineItem } from './components/TimelineItem';

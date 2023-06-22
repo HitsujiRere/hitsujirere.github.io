@@ -1,3 +1,1 @@
-import { WrapLink } from './compoents/WrapLink';
-
-export { WrapLink };
+export { WrapLink } from './compoents/WrapLink';
