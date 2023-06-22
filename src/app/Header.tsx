@@ -8,9 +8,6 @@ export const Header = () => {
           Hitsuji.Rere
         </Link>
         <ul className='flex gap-8'>
-          <Link href='/about' className='text-2xl'>
-            ABOUT
-          </Link>
           <Link href='/works' className='text-2xl'>
             WORKS
           </Link>
