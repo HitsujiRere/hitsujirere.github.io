@@ -9,7 +9,24 @@
     "linkWork": "https://xcratch.github.io/editor/#https://HitsujiRere.github.io/scratch2verilog/projects/example.sb3",
     "linkGitHub": "https://github.com/HitsujiRere/scratch2verilog",
     "coverImage": "/works-img/scratch2verilog/logo.png",
-    "images": ["/works-img/scratch2verilog/presentation 0.png"]
+    "images": [
+      "/works-img/scratch2verilog/presentation (1).png",
+      "/works-img/scratch2verilog/presentation (2).png",
+      "/works-img/scratch2verilog/presentation (3).png",
+      "/works-img/scratch2verilog/presentation (4).png",
+      "/works-img/scratch2verilog/presentation (5).png",
+      "/works-img/scratch2verilog/presentation (6).png",
+      "/works-img/scratch2verilog/presentation (7).png",
+      "/works-img/scratch2verilog/presentation (8).png",
+      "/works-img/scratch2verilog/presentation (9).png",
+      "/works-img/scratch2verilog/presentation (10).png",
+      "/works-img/scratch2verilog/presentation (11).png",
+      "/works-img/scratch2verilog/presentation (12).png",
+      "/works-img/scratch2verilog/presentation (13).png",
+      "/works-img/scratch2verilog/presentation (14).png",
+      "/works-img/scratch2verilog/presentation (15).png",
+      "/works-img/scratch2verilog/presentation (16).png"
+    ]
   },
   {
     "id": "time-calc",
@@ -35,7 +52,7 @@
     "linkWork": "https://hitsujirere.github.io",
     "linkGitHub": "https://github.com/HitsujiRere/hitsujirere.github.io",
     "coverImage": "/works-img/my-webpage/v2.png",
-    "images": ["/img/my-webpage/v2.png", "/img/my-webpage/v1.png"]
+    "images": ["/works-img/my-webpage/v1.png"]
   },
   {
     "id": "logic-connect-block",
@@ -49,7 +66,29 @@
     "linkWork": "https://hitsujirere.github.io/LogicConnectBlockSim/",
     "linkGitHub": "https://github.com/HitsujiRere/LogicConnectBlockSim",
     "coverImage": "/works-img/LogicConnectBlock/cover.jpg",
-    "images": ["/img/LogicConnectBlock/cover.jpg", "/img/LogicConnectBlock/web-sim.png"]
+    "images": [
+      "/works-img/LogicConnectBlock/cover.jpg",
+      "/works-img/LogicConnectBlock/web-sim.png",
+      "/works-img/LogicConnectBlock/presentation (1).png",
+      "/works-img/LogicConnectBlock/presentation (2).png",
+      "/works-img/LogicConnectBlock/presentation (3).png",
+      "/works-img/LogicConnectBlock/presentation (4).png",
+      "/works-img/LogicConnectBlock/presentation (5).png",
+      "/works-img/LogicConnectBlock/presentation (6).png",
+      "/works-img/LogicConnectBlock/presentation (7).png",
+      "/works-img/LogicConnectBlock/presentation (8).png",
+      "/works-img/LogicConnectBlock/presentation (9).png",
+      "/works-img/LogicConnectBlock/presentation (10).png",
+      "/works-img/LogicConnectBlock/presentation (11).png",
+      "/works-img/LogicConnectBlock/presentation (12).png",
+      "/works-img/LogicConnectBlock/presentation (13).png",
+      "/works-img/LogicConnectBlock/presentation (14).png",
+      "/works-img/LogicConnectBlock/presentation (15).png",
+      "/works-img/LogicConnectBlock/presentation (16).png",
+      "/works-img/LogicConnectBlock/presentation (17).png",
+      "/works-img/LogicConnectBlock/presentation (18).png",
+      "/works-img/LogicConnectBlock/presentation (19).png"
+    ]
   },
   {
     "id": "oshaberu",
@@ -63,10 +102,10 @@
     "linkGitHub": "https://github.com/HitsujiRere/hitsujirere.github.io",
     "coverImage": "/works-img/oshaberu/logo.png",
     "images": [
-      "/img/oshaberu/cover.png",
-      "/img/oshaberu/system.png",
-      "/img/oshaberu/voice-1.png",
-      "/img/oshaberu/voice-2.png"
+      "/works-img/oshaberu/cover.png",
+      "/works-img/oshaberu/system.png",
+      "/works-img/oshaberu/voice-1.png",
+      "/works-img/oshaberu/voice-2.png"
     ]
   },
   {
@@ -78,7 +117,7 @@
     "framework": "Node.js, Vue.js, Socket.IO",
     "linkGitHub": "https://github.com/HitsujiRere/Twattaa",
     "coverImage": "/works-img/twattaa/1.png",
-    "images": ["/img/twattaa/1.png", "/img/twattaa/2.png"]
+    "images": ["/works-img/twattaa/1.png", "/works-img/twattaa/2.png"]
   },
   {
     "id": "learn-processing",
@@ -87,7 +126,7 @@
     "hasDetailPage": true,
     "linkWork": "https://github.com/HitsujiRere/LearnProcessing#readme",
     "coverImage": "/works-img/LearnProcessing.png",
-    "images": ["/img/LearnProcessing.png"]
+    "images": ["/works-img/LearnProcessing.png"]
   },
   {
     "id": "fall-texts",

@@ -1,4 +1,5 @@
-import { WorkCard, fetchWorks } from '@/components/workCard';
+import { fetchWorks } from '@/utils/fetchWorks';
+import { WorkCard } from '@/components/workCard';
 
 export default async function Home() {
   const works = await fetchWorks();
@@ -14,6 +15,7 @@ export default async function Home() {
             title={work.name}
             comment={work.explain}
             imageSrc={work.coverImage}
+            href={work.hasDetailPage ? `/works/${work.id}` : undefined}
           />
         ))}
       </ul>
