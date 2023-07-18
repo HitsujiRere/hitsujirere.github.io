@@ -2,7 +2,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { fetchWorks } from '@/utils/fetchWorks';
-import a from 'public/works-img/scratch2verilog/presentation (1).png';
 import { MdLink } from 'react-icons/md';
 import { SiGithub } from 'react-icons/si';
 
