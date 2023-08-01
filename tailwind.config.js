@@ -1,29 +1,34 @@
 const plugin = require('tailwindcss/plugin');
 
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/*.{js,ts,jsx,tsx}'],
+  content: [
+    './src/pages/**/*.{js,ts,jsx,tsx}',
+    './src/components/**/*.{js,ts,jsx,tsx}',
+    './src/app/**/*.{js,ts,jsx,tsx}',
+  ],
   theme: {
-    extend: {},
+    extend: {
+      height: {
+        screen: ['100vh', '100dvh'],
+      },
+      minHeight: {
+        screen: ['100vh', '100dvh'],
+      },
+      maxHeight: {
+        screen: ['100vh', '100dvh'],
+      },
+    },
   },
   plugins: [
-    require('tailwind-scrollbar'),
-    require('tailwind-scrollbar')({ nocompatible: true }),
-    plugin(function ({ addComponents, addBase }) {
-      addComponents({
-        '.hide-scrollbar': {
-          /* IE and Edge */
-          '-ms-overflow-style': 'none',
-          /* Firefox */
-          'scrollbar-width': 'none',
-          /* Chrome, Safari and Opera */
-          '&::-webkit-scrollbar': {
-            display: 'none',
-          },
+    require('@tailwindcss/container-queries'),
+    plugin(function ({ addUtilities }) {
+      addUtilities({
+        '.rotate-z-0': {
+          transform: 'rotateY(0)',
         },
-      });
-      addBase({
-        html: {
-          fontSize: '20px',
+        '.rotate-z-180': {
+          transform: 'rotateY(180deg)',
         },
       });
     }),
