@@ -1,5 +1,13 @@
 [
   {
+    "id": "comp-programming-problem",
+    "name": "競プロ作問",
+    "explain": "",
+    "hasDetailPage": true,
+    "linkWork": "https://mojacoder.app/users/Hitsuji",
+    "images": []
+  },
+  {
     "id": "scratch2verilog",
     "name": "Scratch to Verilog HDL",
     "explain": "ビジュアルプログラミングが行えるScratch上でFPGAのハードウェア記述言語の1つであるVerilog HDKの自動合成を行う拡張機能",
