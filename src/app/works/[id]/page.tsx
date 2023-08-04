@@ -16,7 +16,7 @@ export default async function WorkDetail({ params }: { params: { id: string } })
     <div className='space-y-8'>
       <div className='space-y-4'>
         <h1 className='text-3xl font-bold'>{work.name}</h1>
-        <p>{work.explain}</p>
+        <p className='text-xl'>{work.explain}</p>
       </div>
       {work.feeling && <p className='text-xl'>{work.feeling}</p>}
       <div className='space-y-4'>
@@ -39,8 +39,10 @@ export default async function WorkDetail({ params }: { params: { id: string } })
         )}
       </div>
       <div className='space-y-2'>
-        <Image src={work.coverImage} alt='Image 1' width={2000} height={1500} />
-        {work.images.map((image, index) => (
+        {work.coverImage && (
+          <Image src={work.coverImage} alt='Image 1' width={2000} height={1500} />
+        )}
+        {(work.images ?? []).map((image, index) => (
           <Image key={image} src={image} alt={`Image ${index + 2}`} width={2000} height={1500} />
         ))}
       </div>

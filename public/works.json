@@ -10,10 +10,10 @@
   {
     "id": "scratch2verilog",
     "name": "Scratch to Verilog HDL",
-    "explain": "ビジュアルプログラミングが行えるScratch上でFPGAのハードウェア記述言語の1つであるVerilog HDKの自動合成を行う拡張機能",
+    "explain": "ビジュアルプログラミングが行えるScratch上でFPGAのハードウェア記述言語の1つであるVerilog HDKの自動合成を行う拡張機能です。",
     "hasDetailPage": true,
     "language": "JavaScript",
-    "feeling": "工業高等専門学校の卒業研究として行いました．",
+    "feeling": "工業高等専門学校の卒業研究として行いました。",
     "linkWork": "https://xcratch.github.io/editor/#https://HitsujiRere.github.io/scratch2verilog/projects/example.sb3",
     "linkGitHub": "https://github.com/HitsujiRere/scratch2verilog",
     "coverImage": "/works-img/scratch2verilog/logo.png",

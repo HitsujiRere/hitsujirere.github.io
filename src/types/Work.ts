@@ -1,7 +1,7 @@
 export type Work = {
   id: string;
   name: string;
-  explain: string;
+  explain?: string;
   hasDetailPage: boolean;
   charge?: string;
   language?: string;
@@ -9,6 +9,6 @@ export type Work = {
   feeling?: string;
   linkWork?: string;
   linkGitHub?: string;
-  coverImage: string;
-  images: string[];
+  coverImage?: string;
+  images?: string[];
 };

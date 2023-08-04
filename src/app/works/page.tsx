@@ -13,7 +13,7 @@ export default async function Home() {
           <WorkCard
             key={work.id}
             title={work.name}
-            comment={work.explain}
+            comment={work.explain ?? ''}
             imageSrc={work.coverImage}
             href={work.hasDetailPage ? `/works/${work.id}` : undefined}
           />
